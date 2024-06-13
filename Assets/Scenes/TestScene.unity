@@ -12588,7 +12588,7 @@ GameObject:
   - component: {fileID: 208501021}
   m_Layer: 6
   m_Name: down
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24082,7 +24082,7 @@ GameObject:
   - component: {fileID: 537813417}
   m_Layer: 6
   m_Name: left
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37690,7 +37690,7 @@ GameObject:
   - component: {fileID: 880467039}
   m_Layer: 6
   m_Name: left
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40334,7 +40334,7 @@ GameObject:
   - component: {fileID: 934550209}
   m_Layer: 6
   m_Name: down
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40848,12 +40848,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42ff566cafdeaf4a99eac30420afb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typePlayerOne: 0
-  _typePlayerTwo: 0
-  _typeNoteAsset: 0
-  _typeNoteParticleAsset: 0
+  _typePlayerOne: 2
+  _typePlayerTwo: 2
+  _typeNoteAsset: 2
+  _typeNoteParticleAsset: 2
   CustomNoteParticleName: CustomParticleDemo
-  _noteParticleSpriteRenderer: []
+  _particleSpriteWidth: 1080
+  _particleSpriteHeight: 1080
+  _noteParticleSpriteRenderers: []
+  CustomNoteName: Dreamwave Custom Example Note
+  CustomNoteHeldName: Dreamwave Custom Example Note Held
+  _NoteWidth: 470
+  _NoteHeight: 540
+  _noteSpriteRenderers: []
+  _noteController: {fileID: 1524813484}
 --- !u!1 &947138878
 GameObject:
   m_ObjectHideFlags: 0
@@ -54029,7 +54037,7 @@ GameObject:
   - component: {fileID: 1290760039}
   m_Layer: 0
   m_Name: Note Culler
-  m_TagString: Untagged
+  m_TagString: NoteCuller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78169,7 +78177,7 @@ GameObject:
   - component: {fileID: 1723429532}
   m_Layer: 6
   m_Name: right
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85104,7 +85112,7 @@ GameObject:
   - component: {fileID: 1889616058}
   m_Layer: 6
   m_Name: up
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85189,7 +85197,7 @@ GameObject:
   - component: {fileID: 1893410007}
   m_Layer: 6
   m_Name: up
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86120,7 +86128,7 @@ GameObject:
   - component: {fileID: 1909558390}
   m_Layer: 6
   m_Name: right
-  m_TagString: Untagged
+  m_TagString: Note Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

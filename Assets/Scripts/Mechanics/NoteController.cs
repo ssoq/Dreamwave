@@ -6,7 +6,7 @@ public class NoteController : MonoBehaviour
 {
     [Header("Sprites")]
     [SerializeField] private SpriteRenderer[] noteRenderers;
-    [SerializeField] private Sprite[] noteSprites;
+    [SerializeField] public Sprite[] noteSprites;
     [SerializeField] private Animator plrAnim;
     [SerializeField] private string currentAnimationPlaying;
 

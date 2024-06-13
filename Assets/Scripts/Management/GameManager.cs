@@ -270,6 +270,7 @@ public class GameManager : MonoBehaviour
 
         accuracy = Mathf.Clamp(accuracy, 0f, 100f);
         accuracyText.text = "Accuracy: " + accuracy.ToString("F2") + "%";
+        score = Mathf.Clamp(score, 0, 999999999);
         scoreText.text = "Score: " + score.ToString();
         CalculatePlayerRating();
         //Debug.Log(score + " - " + newScore);

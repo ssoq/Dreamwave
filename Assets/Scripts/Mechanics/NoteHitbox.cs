@@ -126,6 +126,11 @@ public class NoteHitbox : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Note"))
         {
+            if (!Input.GetKeyDown(keyForSide))
+            {
+                NoteHit("Shit", delayInMs, 2);
+            }
+
             notesWithinHitBox.Remove(collision.gameObject);
         }
 

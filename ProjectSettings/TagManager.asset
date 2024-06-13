@@ -17,6 +17,8 @@ TagManager:
   - ChartScroller
   - BeatAnimator
   - Note Particle
+  - Note Object
+  - NoteCuller
   layers:
   - Default
   - TransparentFX
