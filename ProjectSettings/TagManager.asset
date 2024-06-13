@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - LuaEditor
+  - Lua Editor Window
+  - TempoManager
+  - EnemyNote
+  - Note
+  - BreakText
+  - Note Hold
+  - Canvas
+  - BreakTimeAnimator
+  - ScrollEventTrigger
+  - ChartScroller
+  - BeatAnimator
+  - Note Particle
   layers:
   - Default
   - TransparentFX
