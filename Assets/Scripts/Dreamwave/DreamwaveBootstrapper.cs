@@ -20,6 +20,12 @@ public class DreamwaveBootstrapper : MonoBehaviour
     [Header("UI")]
     [SerializeField] private TextMeshProUGUI _bootstrapProgressText;
 
+    #region References
+
+    [SerializeField] private GameObject _discordRpc;
+    
+    #endregion
+
     private void Awake()
     {
         Init();
@@ -59,13 +65,17 @@ public class DreamwaveBootstrapper : MonoBehaviour
     {
         switch (key)
         {
-            case "_isCustomEngine":
+            case "isCustomEngine":
                 if (value == 1) _typeOfEngineBuild = TypeOfEngineBuild.CustomBuild;
                 else _typeOfEngineBuild = TypeOfEngineBuild.Dreamwave;
 
                 _bootstrapProgressText.text = $"Build Type: {_typeOfEngineBuild.ToString()}";
 
                 StartCoroutine(InitEngineBuildType());
+                break;
+            case "useDiscordRpc":
+                if (value == 1) _discordRpc.SetActive(true);
+                else _discordRpc.SetActive(false);
                 break;
         }
     }
@@ -74,7 +84,7 @@ public class DreamwaveBootstrapper : MonoBehaviour
     {
         yield return new WaitUntil(() => _completedBootstrap);
         
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(2f);
 
         _bootstrapProgressText.text = "Completed! Now loading...";
 

@@ -1,1 +1,2 @@
-_isCustomEngine = 0
+isCustomEngine = 0
+useDiscordRpc = 0
