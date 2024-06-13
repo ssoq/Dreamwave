@@ -1,0 +1,2454 @@
+fileFormatVersion: 2
+guid: 7b6c1c4496e94394982b6fb6617d273b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fnfTitles_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 570
+        width: 54
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a2349c8a71c834a825c9636474018d
+      internalID: 125022590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 570
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1eb0ad0e905ce749ab3c8ebc004cc1e
+      internalID: -737822964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_2
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 578
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe48f0515564ca48915817d215aa12a
+      internalID: -1891817564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 578
+        width: 46
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c5f8e98a667aa449a92a09714dff5f
+      internalID: 1160900996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_4
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 567
+        width: 46
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d2b3ac1a9900649956b08c9e46d1a9
+      internalID: 989094152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 567
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b503ecdb03c0f5f4697e244c7908e817
+      internalID: 1092661222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 579
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e61c21cc0ea694aa1057108009aea5
+      internalID: 1871903179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_7
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 578
+        width: 38
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b79386f8a6515f4abfcc94f7fafa869
+      internalID: 1016276484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_8
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 571
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db3119fcb6703546ba947e31b309f9e
+      internalID: 1011964269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_9
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 573
+        width: 55
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8691b462909feb847abe8593cd34d5af
+      internalID: -1226353730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_10
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 580
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb09ed75ba78794589ba22c8965c5bd
+      internalID: 664487005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_11
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 580
+        width: 45
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0609d141a2362f342a591808cca5cf82
+      internalID: 1821356716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_12
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 571
+        width: 53
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63171251525361140aed03382e5f67e0
+      internalID: 1184119697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_13
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 570
+        width: 53
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba0cb968190c75e419201a549030a6b6
+      internalID: -505341630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_14
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 580
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f59d8ed6a7ac3b4fb86e0ff71752237
+      internalID: -1491171955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_15
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 580
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756e3be356f13424d88e95d173f1dfe0
+      internalID: 1317058504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 485
+        width: 43
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5790c47cbdf4ebd42b4829ed2c1b08ef
+      internalID: -1434688238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_17
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 485
+        width: 43
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f710b62495252ab4e823f6864b866b99
+      internalID: 1033853064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_18
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 498
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e3522ff8b86884d89d9b1a910f8c86
+      internalID: 196463340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 497
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e331a87c0a1ea4a8426de7c4e4201e
+      internalID: -1797611784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_20
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 483
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec98c3c632fe44545af3787d9da6c762
+      internalID: -818592195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_21
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 483
+        width: 43
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5860129c445134d9bc52dd779e201b
+      internalID: 650951833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_22
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 499
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40012cf7f4e39654593dbb0b1443fc05
+      internalID: -2028001693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_23
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 499
+        width: 36
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57050b00f4ba48644813396b5464c0f7
+      internalID: 3068031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_24
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 480
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a88c2e3055bf84f892141cc4d1c5aa
+      internalID: 34633260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_25
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 480
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfc46741c6ff3b4a95a6992376a1421
+      internalID: 1545148966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_26
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 495
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504e0e641303ae842a303ac140a9c02a
+      internalID: 877107310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_27
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 495
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec358c83c73fb841b8035e49f562d14
+      internalID: 1777396377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_28
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 484
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf36b55260dd04499bb87516a591520
+      internalID: 805810618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_29
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 484
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a6775dc2d692b4ab36abc7944c636a
+      internalID: -468816093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_30
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 498
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe414f98669572459148c1c1473cd4f
+      internalID: 1013591476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_31
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 498
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b04bdff258591ae48a532d665e8c0910
+      internalID: 2069538375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_32
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 486
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafa0d94fc2b51543afb4ce1d1477fdd
+      internalID: 1470699641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_33
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 486
+        width: 43
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd2f493e59ac434dad65537bc6a40b0
+      internalID: 2094980666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_34
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 498
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c119a0af386154e8d4fbb4deebced2
+      internalID: 1317309781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_35
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 498
+        width: 36
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d60ad19ddf55b646ade026bc470ba18
+      internalID: -2144995852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_36
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 392
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a687c00f0834554d873e9ce9477171d
+      internalID: -1096869665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_37
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 392
+        width: 53
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8aace48d716d440b58b80e2ef6ce86
+      internalID: -1859638412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_38
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 408
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8ad8ada2ddd534fbed6c5d28e1bcf0
+      internalID: -1301163925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_39
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 408
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf34f8251f437b47a67d57409b4f37d
+      internalID: 1260341658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_40
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 393
+        width: 44
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0561a4bc686e78845acd21724375ee72
+      internalID: 856978507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_41
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 393
+        width: 44
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 429e21cff2cb1f4498b80fcf80bf301f
+      internalID: -13206730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_42
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 410
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39682f140b613ca4bbc5a576255f7da6
+      internalID: 1982520434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_43
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 410
+        width: 35
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cc78ced5a3c994ba1e5217b4647c23
+      internalID: -2029176246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_44
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 396
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2f4a1ee6ff81542aeed60679ec3f3f
+      internalID: 1958930637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_45
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 396
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4b5a2be104a8a45aa7fa18adb3e93a
+      internalID: 67912721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_46
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 409
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608317e8cda6ab1418346eabc73de89a
+      internalID: -2074925805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_47
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 410
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e772058956eb3af45994e1d410cdfe2d
+      internalID: -705172853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_48
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 399
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5b4edea4aaacd4b855e03fa78994ce
+      internalID: -607295401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_49
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 399
+        width: 56
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b9b5c800d248549aa1f44baf9894e1
+      internalID: -1927445300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_50
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 412
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d476787949ec947895d63de49750dc
+      internalID: 1230993875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_51
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 413
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9c94975af61ae4882f00e946ce1bf9
+      internalID: 612441638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_52
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 397
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbd30cd4abfe2744a110c2b4b628ff7
+      internalID: -1433672217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_53
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 397
+        width: 45
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a717db18089ca4b94ddd568c877c08
+      internalID: -1028759087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_54
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 412
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86aec6feb923e7543b8b1bb0d925f559
+      internalID: 1481198121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_55
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 412
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede1befd9efc6a04680daf35d2a35315
+      internalID: 808244492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_56
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 297
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabd7aef5f4528e46ba9c36b0920eda9
+      internalID: 1218049890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_57
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 297
+        width: 50
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e88215b99677944bbf5a1dcbcc580c
+      internalID: 624389766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_58
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 312
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da334b86a072c934988a78bfd47a51c5
+      internalID: 630286043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_59
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 312
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cc4917f3b06ac419472397e0460fff
+      internalID: -2040376819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_60
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 298
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693c2a0efed53fa4c95bd679254cadd7
+      internalID: 1471607295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_61
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 298
+        width: 45
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42d650b632cf3448b7d5292a0f19a57
+      internalID: 1781636882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_62
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 317
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f184f0307c5724b8a016419d3e9810
+      internalID: 653513597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_63
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 317
+        width: 35
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6ce4635c4820a4f876dcd0ad73f17a
+      internalID: -1850225629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_64
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 301
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f78d3975ce736e4baad6ece400993d8
+      internalID: -1556080564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_65
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 301
+        width: 51
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499368f24d9587d4bbf8817494847089
+      internalID: 1343102310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_66
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 317
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f3553bffbdb7a43b6635de987d59d4
+      internalID: -1348989085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_67
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 317
+        width: 41
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fa5463c74ba1545aa806a4850f9d33
+      internalID: 651062562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_68
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 302
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b75b1db6399cbd43b3cbb51f9636361
+      internalID: 1320834173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_69
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 302
+        width: 47
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c208c4e3356bc424c9bc40ecbd749495
+      internalID: -1916533016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_70
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 313
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73761707b04b3574c8a08f41b6151d42
+      internalID: -296549321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_71
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 313
+        width: 39
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baf5c0310c052c4caa5d22b80febcbf
+      internalID: 36730965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_72
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 302
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061e3c44b4e292440844936198852552
+      internalID: 873287658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_73
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 302
+        width: 48
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d80c4300198e0794f973d8612e9f5d7f
+      internalID: 1893982457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_74
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 313
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517708f450ab5ab47b86683f1de358e9
+      internalID: -307343418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_75
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 313
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f17b02b5c5769544904d3c862dcc5cc
+      internalID: 38072128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_76
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 210
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1588a8469449641bf2b994f1df7257
+      internalID: -833940536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_77
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 210
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddc91d54792dfd48a9e4b59e98bb74d
+      internalID: -458079459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_78
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 224
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd7115d59b80b1488a9eaada38ca392
+      internalID: 158437903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_79
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 224
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389487f2e5ea65e44a1e936d73cdaf34
+      internalID: 1739484602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_80
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 215
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd69f220c5f4e0b4ab225aaca3ca7984
+      internalID: -1286890395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_81
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 215
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc7c09e90e3734b9e168cfb496f846
+      internalID: -794737905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_82
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 225
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809a0d4fe0f231b48a6fd0fc08b6b12e
+      internalID: -1349164466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_83
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 225
+        width: 38
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1aa2a1547b6528448ad761010da83a3
+      internalID: -521237838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_84
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 208
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04064b7ce8318dd43a7ee12739ca4318
+      internalID: -1151500606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_85
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 208
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3577e0f9c98bd2469e4347538985b2a
+      internalID: 1829253042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_86
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 226
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d457dcdc404d4740a7049d0b7a79926
+      internalID: 369721043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_87
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 226
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba49ac69e4bc2504982921d4b46d5c34
+      internalID: -268351009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_88
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 211
+        width: 58
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5700854147dafe48b849264e0734da9
+      internalID: 1740157939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_89
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 210
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49972d6770b53b546b382bb02bc8c9ac
+      internalID: -1094892689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_90
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 221
+        width: 46
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ded9cf367e7b584eae9c99373321737
+      internalID: -729387209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_91
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 221
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89650c6cfce8d4f478138efdc19a430b
+      internalID: -715086464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_92
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 126
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a7522d2270baa48a15aa6d227ff67d
+      internalID: 1870956745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_93
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 126
+        width: 55
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0cd041bbc68e424eaa8548aa06583c1
+      internalID: -1657036594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_94
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 140
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f13aac23714994cb34c55e3ed77627
+      internalID: 944857707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_95
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 140
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eae3eee4d5a7f64ead095f6ab23c5d9
+      internalID: -1979015021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_96
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 123
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0153d1db5c38e47808ba42c508fb61
+      internalID: 2106457827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_97
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 123
+        width: 54
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75a0d713bd5f4640bea9f74b5ee4664
+      internalID: 383368508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_98
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 140
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e91d3454d4e48b46a5c4bf8270f437f
+      internalID: 891561776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_99
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 140
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b9b72bf0a4649439d3f229e38e2596
+      internalID: -1125638748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_100
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 127
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fc1b8aa972af44ca84c79cef6fd36d
+      internalID: 53637321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_101
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 127
+        width: 51
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4972233b4cc0884ebe4465f486141aa
+      internalID: -1618361013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_102
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 145
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc5f36210726ae4b9de41cffc044dc3
+      internalID: 1736492538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fnfTitles_103
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 145
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e566887e70912ea4081cff3aeef8aef3
+      internalID: 1060387335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      fnfTitles_0: 125022590
+      fnfTitles_1: -737822964
+      fnfTitles_10: 664487005
+      fnfTitles_100: 53637321
+      fnfTitles_101: -1618361013
+      fnfTitles_102: 1736492538
+      fnfTitles_103: 1060387335
+      fnfTitles_11: 1821356716
+      fnfTitles_12: 1184119697
+      fnfTitles_13: -505341630
+      fnfTitles_14: -1491171955
+      fnfTitles_15: 1317058504
+      fnfTitles_16: -1434688238
+      fnfTitles_17: 1033853064
+      fnfTitles_18: 196463340
+      fnfTitles_19: -1797611784
+      fnfTitles_2: -1891817564
+      fnfTitles_20: -818592195
+      fnfTitles_21: 650951833
+      fnfTitles_22: -2028001693
+      fnfTitles_23: 3068031
+      fnfTitles_24: 34633260
+      fnfTitles_25: 1545148966
+      fnfTitles_26: 877107310
+      fnfTitles_27: 1777396377
+      fnfTitles_28: 805810618
+      fnfTitles_29: -468816093
+      fnfTitles_3: 1160900996
+      fnfTitles_30: 1013591476
+      fnfTitles_31: 2069538375
+      fnfTitles_32: 1470699641
+      fnfTitles_33: 2094980666
+      fnfTitles_34: 1317309781
+      fnfTitles_35: -2144995852
+      fnfTitles_36: -1096869665
+      fnfTitles_37: -1859638412
+      fnfTitles_38: -1301163925
+      fnfTitles_39: 1260341658
+      fnfTitles_4: 989094152
+      fnfTitles_40: 856978507
+      fnfTitles_41: -13206730
+      fnfTitles_42: 1982520434
+      fnfTitles_43: -2029176246
+      fnfTitles_44: 1958930637
+      fnfTitles_45: 67912721
+      fnfTitles_46: -2074925805
+      fnfTitles_47: -705172853
+      fnfTitles_48: -607295401
+      fnfTitles_49: -1927445300
+      fnfTitles_5: 1092661222
+      fnfTitles_50: 1230993875
+      fnfTitles_51: 612441638
+      fnfTitles_52: -1433672217
+      fnfTitles_53: -1028759087
+      fnfTitles_54: 1481198121
+      fnfTitles_55: 808244492
+      fnfTitles_56: 1218049890
+      fnfTitles_57: 624389766
+      fnfTitles_58: 630286043
+      fnfTitles_59: -2040376819
+      fnfTitles_6: 1871903179
+      fnfTitles_60: 1471607295
+      fnfTitles_61: 1781636882
+      fnfTitles_62: 653513597
+      fnfTitles_63: -1850225629
+      fnfTitles_64: -1556080564
+      fnfTitles_65: 1343102310
+      fnfTitles_66: -1348989085
+      fnfTitles_67: 651062562
+      fnfTitles_68: 1320834173
+      fnfTitles_69: -1916533016
+      fnfTitles_7: 1016276484
+      fnfTitles_70: -296549321
+      fnfTitles_71: 36730965
+      fnfTitles_72: 873287658
+      fnfTitles_73: 1893982457
+      fnfTitles_74: -307343418
+      fnfTitles_75: 38072128
+      fnfTitles_76: -833940536
+      fnfTitles_77: -458079459
+      fnfTitles_78: 158437903
+      fnfTitles_79: 1739484602
+      fnfTitles_8: 1011964269
+      fnfTitles_80: -1286890395
+      fnfTitles_81: -794737905
+      fnfTitles_82: -1349164466
+      fnfTitles_83: -521237838
+      fnfTitles_84: -1151500606
+      fnfTitles_85: 1829253042
+      fnfTitles_86: 369721043
+      fnfTitles_87: -268351009
+      fnfTitles_88: 1740157939
+      fnfTitles_89: -1094892689
+      fnfTitles_9: -1226353730
+      fnfTitles_90: -729387209
+      fnfTitles_91: -715086464
+      fnfTitles_92: 1870956745
+      fnfTitles_93: -1657036594
+      fnfTitles_94: 944857707
+      fnfTitles_95: -1979015021
+      fnfTitles_96: 2106457827
+      fnfTitles_97: 383368508
+      fnfTitles_98: 891561776
+      fnfTitles_99: -1125638748
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
