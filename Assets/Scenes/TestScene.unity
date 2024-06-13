@@ -40734,6 +40734,7 @@ GameObject:
   - component: {fileID: 942200541}
   - component: {fileID: 942200540}
   - component: {fileID: 942200542}
+  - component: {fileID: 942200543}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -40851,7 +40852,7 @@ MonoBehaviour:
   _typePlayerOne: 2
   _typePlayerTwo: 2
   _typeNoteAsset: 2
-  _typeNoteParticleAsset: 2
+  _typeNoteParticleAsset: 0
   CustomNoteParticleName: CustomParticleDemo
   _particleSpriteWidth: 1080
   _particleSpriteHeight: 1080
@@ -40862,6 +40863,18 @@ MonoBehaviour:
   _NoteHeight: 540
   _noteSpriteRenderers: []
   _noteController: {fileID: 1524813484}
+--- !u!114 &942200543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942200539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d2ec1f5f2ca91a44af74666e1d216a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &947138878
 GameObject:
   m_ObjectHideFlags: 0

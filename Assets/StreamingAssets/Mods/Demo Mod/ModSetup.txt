@@ -1,0 +1,2 @@
+hasCutscenes = 0
+hasDialogue = 0
