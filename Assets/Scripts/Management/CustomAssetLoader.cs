@@ -43,11 +43,13 @@ public class CustomAssetLoader : MonoBehaviour
     public TypePlayerOne _typePlayerOne;
     public TypePlayerTwo _typePlayerTwo;
     public TypeNoteAsset _typeNoteAsset;
-    public TypeNoteAsset _typeNoteParticleAsset;
+    public TypeNoteParticleAsset _typeNoteParticleAsset;
 
     #region Note Renderer Section
 
     public string CustomNoteParticleName;
+    public int _particleSpriteWidth = 1080;
+    public int _particleSpriteHeight = 1080;
     [Header("Note Particle Renderers")]
     [SerializeField] private List<SpriteRenderer> _noteParticleSpriteRenderer;
 
@@ -72,23 +74,24 @@ public class CustomAssetLoader : MonoBehaviour
 
     private void LoadCustomAssets()
     {
-        switch (_typeNoteAsset)
+        switch (_typeNoteParticleAsset)
         {
-            case TypeNoteAsset.Custom:
+            case TypeNoteParticleAsset.Custom:
                 for (int i = 0; i < _noteParticleSpriteRenderer.Count; i++)
                 {
                     _noteParticleSpriteRenderer[i].sprite = LoadStreamedSprite($"" +
-                        $"{Application.streamingAssetsPath + "/Sprites/UI/Game/NoteParticles/"}", CustomNoteParticleName + ".png");
+                        $"{Application.streamingAssetsPath + "/Sprites/UI/Game/NoteParticles/"}", CustomNoteParticleName + ".png",
+                        _particleSpriteWidth, _particleSpriteHeight);
                 }
                 break;
-            case TypeNoteAsset.Mod:
+            case TypeNoteParticleAsset.Mod:
                 break;
-            case TypeNoteAsset.Default:
+            case TypeNoteParticleAsset.Default:
                 break;
         }
     }
 
-    public Sprite LoadStreamedSprite(string filepath, string fileName)
+    public Sprite LoadStreamedSprite(string filepath, string fileName, int width, int height)
     {
         string filePath = Path.Combine(filepath, fileName);
 
@@ -96,10 +99,10 @@ public class CustomAssetLoader : MonoBehaviour
         {
             byte[] fileData = File.ReadAllBytes(filePath);
 
-            Texture2D texture = new (1080, 1080, TextureFormat.ARGB32, false);
+            Texture2D texture = new (width, height, TextureFormat.ARGB32, false);
             texture.LoadImage(fileData);
 
-            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0, 0));
+            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 
             return sprite;
         }
