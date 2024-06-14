@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
-using UnityEditor;
 using UnityEngine;
 
 public enum Side 
@@ -103,7 +102,15 @@ public class NoteHitbox : MonoBehaviour
             }
 
             stopwatch.Reset();
-            fn.SetActive(false);
+            
+            if (fn.CompareTag("Note"))
+            {
+                fn.SetActive(false);
+            }
+            else if (fn.CompareTag("Note Hold Parent"))
+            {
+                fn.GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
     }
 
@@ -115,10 +122,25 @@ public class NoteHitbox : MonoBehaviour
             stopwatch.Restart();
         }
 
+        if (collision.gameObject.CompareTag("Note Hold Parent"))
+        {
+            notesWithinHitBox.Add(collision.gameObject);
+            stopwatch.Restart();
+        }
+
         if (collision.gameObject.CompareTag("Note Hold"))
         {
             notesWithinHitBox.Add(collision.gameObject);
             stopwatch.Restart();
+        }
+
+        if (collision.gameObject.CompareTag("Note Hold"))
+        {
+            if (Input.GetKey(keyForSide))
+            {
+                NoteHit("Dreamy", delayInMs, 0);
+                //collision.gameObject.transform.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -134,8 +156,24 @@ public class NoteHitbox : MonoBehaviour
             notesWithinHitBox.Remove(collision.gameObject);
         }
 
+        if (collision.gameObject.CompareTag("Note Hold Parent"))
+        {
+            if (!Input.GetKey(keyForSide))
+            {
+                NoteHit("Shit", delayInMs, 2);
+            }
+
+            notesWithinHitBox.Remove(collision.gameObject);
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+
         if (collision.gameObject.CompareTag("Note Hold"))
         {
+            if (!Input.GetKey(keyForSide))
+            {
+                NoteHit("Shit", delayInMs, 2);
+            }
+
             notesWithinHitBox.Remove(collision.gameObject);
         }
     }

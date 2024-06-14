@@ -21,6 +21,8 @@ TagManager:
   - NoteCuller
   - NoteWarning
   - DreamwaveCharacter
+  - Note Hold Parent
+  - Note Hold Culler
   layers:
   - Default
   - TransparentFX

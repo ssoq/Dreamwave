@@ -37,7 +37,7 @@ public class IncomingNoteWarning : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Note") | collision.gameObject.CompareTag("EnemyNote"))
+        if (collision.gameObject.CompareTag("Note") | collision.gameObject.CompareTag("EnemyNote") | collision.gameObject.CompareTag("Note Hold Parent"))
         {
             _notesInSection.Add(collision.gameObject);
         }
@@ -45,7 +45,7 @@ public class IncomingNoteWarning : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Note") | collision.gameObject.CompareTag("EnemyNote"))
+        if (collision.gameObject.CompareTag("Note") | collision.gameObject.CompareTag("EnemyNote") | collision.gameObject.CompareTag("Note Hold Parent"))
         {
             _notesInSection.Remove(collision.gameObject);
         }
