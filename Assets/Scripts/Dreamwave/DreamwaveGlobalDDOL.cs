@@ -5,13 +5,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
+/// <summary>
+/// CALL NEW SCENES TO LOAD LIKE THIS NOW FOR CUTSCENE SUPPORT
+/// 
+///     StartCoroutine(LoadSceneSettings("Videos/TestVideo", "TestScene"));
+/// 
+/// 
+/// </summary>
+
 public class DreamwaveGlobalDDOL : MonoBehaviour
 {
     private void Awake()
     {
         DontDestroyOnLoad(this);
-
-        StartCoroutine(LoadSceneSettings("Videos/TestVideo", "TestScene"));
+        
+        //StartCoroutine(LoadSceneSettings("Videos/TestVideo", "TestScene"));
     }
 
     public IEnumerator LoadSceneSettings(string cutsceneToPlayPath, string sceneAfterCutsceneOrIfNone)
@@ -26,7 +34,7 @@ public class DreamwaveGlobalDDOL : MonoBehaviour
 
             if (vp != null)
             {
-                string filePath = System.IO.Path.Combine($"{Application.streamingAssetsPath}/{cutsceneToPlayPath}.mp4");
+                string filePath = Path.Combine($"{Application.streamingAssetsPath}/{cutsceneToPlayPath}.mp4");
 
                 vp.url = filePath;
 
