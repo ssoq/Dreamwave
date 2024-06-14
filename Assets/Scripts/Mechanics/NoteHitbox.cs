@@ -32,19 +32,19 @@ public class NoteHitbox : MonoBehaviour
         switch (side) 
         {
             case Side.Left:
-                keyForSide = GameManager.Instance.left;
+                //keyForSide = GameManager.Instance.left;
                 buttonForSide = "Left";
                 break;
             case Side.Down:
-                keyForSide = GameManager.Instance.down;
+                //keyForSide = GameManager.Instance.down;
                 buttonForSide = "Down";
                 break;
             case Side.Up:
-                keyForSide = GameManager.Instance.up;
+                //keyForSide = GameManager.Instance.up;
                 buttonForSide = "Up";
                 break;
             case Side.Right:
-                keyForSide = GameManager.Instance.right;
+                //keyForSide = GameManager.Instance.right;
                 buttonForSide = "Right";
                 break;
         }

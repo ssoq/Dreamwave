@@ -12,12 +12,6 @@ public class DreamwaveUserSetup : MonoBehaviour
     
     private void Start()
     {
-        // have to set these for some reason - something to do with whats called first - keyForSide is also assigned at start. No need to fix.
-        _playerNoteHitbox[0].keyForSide = GameManager.Instance.left;
-        _playerNoteHitbox[1].keyForSide = GameManager.Instance.down;
-        _playerNoteHitbox[2].keyForSide = GameManager.Instance.up;
-        _playerNoteHitbox[3].keyForSide = GameManager.Instance.right;
-
         LoadUserSettings();
     }
 
@@ -52,6 +46,13 @@ public class DreamwaveUserSetup : MonoBehaviour
             _playerNoteHitbox[2].keyForSide = GameManager.Instance.down;
             _playerNoteHitbox[3].keyForSide = GameManager.Instance.left;
 
+
+            Debug.Log("Keys set for upScroll: " +
+            _playerNoteHitbox[0].keyForSide + ", " +
+            _playerNoteHitbox[1].keyForSide + ", " +
+            _playerNoteHitbox[2].keyForSide + ", " +
+            _playerNoteHitbox[3].keyForSide);
+
         }
         else if(PlayerPrefs.GetString("chartPos") == "upScroll")
         {
@@ -62,6 +63,12 @@ public class DreamwaveUserSetup : MonoBehaviour
             _playerNoteHitbox[1].keyForSide = GameManager.Instance.down;
             _playerNoteHitbox[2].keyForSide = GameManager.Instance.up;
             _playerNoteHitbox[3].keyForSide = GameManager.Instance.right;
+
+            Debug.Log("Keys set for upScroll: " +
+            _playerNoteHitbox[0].keyForSide + ", " +
+            _playerNoteHitbox[1].keyForSide + ", " +
+            _playerNoteHitbox[2].keyForSide + ", " +
+            _playerNoteHitbox[3].keyForSide);
         }
     }
 
