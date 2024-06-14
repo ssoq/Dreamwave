@@ -11,7 +11,7 @@ public class IncomingNoteWarning : MonoBehaviour
     [SerializeField] private List<GameObject> _notesInSection = new();
 
     [Header("Settings")]
-    [SerializeField] private float _smoothing = 15f;
+    [SerializeField] private float _smoothing = 10f;
 
     private void LateUpdate()
     {

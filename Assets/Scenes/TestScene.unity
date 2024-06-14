@@ -4852,7 +4852,7 @@ MonoBehaviour:
   _sideWarningRenderer: {fileID: 1195855839}
   _showSideWarning: 0
   _notesInSection: []
-  _smoothing: 15
+  _smoothing: 10
 --- !u!1 &154318385
 GameObject:
   m_ObjectHideFlags: 0
@@ -29679,7 +29679,7 @@ MonoBehaviour:
   _sideWarningRenderer: {fileID: 1724511884}
   _showSideWarning: 0
   _notesInSection: []
-  _smoothing: 15
+  _smoothing: 10
 --- !u!1 &657000368
 GameObject:
   m_ObjectHideFlags: 0
@@ -55993,7 +55993,7 @@ MonoBehaviour:
   _sideWarningRenderer: {fileID: 332607901}
   _showSideWarning: 0
   _notesInSection: []
-  _smoothing: 15
+  _smoothing: 10
 --- !u!1 &1288067876
 GameObject:
   m_ObjectHideFlags: 0
@@ -99102,7 +99102,7 @@ MonoBehaviour:
   _sideWarningRenderer: {fileID: 1199824499}
   _showSideWarning: 0
   _notesInSection: []
-  _smoothing: 15
+  _smoothing: 10
 --- !u!1 &2145688167
 GameObject:
   m_ObjectHideFlags: 0
