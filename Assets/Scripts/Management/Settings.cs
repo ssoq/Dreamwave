@@ -39,7 +39,7 @@ public class Settings : MonoBehaviour
     private void OnDisable() => instance = null;
     private void OnDestroy() => instance = null;
 
-    private void Start()
+    private void Awake()
     {
         localFps = PlayerPrefs.GetInt("fps");
         localFfps = PlayerPrefs.GetFloat("ffps");
