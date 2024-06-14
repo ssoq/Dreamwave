@@ -50646,7 +50646,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dreamverse 2024.0.2.6
+  m_text: Dreamwave 2024.0.2.6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc1992457b5dc764587847ddf57c503e, type: 2}
   m_sharedMaterial: {fileID: -2245736175916561741, guid: dc1992457b5dc764587847ddf57c503e,
