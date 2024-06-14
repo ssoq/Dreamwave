@@ -24955,7 +24955,6 @@ Transform:
   - {fileID: 1821306574}
   - {fileID: 300072333}
   - {fileID: 1524813483}
-  - {fileID: 1069307947}
   - {fileID: 1046435355}
   - {fileID: 1290760037}
   - {fileID: 382014975}
@@ -46599,7 +46598,7 @@ GameObject:
   - component: {fileID: 1069307947}
   - component: {fileID: 1069307948}
   m_Layer: 6
-  m_Name: Scroller
+  m_Name: Chart Scroller
   m_TagString: ChartScroller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46613,15 +46612,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069307946}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9, y: -10, z: -42.56}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 852260799}
   - {fileID: 1981523466}
   - {fileID: 1580746756}
-  m_Father: {fileID: 541235031}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1069307948
 MonoBehaviour:
@@ -99792,6 +99791,7 @@ SceneRoots:
   - {fileID: 90009704}
   - {fileID: 543450651805212683}
   - {fileID: 543450652395831444}
+  - {fileID: 1069307947}
   - {fileID: 541235031}
   - {fileID: 830386068}
   - {fileID: 942200541}
