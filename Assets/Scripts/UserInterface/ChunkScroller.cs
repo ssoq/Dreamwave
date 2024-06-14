@@ -74,11 +74,11 @@ public class ChunkScroller : MonoBehaviour
 
     private void GetScrollInput()
     {
-        if (Input.mouseScrollDelta.y > _yScrollThreshold | Input.GetKey(Settings.instance.navUp)) // scroll up
+        if (Input.mouseScrollDelta.y > _yScrollThreshold | Input.GetKeyDown(Settings.instance.navUp)) // scroll up
         {
             ScrollChunkUp(1);
         }
-        else if (Input.mouseScrollDelta.y < _yScrollThreshold | Input.GetKey(Settings.instance.navDown)) // scroll down
+        else if (Input.mouseScrollDelta.y < _yScrollThreshold | Input.GetKeyDown(Settings.instance.navDown)) // scroll down
         {
             ScrollChunkDown(1);
         }
@@ -90,12 +90,12 @@ public class ChunkScroller : MonoBehaviour
 
     private void ScrollChunkUp(int i)
     {
-        if (_scrollIndex > 0) { _scrollIndex -= i; _scrollAnimatorObjects[_scrollIndex].SetTrigger("active"); _scrollAnimatorObjects[_scrollIndex+1].SetTrigger("active"); }
+        if (_scrollIndex > 0) { _scrollIndex -= i; _scrollAnimatorObjects[_scrollIndex].SetBool("active", true); _scrollAnimatorObjects[_scrollIndex + 1].SetBool("active", false); }
     }
 
     private void ScrollChunkDown(int i)
     {
-        if (_scrollIndex < _scrollAnimatorObjects.Length - 1) { _scrollIndex += i; _scrollAnimatorObjects[_scrollIndex].SetTrigger("active"); _scrollAnimatorObjects[_scrollIndex-1].SetTrigger("active"); }
+        if (_scrollIndex < _scrollAnimatorObjects.Length - 1) { _scrollIndex += i; _scrollAnimatorObjects[_scrollIndex].SetBool("active", true); _scrollAnimatorObjects[_scrollIndex-1].SetBool("active", false); }
     }
 
     #endregion
