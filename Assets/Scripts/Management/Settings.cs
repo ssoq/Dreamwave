@@ -159,7 +159,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_quality >= 0) _quality++;
+            if (_quality > 0) _quality--;
             QualitySettings.SetQualityLevel(_quality);
 
             switch (_quality)
@@ -175,12 +175,11 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            PlayerPrefs.SetInt("quality", _quality);
-            PlayerPrefs.Save();
+            SaveSettingsOfBool("quality", _quality);
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_quality <= 2) _quality--;
+            if (_quality < 2) _quality++;
             QualitySettings.SetQualityLevel(_quality);
 
             switch (_quality)
@@ -196,8 +195,7 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            PlayerPrefs.SetInt("quality", localFps);
-            PlayerPrefs.Save();
+            SaveSettingsOfBool("quality", _quality);
         }
     }
 
@@ -211,7 +209,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_chartInt >= 0) _chartInt++;
+            if (_chartInt > 0) _chartInt--;
 
             switch (_chartInt)
             {
@@ -235,10 +233,11 @@ public class Settings : MonoBehaviour
 
             PlayerPrefs.SetString("chartPos", _chartPos);
             PlayerPrefs.Save();
+            DreamwaveUserSetup.instance.LoadUserSettings();
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_chartInt <= 3) _chartInt--;
+            if (_chartInt < 3) _chartInt++;
 
             switch (_chartInt)
             {
@@ -262,6 +261,7 @@ public class Settings : MonoBehaviour
 
             PlayerPrefs.SetString("chartPos", _chartPos);
             PlayerPrefs.Save();
+            DreamwaveUserSetup.instance.LoadUserSettings();
         }
     }
 
@@ -274,7 +274,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_opponentNotesEnabled > 0) _opponentNotesEnabled++;
+            if (_opponentNotesEnabled > 0) _opponentNotesEnabled--;
 
             switch (_opponentNotesEnabled)
             {
@@ -286,12 +286,11 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            PlayerPrefs.SetInt("opponentEnabled", _opponentNotesEnabled);
-            PlayerPrefs.Save();
+            SaveSettingsOfBool("opponentEnabled", _opponentNotesEnabled);
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_opponentNotesEnabled > 0) _opponentNotesEnabled++;
+            if (_opponentNotesEnabled < 1) _opponentNotesEnabled++;
 
             switch (_opponentNotesEnabled)
             {
@@ -303,8 +302,7 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            PlayerPrefs.SetInt("opponentEnabled", _opponentNotesEnabled);
-            PlayerPrefs.Save();
+            SaveSettingsOfBool("opponentEnabled", _opponentNotesEnabled);
         }
     }
 
@@ -317,7 +315,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_ghostTapping > 0) _ghostTapping++;
+            if (_ghostTapping > 0) _ghostTapping--;
 
             switch (_ghostTapping)
             {
@@ -329,12 +327,11 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            PlayerPrefs.SetInt("ghostTapping", _ghostTapping);
-            PlayerPrefs.Save();
+            SaveSettingsOfBool("ghostTapping", _ghostTapping);
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_ghostTapping < 0) _ghostTapping--;
+            if (_ghostTapping < 1) _ghostTapping++;
 
             switch (_ghostTapping)
             {
@@ -346,8 +343,7 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            PlayerPrefs.SetInt("ghostTapping", _ghostTapping);
-            PlayerPrefs.Save();
+            SaveSettingsOfBool("ghostTapping", _ghostTapping);
         }
     }
 
@@ -360,7 +356,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_freeAnimate > 0) _freeAnimate++;
+            if (_freeAnimate > 0) _freeAnimate--;
 
             switch (_freeAnimate)
             {
@@ -376,9 +372,9 @@ public class Settings : MonoBehaviour
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_ghostTapping < 0) _freeAnimate--;
+            if (_freeAnimate < 1) _freeAnimate++;
 
-            switch (_ghostTapping)
+            switch (_freeAnimate)
             {
                 case 0:
                     settingsTextAssets[6].text = "False";
@@ -401,9 +397,9 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_freeAnimate > 0) _freeAnimate++;
+            if (_incomingNoteWarning > 0) _incomingNoteWarning--;
 
-            switch (_freeAnimate)
+            switch (_incomingNoteWarning)
             {
                 case 0:
                     settingsTextAssets[7].text = "False";
@@ -413,13 +409,13 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            SaveSettingsOfBool("freeAnimate", _freeAnimate);
+            SaveSettingsOfBool("incomingNoteWarning", _incomingNoteWarning);
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_ghostTapping < 0) _freeAnimate--;
+            if (_incomingNoteWarning < 1) _incomingNoteWarning++;
 
-            switch (_freeAnimate)
+            switch (_incomingNoteWarning)
             {
                 case 0:
                     settingsTextAssets[7].text = "False";
@@ -429,7 +425,7 @@ public class Settings : MonoBehaviour
                     break;
             }
 
-            SaveSettingsOfBool("freeAnimate", _freeAnimate);
+            SaveSettingsOfBool("incomingNoteWarning", _incomingNoteWarning);
         }
     }
 
@@ -442,7 +438,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_autoPause > 0) _autoPause++;
+            if (_autoPause > 0) _autoPause--;
 
             switch (_autoPause)
             {
@@ -458,9 +454,9 @@ public class Settings : MonoBehaviour
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_autoPause < 0) _autoPause--;
+            if (_autoPause < 1) _autoPause++;
 
-            switch (_ghostTapping)
+            switch (_autoPause)
             {
                 case 0:
                     settingsTextAssets[8].text = "False";
@@ -483,7 +479,7 @@ public class Settings : MonoBehaviour
     {
         if (Input.GetKeyDown(navLeft))
         {
-            if (_noteSplashes > 0) _noteSplashes++;
+            if (_noteSplashes > 0) _noteSplashes--;
 
             switch (_noteSplashes)
             {
@@ -499,7 +495,7 @@ public class Settings : MonoBehaviour
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (_noteSplashes < 0) _noteSplashes--;
+            if (_noteSplashes < 1) _noteSplashes++;
 
             switch (_noteSplashes)
             {
@@ -528,6 +524,7 @@ public class Settings : MonoBehaviour
     {
         PlayerPrefs.SetInt(prefsName, value);
         PlayerPrefs.Save();
+        DreamwaveUserSetup.instance.LoadUserSettings();
     }
     
     #endregion

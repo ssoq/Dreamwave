@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class DreamwaveUserSetup : MonoBehaviour
 {
+    public static DreamwaveUserSetup instance;
+
+    private void Awake() => instance = this;
+    
     private void Start()
     {
         LoadUserSettings();
     }
 
-    private void LoadUserSettings()
+    public void LoadUserSettings()
     {
         CheckPlayerNoteRenderPreferences();
     }
@@ -21,7 +25,7 @@ public class DreamwaveUserSetup : MonoBehaviour
             GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(180f, 0, 0);
             GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(180f, 0, 0);
         }
-        else if(PlayerPrefs.GetString("chartPos") == "rightScroll")
+        else if(PlayerPrefs.GetString("chartPos") == "upScroll")
         {
             GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(0f, 0, 0);
             GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(0f, 0, 0);
