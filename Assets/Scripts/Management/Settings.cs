@@ -70,22 +70,22 @@ public class Settings : MonoBehaviour
                 break;
         }
 
-        switch (_chartInt)
+        switch (_chartPos)
         {
-            case 0:
-                _chartPos = "upScroll";
+            case "upScroll":
+                _chartInt = 0;
                 settingsTextAssets[3].text = "Up Scroll";
                 break;
-            case 1:
-                _chartPos = "downScroll";
+            case "downScroll":
+                _chartInt = 1;
                 settingsTextAssets[3].text = "Down Scroll";
                 break;
-            case 2:
-                _chartPos = "middleScroll";
+            case "middleScroll":
+                _chartInt = 2;
                 settingsTextAssets[3].text = "Middle Top Scroll";
                 break;
-            case 3:
-                _chartPos = "middleBottomScroll";
+            case "middleBottomScroll":
+                _chartInt = 3;
                 settingsTextAssets[3].text = "Middle Bottom Scroll";
                 break;
         }
@@ -151,10 +151,6 @@ public class Settings : MonoBehaviour
         }
 
         #endregion
-
-        Application.targetFrameRate = localFps;
-        Time.fixedDeltaTime = (1.0f / localFfps);
-        QualitySettings.SetQualityLevel(_quality);
     }
 
     private void Update()

@@ -22,7 +22,14 @@ public class IncomingNoteWarning : MonoBehaviour
         else _showSideWarning = false;
 
         Color color = _sideWarningRenderer.color;
-        
+
+        if (!GameManager.Instance.shouldDisplayIncomingNoteWarning)
+        {
+            color.a = 0;
+            _sideWarningRenderer.color = color;
+            return;
+        }
+
         if (_showSideWarning)
         {
             color.a = Mathf.Lerp(color.a, 1, _smoothing * Time.deltaTime);

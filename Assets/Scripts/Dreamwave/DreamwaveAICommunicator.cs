@@ -54,26 +54,38 @@ public class DreamwaveAICommunicator : MonoBehaviour
                 case WhichSide.Left:
                     _character.StopAllCoroutines();
                     _character.StartCoroutine(_character.SingAnimation("Left"));
-                    var pl = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
-                    pl.SetActive(true);
+                    if (GameManager.Instance.shouldDrawNoteSplashes)
+                    {
+                        var pl = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
+                        pl.SetActive(true);
+                    }
                     break;
                 case WhichSide.Down:
                     _character.StopAllCoroutines();
                     _character.StartCoroutine(_character.SingAnimation("Down"));
-                    var pd = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
-                    pd.SetActive(true);
+                    if (GameManager.Instance.shouldDrawNoteSplashes)
+                    {
+                        var pd = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
+                        pd.SetActive(true);
+                    }
                     break;
                 case WhichSide.Up:
                     _character.StopAllCoroutines();
                     _character.StartCoroutine(_character.SingAnimation("Up"));
-                    var pu = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
-                    pu.SetActive(true);
+                    if (GameManager.Instance.shouldDrawNoteSplashes)
+                    {
+                        var pu = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
+                        pu.SetActive(true);
+                    }
                     break;
                 case WhichSide.Right:
                     _character.StopAllCoroutines();
                     _character.StartCoroutine(_character.SingAnimation("Right"));
-                    var pr = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
-                    pr.SetActive(true);
+                    if (GameManager.Instance.shouldDrawNoteSplashes)
+                    {
+                        var pr = Instantiate(_noteParticle, _noteParticle.transform.position, Quaternion.identity);
+                        pr.SetActive(true);
+                    }
                     break;
             }
 

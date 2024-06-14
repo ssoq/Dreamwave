@@ -81,20 +81,32 @@ public class NoteHitbox : MonoBehaviour
             else if (dist >= ratingThresholds[2])
             {
                 NoteHit("Cool", delayInMs, dist);
-                var nhc = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
-                nhc.SetActive(true);
+
+                if (GameManager.Instance.shouldDrawNoteSplashes)
+                {
+                    var nhc = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
+                    nhc.SetActive(true);
+                }
             }
             else if (dist >= ratingThresholds[1])
             {
                 NoteHit("Sick", delayInMs, dist);
-                var nhs = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
-                nhs.SetActive(true);
+
+                if (GameManager.Instance.shouldDrawNoteSplashes)
+                {
+                    var nhs = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
+                    nhs.SetActive(true);
+                }
             }
             else if (dist >= ratingThresholds[0])
             {
                 NoteHit("Dreamy", delayInMs, dist);
-                var nhd = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
-                nhd.SetActive(true);
+
+                if (GameManager.Instance.shouldDrawNoteSplashes)
+                {
+                    var nhd = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
+                    nhd.SetActive(true);
+                }
             }
             else if (dist <= ratingThresholds[0])
             {

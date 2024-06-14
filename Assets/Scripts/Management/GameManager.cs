@@ -44,6 +44,11 @@ public class GameManager : MonoBehaviour
     [Header("States")]
     [SerializeField] public Focus focus;
     [SerializeField] public bool canSongStart = false;
+    [SerializeField] public bool canGhostTap = true;
+    [SerializeField] public bool canFreeAnimate = true;
+    [SerializeField] public bool shouldDisplayIncomingNoteWarning = true;
+    [SerializeField] public bool shouldAutoPause = true;
+    [SerializeField] public bool shouldDrawNoteSplashes = true;
 
     [Header("Keybinds")]
     [SerializeField] public KeyCode left;
@@ -406,7 +411,7 @@ public class GameManager : MonoBehaviour
 
     private void OnApplicationFocus(bool focus)
     {
-        if (!PauseMenu.instance._isPaused) StartCoroutine(OnUnfocus(focus));
+        if (shouldAutoPause && !PauseMenu.instance._isPaused) StartCoroutine(OnUnfocus(focus));
     }
 
     private IEnumerator OnUnfocus(bool focus)

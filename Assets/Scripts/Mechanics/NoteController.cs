@@ -36,38 +36,46 @@ public class NoteController : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.Instance.left))
         {
-            noteRenderers[0].sprite = noteSprites[1];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[0].sprite = noteSprites[1];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[3].sprite = noteSprites[1];
         }
         else if (Input.GetKeyUp(GameManager.Instance.left))
         {
-            noteRenderers[0].sprite = noteSprites[0];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[0].sprite = noteSprites[0];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[3].sprite = noteSprites[0];
         }
 
         if (Input.GetKeyDown(GameManager.Instance.down))
         {
-            noteRenderers[1].sprite = noteSprites[1];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[1].sprite = noteSprites[1];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[2].sprite = noteSprites[1];
         }
         else if (Input.GetKeyUp(GameManager.Instance.down))
         {
-            noteRenderers[1].sprite = noteSprites[0];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[1].sprite = noteSprites[0];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[2].sprite = noteSprites[0];
         }
 
         if (Input.GetKeyDown(GameManager.Instance.up))
         {
-            noteRenderers[2].sprite = noteSprites[1];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[2].sprite = noteSprites[1];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[1].sprite = noteSprites[1];
         }
         else if (Input.GetKeyUp(GameManager.Instance.up))
         {
-            noteRenderers[2].sprite = noteSprites[0];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[2].sprite = noteSprites[0];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[1].sprite = noteSprites[0];
         }
 
         if (Input.GetKeyDown(GameManager.Instance.right))
         {
-            noteRenderers[3].sprite = noteSprites[1];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[3].sprite = noteSprites[1];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[0].sprite = noteSprites[1];
         }
         else if (Input.GetKeyUp(GameManager.Instance.right))
         {
-            noteRenderers[3].sprite = noteSprites[0];
+            if (PlayerPrefs.GetString("chartPos") == "upScroll") noteRenderers[3].sprite = noteSprites[0];
+            else if (PlayerPrefs.GetString("chartPos") == "downScroll") noteRenderers[0].sprite = noteSprites[0];
         }
     }
 }

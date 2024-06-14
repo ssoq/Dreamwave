@@ -44761,6 +44761,11 @@ MonoBehaviour:
   _fanfareEventScript: {fileID: 926711911}
   focus: 2
   canSongStart: 0
+  canGhostTap: 1
+  canFreeAnimate: 1
+  shouldDisplayIncomingNoteWarning: 1
+  shouldAutoPause: 1
+  shouldDrawNoteSplashes: 1
   left: 100
   down: 102
   up: 106
@@ -44879,6 +44884,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2ec1f5f2ca91a44af74666e1d216a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playerNoteHitbox:
+  - {fileID: 1024807880}
+  - {fileID: 468820207}
+  - {fileID: 868015678}
+  - {fileID: 229887436}
 --- !u!1 &947138878
 GameObject:
   m_ObjectHideFlags: 0
