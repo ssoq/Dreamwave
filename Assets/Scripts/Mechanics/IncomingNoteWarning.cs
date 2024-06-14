@@ -8,33 +8,30 @@ public class IncomingNoteWarning : MonoBehaviour
 
     [Header("States")]
     [SerializeField] private bool _showSideWarning;
+    [SerializeField] private List<GameObject> _notesInSection = new();
 
     [Header("Settings")]
     [SerializeField] private float _smoothing = 15f;
 
     private void LateUpdate()
     {
+        if (!GameManager.Instance.canSongStart) return;
+        if (!GameManager.Instance.start) return;
+
+        if (_notesInSection.Count >= 1) _showSideWarning = true;
+        else _showSideWarning = false;
+
         Color color = _sideWarningRenderer.color;
         
         if (_showSideWarning)
         {
-            while (color.a < 1)
-            {
-                color.a = Mathf.Lerp(color.a, 1, _smoothing * Time.deltaTime);
-                _sideWarningRenderer.color = color;
-
-                if (color.a >= 1) break;
-            }
+            color.a = Mathf.Lerp(color.a, 1, _smoothing * Time.deltaTime);
+            _sideWarningRenderer.color = color;
         }
         else
         {
-            while (color.a > 0)
-            {
-                color.a = Mathf.Lerp(color.a, 0, _smoothing * Time.deltaTime);
-                _sideWarningRenderer.color = color;
-
-                if (color.a <= 0) break;
-            }
+            color.a = Mathf.Lerp(color.a, 0, _smoothing * Time.deltaTime);
+            _sideWarningRenderer.color = color;
         }
     }
 
@@ -42,7 +39,7 @@ public class IncomingNoteWarning : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Note"))
         {
-            _showSideWarning = true;
+            _notesInSection.Add(collision.gameObject);
         }
     }
 
@@ -50,7 +47,7 @@ public class IncomingNoteWarning : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Note"))
         {
-            _showSideWarning = false;
+            _notesInSection.Remove(collision.gameObject);
         }
     }
 }
