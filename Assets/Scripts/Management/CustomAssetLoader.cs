@@ -66,6 +66,7 @@ public class CustomAssetLoader : MonoBehaviour
     public string CustomNoteHeldName;
     public int _NoteWidth = 470;
     public int _NoteHeight = 540;
+    public Color[] _noteColors;
     [SerializeField] private List<SpriteRenderer> _noteSpriteRenderers;
     [SerializeField] private NoteController _noteController;
 

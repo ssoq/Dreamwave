@@ -19,6 +19,7 @@ TagManager:
   - Note Particle
   - Note Object
   - NoteCuller
+  - NoteWarning
   layers:
   - Default
   - TransparentFX
