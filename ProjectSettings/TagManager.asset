@@ -20,6 +20,7 @@ TagManager:
   - Note Object
   - NoteCuller
   - NoteWarning
+  - DreamwaveCharacter
   layers:
   - Default
   - TransparentFX

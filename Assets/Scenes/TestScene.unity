@@ -4851,6 +4851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sideWarningRenderer: {fileID: 1195855839}
   _showSideWarning: 0
+  _notesInSection: []
   _smoothing: 15
 --- !u!1 &154318385
 GameObject:
@@ -29677,6 +29678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sideWarningRenderer: {fileID: 1724511884}
   _showSideWarning: 0
+  _notesInSection: []
   _smoothing: 15
 --- !u!1 &657000368
 GameObject:
@@ -55990,6 +55992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sideWarningRenderer: {fileID: 332607901}
   _showSideWarning: 0
+  _notesInSection: []
   _smoothing: 15
 --- !u!1 &1288067876
 GameObject:
@@ -99098,6 +99101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _sideWarningRenderer: {fileID: 1199824499}
   _showSideWarning: 0
+  _notesInSection: []
   _smoothing: 15
 --- !u!1 &2145688167
 GameObject:
@@ -99486,7 +99490,7 @@ GameObject:
   - component: {fileID: 543450651805212683}
   m_Layer: 0
   m_Name: Player One
-  m_TagString: Untagged
+  m_TagString: DreamwaveCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99502,7 +99506,7 @@ GameObject:
   - component: {fileID: 543450652395831444}
   m_Layer: 0
   m_Name: Player Two
-  m_TagString: Untagged
+  m_TagString: DreamwaveCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

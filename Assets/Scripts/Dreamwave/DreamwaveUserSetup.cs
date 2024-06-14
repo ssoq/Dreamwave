@@ -21,6 +21,14 @@ public class DreamwaveUserSetup : MonoBehaviour
             GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(180f, 0, 0);
             GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(180f, 0, 0);
         }
+        else
+        {
+            if (PlayerPrefs.GetInt("downScroll") == 1)
+            {
+                GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(0f, 0, 0);
+                GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(0f, 0, 0);
+            }
+        }
     }
 
     void Update()
