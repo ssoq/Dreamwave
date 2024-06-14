@@ -55,6 +55,103 @@ public class Settings : MonoBehaviour
         settingsTextAssets[0].text = localFps.ToString("F0");
         settingsTextAssets[1].text = localFfps.ToString();
 
+        #region Setup Switches
+
+        switch (_quality)
+        {
+            case 0:
+                settingsTextAssets[2].text = "High";
+                break;
+            case 1:
+                settingsTextAssets[2].text = "Medium";
+                break;
+            case 2:
+                settingsTextAssets[2].text = "Low";
+                break;
+        }
+
+        switch (_chartInt)
+        {
+            case 0:
+                _chartPos = "upScroll";
+                settingsTextAssets[3].text = "Up Scroll";
+                break;
+            case 1:
+                _chartPos = "downScroll";
+                settingsTextAssets[3].text = "Down Scroll";
+                break;
+            case 2:
+                _chartPos = "middleScroll";
+                settingsTextAssets[3].text = "Middle Top Scroll";
+                break;
+            case 3:
+                _chartPos = "middleBottomScroll";
+                settingsTextAssets[3].text = "Middle Bottom Scroll";
+                break;
+        }
+
+        switch (_opponentNotesEnabled)
+        {
+            case 0:
+                settingsTextAssets[4].text = "False";
+                break;
+            case 1:
+                settingsTextAssets[4].text = "True";
+                break;
+        }
+
+        switch (_ghostTapping)
+        {
+            case 0:
+                settingsTextAssets[5].text = "False";
+                break;
+            case 1:
+                settingsTextAssets[5].text = "True";
+                break;
+        }
+
+        switch (_freeAnimate)
+        {
+            case 0:
+                settingsTextAssets[6].text = "False";
+                break;
+            case 1:
+                settingsTextAssets[6].text = "True";
+                break;
+        }
+
+        switch (_incomingNoteWarning)
+        {
+            case 0:
+                settingsTextAssets[7].text = "False";
+                break;
+            case 1:
+                settingsTextAssets[7].text = "True";
+                break;
+        }
+
+        switch (_autoPause)
+        {
+            case 0:
+                settingsTextAssets[8].text = "False";
+                break;
+            case 1:
+                settingsTextAssets[8].text = "True";
+                break;
+        }
+
+        switch (_noteSplashes)
+        {
+            case 0:
+                settingsTextAssets[9].text = "False";
+                break;
+            case 1:
+                settingsTextAssets[9].text = "True";
+                break;
+        }
+
+        #endregion
+
         Application.targetFrameRate = localFps;
         Time.fixedDeltaTime = (1.0f / localFfps);
         QualitySettings.SetQualityLevel(_quality);
