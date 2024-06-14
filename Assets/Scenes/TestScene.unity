@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 4286498}
   - component: {fileID: 4286497}
   - component: {fileID: 4286496}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 13405476}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Controller Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +773,7 @@ GameObject:
   - component: {fileID: 32112747}
   - component: {fileID: 32112746}
   - component: {fileID: 32112745}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (20)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -928,7 +928,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 41508192}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1151,7 +1151,7 @@ GameObject:
   - component: {fileID: 49232099}
   - component: {fileID: 49232098}
   - component: {fileID: 49232097}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (4)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -1465,7 +1465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51406549}
   - component: {fileID: 51406550}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (1)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 52698266}
   - component: {fileID: 52698265}
   - component: {fileID: 52698264}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (7)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -1844,7 +1844,7 @@ GameObject:
   - component: {fileID: 65227986}
   - component: {fileID: 65227985}
   - component: {fileID: 65227984}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (32)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -2002,7 +2002,7 @@ GameObject:
   - component: {fileID: 65240394}
   - component: {fileID: 65240393}
   - component: {fileID: 65240392}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (17)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -2318,7 +2318,7 @@ GameObject:
   - component: {fileID: 74873794}
   - component: {fileID: 74873793}
   - component: {fileID: 74873792}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (11)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -2476,7 +2476,7 @@ GameObject:
   - component: {fileID: 78779414}
   - component: {fileID: 78779413}
   - component: {fileID: 78779412}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2597,7 +2597,7 @@ GameObject:
   - component: {fileID: 80753092}
   - component: {fileID: 80753091}
   - component: {fileID: 80753090}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2976,7 +2976,7 @@ GameObject:
   - component: {fileID: 95173725}
   - component: {fileID: 95173724}
   - component: {fileID: 95173723}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (10)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -3364,7 +3364,7 @@ GameObject:
   - component: {fileID: 101770472}
   - component: {fileID: 101770471}
   - component: {fileID: 101770470}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (40)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -3838,7 +3838,7 @@ GameObject:
   - component: {fileID: 119399245}
   - component: {fileID: 119399244}
   - component: {fileID: 119399243}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4613,7 +4613,7 @@ GameObject:
   - component: {fileID: 139248803}
   - component: {fileID: 139248802}
   - component: {fileID: 139248801}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (19)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -4929,7 +4929,7 @@ GameObject:
   - component: {fileID: 154549320}
   - component: {fileID: 154549319}
   - component: {fileID: 154549318}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (22)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -10764,7 +10764,7 @@ GameObject:
   - component: {fileID: 174465312}
   - component: {fileID: 174465311}
   - component: {fileID: 174465310}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (6)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -11629,7 +11629,7 @@ GameObject:
   - component: {fileID: 182797383}
   - component: {fileID: 182797382}
   - component: {fileID: 182797381}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (19)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -11787,7 +11787,7 @@ GameObject:
   - component: {fileID: 188195697}
   - component: {fileID: 188195696}
   - component: {fileID: 188195695}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12202,7 +12202,7 @@ GameObject:
   - component: {fileID: 201102859}
   - component: {fileID: 201102861}
   - component: {fileID: 201102860}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -12360,7 +12360,7 @@ GameObject:
   - component: {fileID: 202079111}
   - component: {fileID: 202079110}
   - component: {fileID: 202079109}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (4)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -12518,7 +12518,7 @@ GameObject:
   - component: {fileID: 205804444}
   - component: {fileID: 205804443}
   - component: {fileID: 205804442}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (10)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -13307,7 +13307,7 @@ GameObject:
   - component: {fileID: 229887438}
   - component: {fileID: 229887437}
   - component: {fileID: 229887436}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13486,7 +13486,7 @@ GameObject:
   m_Component:
   - component: {fileID: 236982076}
   - component: {fileID: 236982077}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (2)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -13572,7 +13572,7 @@ GameObject:
   - component: {fileID: 242011645}
   - component: {fileID: 242011644}
   - component: {fileID: 242011643}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14387,7 +14387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274368350}
   - component: {fileID: 274368351}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (6)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -15088,7 +15088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 298824966}
   - component: {fileID: 298824967}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (4)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -15244,7 +15244,7 @@ GameObject:
   - component: {fileID: 302285456}
   - component: {fileID: 302285455}
   - component: {fileID: 302285454}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (32)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -15551,7 +15551,7 @@ GameObject:
   - component: {fileID: 313592542}
   - component: {fileID: 313592541}
   - component: {fileID: 313592540}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (21)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -15917,7 +15917,7 @@ GameObject:
   - component: {fileID: 327680229}
   - component: {fileID: 327680228}
   - component: {fileID: 327680227}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (21)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -16353,7 +16353,7 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
+    quality: 4
     frameInfluence: 0.1
     jitterScale: 1
     mipBias: 0
@@ -16491,7 +16491,7 @@ GameObject:
   - component: {fileID: 340647526}
   - component: {fileID: 340647525}
   - component: {fileID: 340647524}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16610,7 +16610,7 @@ GameObject:
   m_Component:
   - component: {fileID: 343152865}
   - component: {fileID: 343152866}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -17390,7 +17390,7 @@ GameObject:
   - component: {fileID: 363703307}
   - component: {fileID: 363703306}
   - component: {fileID: 363703305}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (29)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -17548,7 +17548,7 @@ GameObject:
   - component: {fileID: 364066440}
   - component: {fileID: 364066439}
   - component: {fileID: 364066438}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17669,7 +17669,7 @@ GameObject:
   - component: {fileID: 365075684}
   - component: {fileID: 365075683}
   - component: {fileID: 365075682}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (28)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -17920,7 +17920,7 @@ GameObject:
   - component: {fileID: 371050351}
   - component: {fileID: 371050350}
   - component: {fileID: 371050349}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (8)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -18076,7 +18076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376204944}
   - component: {fileID: 376204945}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (3)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -18160,7 +18160,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376787845}
   - component: {fileID: 376787846}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (4)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -18486,7 +18486,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 64
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 7561a13029742b048b2014ce97e57a66, type: 2}
   m_TargetDisplay: 0
@@ -18524,7 +18524,7 @@ GameObject:
   - component: {fileID: 382157940}
   - component: {fileID: 382157939}
   - component: {fileID: 382157938}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (26)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -18912,7 +18912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 384719844}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19323,7 +19323,7 @@ GameObject:
   - component: {fileID: 394935119}
   - component: {fileID: 394935118}
   - component: {fileID: 394935117}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (14)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -20547,7 +20547,7 @@ GameObject:
   - component: {fileID: 421857392}
   - component: {fileID: 421857391}
   - component: {fileID: 421857390}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20793,7 +20793,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 425065462}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21407,7 +21407,7 @@ GameObject:
   - component: {fileID: 438370282}
   - component: {fileID: 438370281}
   - component: {fileID: 438370283}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21529,7 +21529,7 @@ GameObject:
   - component: {fileID: 438824960}
   - component: {fileID: 438824959}
   - component: {fileID: 438824958}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21729,7 +21729,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 444542578}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21921,7 +21921,7 @@ GameObject:
   - component: {fileID: 458972703}
   - component: {fileID: 458972702}
   - component: {fileID: 458972701}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (26)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -22079,7 +22079,7 @@ GameObject:
   - component: {fileID: 464732746}
   - component: {fileID: 464732745}
   - component: {fileID: 464732744}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (3)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -22553,7 +22553,7 @@ GameObject:
   - component: {fileID: 468820209}
   - component: {fileID: 468820208}
   - component: {fileID: 468820207}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22685,7 +22685,7 @@ GameObject:
   - component: {fileID: 469605060}
   - component: {fileID: 469605059}
   - component: {fileID: 469605058}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (42)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -22927,7 +22927,7 @@ GameObject:
   - component: {fileID: 477409679}
   - component: {fileID: 477409678}
   - component: {fileID: 477409677}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (50)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -23085,7 +23085,7 @@ GameObject:
   - component: {fileID: 485527142}
   - component: {fileID: 485527141}
   - component: {fileID: 485527140}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (40)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -23378,7 +23378,7 @@ GameObject:
   - component: {fileID: 490914286}
   - component: {fileID: 490914285}
   - component: {fileID: 490914284}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (52)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -23927,7 +23927,7 @@ GameObject:
   - component: {fileID: 511042184}
   - component: {fileID: 511042183}
   - component: {fileID: 511042182}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (8)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -24212,7 +24212,7 @@ GameObject:
   - component: {fileID: 519091552}
   - component: {fileID: 519091551}
   - component: {fileID: 519091550}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (7)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -24370,7 +24370,7 @@ GameObject:
   - component: {fileID: 527079827}
   - component: {fileID: 527079826}
   - component: {fileID: 527079825}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (11)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -24926,7 +24926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 541235031}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Note Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25271,7 +25271,7 @@ GameObject:
   - component: {fileID: 559849173}
   - component: {fileID: 559849172}
   - component: {fileID: 559849171}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25395,7 +25395,7 @@ GameObject:
   - component: {fileID: 563319156}
   - component: {fileID: 563319155}
   - component: {fileID: 563319154}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (27)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -25553,7 +25553,7 @@ GameObject:
   - component: {fileID: 564988859}
   - component: {fileID: 564988858}
   - component: {fileID: 564988857}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (25)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -25709,7 +25709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 565260859}
   - component: {fileID: 565260860}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (2)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -25845,7 +25845,7 @@ GameObject:
   - component: {fileID: 576298812}
   - component: {fileID: 576298814}
   - component: {fileID: 576298813}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Face this way text (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26017,7 +26017,7 @@ GameObject:
   - component: {fileID: 577073684}
   - component: {fileID: 577073683}
   - component: {fileID: 577073682}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (28)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -26175,7 +26175,7 @@ GameObject:
   - component: {fileID: 584475116}
   - component: {fileID: 584475115}
   - component: {fileID: 584475114}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (24)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -26572,7 +26572,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 588008290}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HitBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26765,7 +26765,7 @@ GameObject:
   - component: {fileID: 589179453}
   - component: {fileID: 589179452}
   - component: {fileID: 589179451}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (26)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -27081,7 +27081,7 @@ GameObject:
   - component: {fileID: 593322117}
   - component: {fileID: 593322116}
   - component: {fileID: 593322115}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (23)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -27239,7 +27239,7 @@ GameObject:
   - component: {fileID: 594447749}
   - component: {fileID: 594447748}
   - component: {fileID: 594447747}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (31)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -27397,7 +27397,7 @@ GameObject:
   - component: {fileID: 601537437}
   - component: {fileID: 601537436}
   - component: {fileID: 601537435}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (27)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -27713,7 +27713,7 @@ GameObject:
   - component: {fileID: 607520464}
   - component: {fileID: 607520463}
   - component: {fileID: 607520462}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (38)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -27871,7 +27871,7 @@ GameObject:
   - component: {fileID: 609380787}
   - component: {fileID: 609380786}
   - component: {fileID: 609380785}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (29)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -28923,7 +28923,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634210568}
   - component: {fileID: 634210569}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (4)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -29009,7 +29009,7 @@ GameObject:
   - component: {fileID: 634375567}
   - component: {fileID: 634375566}
   - component: {fileID: 634375565}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (36)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -29381,7 +29381,7 @@ GameObject:
   - component: {fileID: 657000372}
   - component: {fileID: 657000371}
   - component: {fileID: 657000370}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (12)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -29539,7 +29539,7 @@ GameObject:
   - component: {fileID: 660157066}
   - component: {fileID: 660157065}
   - component: {fileID: 660157064}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29657,7 +29657,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 663223480}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29693,7 +29693,7 @@ GameObject:
   - component: {fileID: 663895089}
   - component: {fileID: 663895088}
   - component: {fileID: 663895087}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29970,7 +29970,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673290004}
   - component: {fileID: 673290005}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (1)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -30158,7 +30158,7 @@ GameObject:
   - component: {fileID: 674666702}
   - component: {fileID: 674666701}
   - component: {fileID: 674666700}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (35)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -30558,7 +30558,7 @@ GameObject:
   - component: {fileID: 690374203}
   - component: {fileID: 690374202}
   - component: {fileID: 690374201}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right Hold
   m_TagString: Note Hold
   m_Icon: {fileID: 0}
@@ -30716,7 +30716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 697220035}
   - component: {fileID: 697220036}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (5)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -31250,7 +31250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 704514718}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31528,7 +31528,7 @@ GameObject:
   - component: {fileID: 719525112}
   - component: {fileID: 719525111}
   - component: {fileID: 719525110}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (28)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -31792,7 +31792,7 @@ GameObject:
   - component: {fileID: 728867097}
   - component: {fileID: 728867096}
   - component: {fileID: 728867095}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31913,7 +31913,7 @@ GameObject:
   - component: {fileID: 728995768}
   - component: {fileID: 728995767}
   - component: {fileID: 728995766}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (43)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -32071,7 +32071,7 @@ GameObject:
   - component: {fileID: 731862521}
   - component: {fileID: 731862520}
   - component: {fileID: 731862519}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (38)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -32229,7 +32229,7 @@ GameObject:
   - component: {fileID: 735981611}
   - component: {fileID: 735981610}
   - component: {fileID: 735981609}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32350,7 +32350,7 @@ GameObject:
   - component: {fileID: 740729948}
   - component: {fileID: 740729947}
   - component: {fileID: 740729946}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (23)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -32508,7 +32508,7 @@ GameObject:
   - component: {fileID: 747104508}
   - component: {fileID: 747104507}
   - component: {fileID: 747104506}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (36)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -32808,7 +32808,7 @@ GameObject:
   - component: {fileID: 755364756}
   - component: {fileID: 755364755}
   - component: {fileID: 755364754}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (31)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -33005,7 +33005,7 @@ GameObject:
   - component: {fileID: 759614760}
   - component: {fileID: 759614759}
   - component: {fileID: 759614758}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (35)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -33319,7 +33319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 762932322}
   - component: {fileID: 762932323}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -33539,7 +33539,7 @@ GameObject:
   - component: {fileID: 767760680}
   - component: {fileID: 767760679}
   - component: {fileID: 767760678}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (37)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -33697,7 +33697,7 @@ GameObject:
   - component: {fileID: 769781480}
   - component: {fileID: 769781479}
   - component: {fileID: 769781478}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (19)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -33855,7 +33855,7 @@ GameObject:
   - component: {fileID: 774337053}
   - component: {fileID: 774337052}
   - component: {fileID: 774337051}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34438,7 +34438,7 @@ GameObject:
   - component: {fileID: 782232423}
   - component: {fileID: 782232422}
   - component: {fileID: 782232421}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (22)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -34596,7 +34596,7 @@ GameObject:
   - component: {fileID: 785963677}
   - component: {fileID: 785963676}
   - component: {fileID: 785963675}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (9)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -34791,7 +34791,7 @@ GameObject:
   - component: {fileID: 789195065}
   - component: {fileID: 789195064}
   - component: {fileID: 789195063}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34912,7 +34912,7 @@ GameObject:
   - component: {fileID: 796410819}
   - component: {fileID: 796410818}
   - component: {fileID: 796410817}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (36)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -35142,7 +35142,7 @@ GameObject:
   - component: {fileID: 800387086}
   - component: {fileID: 800387085}
   - component: {fileID: 800387084}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (32)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -35602,7 +35602,7 @@ GameObject:
   - component: {fileID: 816584137}
   - component: {fileID: 816584136}
   - component: {fileID: 816584138}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35723,7 +35723,7 @@ GameObject:
   - component: {fileID: 818148760}
   - component: {fileID: 818148759}
   - component: {fileID: 818148758}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (12)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -35881,7 +35881,7 @@ GameObject:
   - component: {fileID: 823968939}
   - component: {fileID: 823968938}
   - component: {fileID: 823968937}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (12)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -36075,7 +36075,7 @@ GameObject:
   - component: {fileID: 826092499}
   - component: {fileID: 826092498}
   - component: {fileID: 826092497}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (11)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -36232,7 +36232,7 @@ GameObject:
   - component: {fileID: 826533895}
   - component: {fileID: 826533897}
   - component: {fileID: 826533896}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Face this way text (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36664,7 +36664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 830386068}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Other Player Note Section
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36701,7 +36701,7 @@ GameObject:
   - component: {fileID: 831840628}
   - component: {fileID: 831840627}
   - component: {fileID: 831840626}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37308,7 +37308,7 @@ GameObject:
   - component: {fileID: 841518131}
   - component: {fileID: 841518130}
   - component: {fileID: 841518129}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37426,7 +37426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 842971205}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HitBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37777,7 +37777,7 @@ GameObject:
   - component: {fileID: 850756920}
   - component: {fileID: 850756919}
   - component: {fileID: 850756918}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37898,7 +37898,7 @@ GameObject:
   - component: {fileID: 852217785}
   - component: {fileID: 852217784}
   - component: {fileID: 852217783}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (2)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -38053,7 +38053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 852260799}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38255,7 +38255,7 @@ GameObject:
   - component: {fileID: 860815353}
   - component: {fileID: 860815352}
   - component: {fileID: 860815351}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38377,7 +38377,7 @@ GameObject:
   - component: {fileID: 868015680}
   - component: {fileID: 868015679}
   - component: {fileID: 868015678}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38509,7 +38509,7 @@ GameObject:
   - component: {fileID: 876397265}
   - component: {fileID: 876397264}
   - component: {fileID: 876397263}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38712,7 +38712,7 @@ GameObject:
   m_Component:
   - component: {fileID: 880467038}
   - component: {fileID: 880467039}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: left
   m_TagString: Note Object
   m_Icon: {fileID: 0}
@@ -38799,7 +38799,7 @@ GameObject:
   - component: {fileID: 881359033}
   - component: {fileID: 881359032}
   - component: {fileID: 881359031}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (24)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -39101,7 +39101,7 @@ GameObject:
   - component: {fileID: 891726846}
   - component: {fileID: 891726845}
   - component: {fileID: 891726844}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39222,7 +39222,7 @@ GameObject:
   - component: {fileID: 895921826}
   - component: {fileID: 895921825}
   - component: {fileID: 895921824}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (7)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -39696,7 +39696,7 @@ GameObject:
   - component: {fileID: 903503736}
   - component: {fileID: 903503735}
   - component: {fileID: 903503734}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (30)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -39854,7 +39854,7 @@ GameObject:
   - component: {fileID: 904630747}
   - component: {fileID: 904630746}
   - component: {fileID: 904630745}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (10)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -40313,7 +40313,7 @@ GameObject:
   - component: {fileID: 912641014}
   - component: {fileID: 912641013}
   - component: {fileID: 912641012}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40434,7 +40434,7 @@ GameObject:
   - component: {fileID: 916857852}
   - component: {fileID: 916857851}
   - component: {fileID: 916857850}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (1)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -40873,7 +40873,7 @@ GameObject:
   - component: {fileID: 925595885}
   - component: {fileID: 925595884}
   - component: {fileID: 925595883}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (40)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -41029,7 +41029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 926588721}
   - component: {fileID: 926588722}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (3)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -41284,7 +41284,7 @@ GameObject:
   - component: {fileID: 934501952}
   - component: {fileID: 934501951}
   - component: {fileID: 934501950}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (35)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -41440,7 +41440,7 @@ GameObject:
   m_Component:
   - component: {fileID: 934550208}
   - component: {fileID: 934550209}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: down
   m_TagString: Note Object
   m_Icon: {fileID: 0}
@@ -41527,7 +41527,7 @@ GameObject:
   - component: {fileID: 935781384}
   - component: {fileID: 935781383}
   - component: {fileID: 935781382}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (17)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -41685,7 +41685,7 @@ GameObject:
   - component: {fileID: 938938560}
   - component: {fileID: 938938559}
   - component: {fileID: 938938558}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (34)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -42285,7 +42285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951114033}
   - component: {fileID: 951114034}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (2)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -42613,7 +42613,7 @@ GameObject:
   - component: {fileID: 959593760}
   - component: {fileID: 959593759}
   - component: {fileID: 959593758}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (23)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -42769,7 +42769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 961197322}
   - component: {fileID: 961197323}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hold Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42856,7 +42856,7 @@ GameObject:
   - component: {fileID: 962772576}
   - component: {fileID: 962772575}
   - component: {fileID: 962772574}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (4)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -43312,7 +43312,7 @@ GameObject:
   - component: {fileID: 973396974}
   - component: {fileID: 973396973}
   - component: {fileID: 973396972}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (11)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -43468,7 +43468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 974324165}
   - component: {fileID: 974324166}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (2)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -43870,7 +43870,7 @@ GameObject:
   - component: {fileID: 994837147}
   - component: {fileID: 994837146}
   - component: {fileID: 994837145}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (33)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -44315,7 +44315,7 @@ GameObject:
   - component: {fileID: 1003148071}
   - component: {fileID: 1003148070}
   - component: {fileID: 1003148069}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (3)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -44833,7 +44833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1015663334}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44869,7 +44869,7 @@ GameObject:
   - component: {fileID: 1022516034}
   - component: {fileID: 1022516033}
   - component: {fileID: 1022516032}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (18)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -45027,7 +45027,7 @@ GameObject:
   - component: {fileID: 1024807879}
   - component: {fileID: 1024807878}
   - component: {fileID: 1024807880}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45156,7 +45156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1032701177}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45192,7 +45192,7 @@ GameObject:
   - component: {fileID: 1036280958}
   - component: {fileID: 1036280957}
   - component: {fileID: 1036280956}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (25)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -45350,7 +45350,7 @@ GameObject:
   - component: {fileID: 1045712783}
   - component: {fileID: 1045712782}
   - component: {fileID: 1045712781}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (40)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -45507,7 +45507,7 @@ GameObject:
   - component: {fileID: 1046435355}
   - component: {fileID: 1046435357}
   - component: {fileID: 1046435356}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event Trigger
   m_TagString: ScrollEventTrigger
   m_Icon: {fileID: 0}
@@ -45771,7 +45771,7 @@ GameObject:
   - component: {fileID: 1048149844}
   - component: {fileID: 1048149843}
   - component: {fileID: 1048149842}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45890,7 +45890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1048995139}
   - component: {fileID: 1048995140}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (1)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -45974,7 +45974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051133260}
   - component: {fileID: 1051133261}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -46058,7 +46058,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1053013633}
   - component: {fileID: 1053013634}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hold End Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46270,7 +46270,7 @@ GameObject:
   - component: {fileID: 1064486387}
   - component: {fileID: 1064486389}
   - component: {fileID: 1064486388}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Face this way text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46598,7 +46598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069307947}
   - component: {fileID: 1069307948}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Scroller
   m_TagString: ChartScroller
   m_Icon: {fileID: 0}
@@ -46829,7 +46829,7 @@ GameObject:
   - component: {fileID: 1089763078}
   - component: {fileID: 1089763077}
   - component: {fileID: 1089763076}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (18)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -47122,7 +47122,7 @@ GameObject:
   - component: {fileID: 1090305369}
   - component: {fileID: 1090305368}
   - component: {fileID: 1090305367}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (14)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -47415,7 +47415,7 @@ GameObject:
   - component: {fileID: 1097326302}
   - component: {fileID: 1097326301}
   - component: {fileID: 1097326300}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (37)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -47573,7 +47573,7 @@ GameObject:
   - component: {fileID: 1115624617}
   - component: {fileID: 1115624616}
   - component: {fileID: 1115624615}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48091,7 +48091,7 @@ GameObject:
   - component: {fileID: 1128715460}
   - component: {fileID: 1128715459}
   - component: {fileID: 1128715458}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (6)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -48249,7 +48249,7 @@ GameObject:
   - component: {fileID: 1134128137}
   - component: {fileID: 1134128136}
   - component: {fileID: 1134128135}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48370,7 +48370,7 @@ GameObject:
   - component: {fileID: 1134707589}
   - component: {fileID: 1134707588}
   - component: {fileID: 1134707587}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48494,7 +48494,7 @@ GameObject:
   - component: {fileID: 1136372717}
   - component: {fileID: 1136372716}
   - component: {fileID: 1136372715}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Hold Section
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -49040,7 +49040,7 @@ GameObject:
   - component: {fileID: 1154550308}
   - component: {fileID: 1154550307}
   - component: {fileID: 1154550306}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (13)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -49236,7 +49236,7 @@ GameObject:
   - component: {fileID: 1160935862}
   - component: {fileID: 1160935861}
   - component: {fileID: 1160935860}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49357,7 +49357,7 @@ GameObject:
   - component: {fileID: 1168201066}
   - component: {fileID: 1168201065}
   - component: {fileID: 1168201064}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (51)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -49757,7 +49757,7 @@ GameObject:
   - component: {fileID: 1172943096}
   - component: {fileID: 1172943095}
   - component: {fileID: 1172943094}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (16)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -49987,7 +49987,7 @@ GameObject:
   - component: {fileID: 1178577499}
   - component: {fileID: 1178577498}
   - component: {fileID: 1178577497}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (23)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -50145,7 +50145,7 @@ GameObject:
   - component: {fileID: 1182625911}
   - component: {fileID: 1182625910}
   - component: {fileID: 1182625909}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (20)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -50502,7 +50502,7 @@ GameObject:
   - component: {fileID: 1195969949}
   - component: {fileID: 1195969948}
   - component: {fileID: 1195969950}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50607,7 +50607,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 192
+    m_Bits: 128
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 79e19d227b117014fa61bc1567ea215e, type: 2}
   m_TargetDisplay: 0
@@ -50645,7 +50645,7 @@ GameObject:
   - component: {fileID: 1200612449}
   - component: {fileID: 1200612448}
   - component: {fileID: 1200612447}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (48)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -50961,7 +50961,7 @@ GameObject:
   - component: {fileID: 1204986899}
   - component: {fileID: 1204986898}
   - component: {fileID: 1204986897}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (39)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -51471,7 +51471,7 @@ GameObject:
   - component: {fileID: 1219273888}
   - component: {fileID: 1219273887}
   - component: {fileID: 1219273886}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (29)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -51629,7 +51629,7 @@ GameObject:
   - component: {fileID: 1219306381}
   - component: {fileID: 1219306380}
   - component: {fileID: 1219306379}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (27)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -51787,7 +51787,7 @@ GameObject:
   - component: {fileID: 1223189297}
   - component: {fileID: 1223189296}
   - component: {fileID: 1223189295}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (1)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -51945,7 +51945,7 @@ GameObject:
   - component: {fileID: 1226252064}
   - component: {fileID: 1226252063}
   - component: {fileID: 1226252062}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52229,7 +52229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234291229}
   - component: {fileID: 1234291230}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (7)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -52315,7 +52315,7 @@ GameObject:
   - component: {fileID: 1234535774}
   - component: {fileID: 1234535773}
   - component: {fileID: 1234535772}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (26)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -52473,7 +52473,7 @@ GameObject:
   - component: {fileID: 1235764127}
   - component: {fileID: 1235764126}
   - component: {fileID: 1235764125}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52597,7 +52597,7 @@ GameObject:
   - component: {fileID: 1241441611}
   - component: {fileID: 1241441610}
   - component: {fileID: 1241441609}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (55)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -52827,7 +52827,7 @@ GameObject:
   - component: {fileID: 1243398679}
   - component: {fileID: 1243398678}
   - component: {fileID: 1243398677}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (25)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -53141,7 +53141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250167130}
   - component: {fileID: 1250167131}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (3)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -55030,7 +55030,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1285744220}
   - component: {fileID: 1285744221}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (7)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -55116,7 +55116,7 @@ GameObject:
   - component: {fileID: 1286315585}
   - component: {fileID: 1286315584}
   - component: {fileID: 1286315583}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (5)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -55274,7 +55274,7 @@ GameObject:
   - component: {fileID: 1287614738}
   - component: {fileID: 1287614737}
   - component: {fileID: 1287614736}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (54)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -55590,7 +55590,7 @@ GameObject:
   - component: {fileID: 1288253891}
   - component: {fileID: 1288253890}
   - component: {fileID: 1288253889}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (49)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -55746,7 +55746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289392833}
   - component: {fileID: 1289392834}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -55832,7 +55832,7 @@ GameObject:
   - component: {fileID: 1290760040}
   - component: {fileID: 1290760038}
   - component: {fileID: 1290760039}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Note Culler
   m_TagString: NoteCuller
   m_Icon: {fileID: 0}
@@ -55948,7 +55948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1293455416}
   - component: {fileID: 1293455417}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (5)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -56192,7 +56192,7 @@ GameObject:
   - component: {fileID: 1294241036}
   - component: {fileID: 1294241035}
   - component: {fileID: 1294241034}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56698,7 +56698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1307195195}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HitBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57049,7 +57049,7 @@ GameObject:
   - component: {fileID: 1313936036}
   - component: {fileID: 1313936035}
   - component: {fileID: 1313936034}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (27)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -57207,7 +57207,7 @@ GameObject:
   - component: {fileID: 1318421484}
   - component: {fileID: 1318421483}
   - component: {fileID: 1318421482}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (30)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -57364,7 +57364,7 @@ GameObject:
   - component: {fileID: 1322890722}
   - component: {fileID: 1322890724}
   - component: {fileID: 1322890723}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Note Particle Group Left (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57630,7 +57630,7 @@ GameObject:
   - component: {fileID: 1331146054}
   - component: {fileID: 1331146053}
   - component: {fileID: 1331146052}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (9)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -57946,7 +57946,7 @@ GameObject:
   - component: {fileID: 1336571261}
   - component: {fileID: 1336571260}
   - component: {fileID: 1336571259}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (28)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -58262,7 +58262,7 @@ GameObject:
   - component: {fileID: 1339375772}
   - component: {fileID: 1339375771}
   - component: {fileID: 1339375770}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (32)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -58492,7 +58492,7 @@ GameObject:
   - component: {fileID: 1340436208}
   - component: {fileID: 1340436207}
   - component: {fileID: 1340436206}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (29)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -58650,7 +58650,7 @@ GameObject:
   - component: {fileID: 1344258304}
   - component: {fileID: 1344258306}
   - component: {fileID: 1344258305}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -63965,7 +63965,7 @@ GameObject:
   - component: {fileID: 1348013141}
   - component: {fileID: 1348013140}
   - component: {fileID: 1348013139}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (6)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -64123,7 +64123,7 @@ GameObject:
   - component: {fileID: 1348962508}
   - component: {fileID: 1348962507}
   - component: {fileID: 1348962506}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (44)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -64646,7 +64646,7 @@ GameObject:
   - component: {fileID: 1358279030}
   - component: {fileID: 1358279029}
   - component: {fileID: 1358279028}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64972,7 +64972,7 @@ GameObject:
   - component: {fileID: 1376353679}
   - component: {fileID: 1376353678}
   - component: {fileID: 1376353677}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (15)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -65130,7 +65130,7 @@ GameObject:
   - component: {fileID: 1377777587}
   - component: {fileID: 1377777586}
   - component: {fileID: 1377777585}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (30)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -65444,7 +65444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378674071}
   - component: {fileID: 1378674072}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (1)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -65688,7 +65688,7 @@ GameObject:
   - component: {fileID: 1389966637}
   - component: {fileID: 1389966636}
   - component: {fileID: 1389966635}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66125,7 +66125,7 @@ GameObject:
   - component: {fileID: 1406057927}
   - component: {fileID: 1406057926}
   - component: {fileID: 1406057925}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (24)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -71178,7 +71178,7 @@ GameObject:
   - component: {fileID: 1409127294}
   - component: {fileID: 1409127293}
   - component: {fileID: 1409127292}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (39)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -71335,7 +71335,7 @@ GameObject:
   - component: {fileID: 1409486088}
   - component: {fileID: 1409486090}
   - component: {fileID: 1409486089}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Note Particle Group Right (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71406,7 +71406,7 @@ GameObject:
   - component: {fileID: 1415680272}
   - component: {fileID: 1415680271}
   - component: {fileID: 1415680270}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Note Culler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71681,7 +71681,7 @@ GameObject:
   - component: {fileID: 1430376217}
   - component: {fileID: 1430376219}
   - component: {fileID: 1430376218}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Face this way text (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71853,7 +71853,7 @@ GameObject:
   - component: {fileID: 1432100509}
   - component: {fileID: 1432100508}
   - component: {fileID: 1432100507}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (38)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -72011,7 +72011,7 @@ GameObject:
   - component: {fileID: 1432468378}
   - component: {fileID: 1432468377}
   - component: {fileID: 1432468376}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (5)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -72167,7 +72167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1433058916}
   - component: {fileID: 1433058917}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (7)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -72251,7 +72251,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439450333}
   - component: {fileID: 1439450334}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (6)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -72337,7 +72337,7 @@ GameObject:
   - component: {fileID: 1441313275}
   - component: {fileID: 1441313274}
   - component: {fileID: 1441313273}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (37)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -73415,7 +73415,7 @@ GameObject:
   - component: {fileID: 1476853870}
   - component: {fileID: 1476853869}
   - component: {fileID: 1476853868}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (5)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -73731,7 +73731,7 @@ GameObject:
   - component: {fileID: 1499788509}
   - component: {fileID: 1499788508}
   - component: {fileID: 1499788507}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73850,7 +73850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1504437120}
   - component: {fileID: 1504437121}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (5)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -73936,7 +73936,7 @@ GameObject:
   - component: {fileID: 1505317803}
   - component: {fileID: 1505317802}
   - component: {fileID: 1505317801}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (9)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -74450,7 +74450,7 @@ GameObject:
   - component: {fileID: 1515559700}
   - component: {fileID: 1515559699}
   - component: {fileID: 1515559698}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (1)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -74683,7 +74683,7 @@ GameObject:
   - component: {fileID: 1517959623}
   - component: {fileID: 1517959622}
   - component: {fileID: 1517959621}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (8)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -74877,7 +74877,7 @@ GameObject:
   - component: {fileID: 1522769166}
   - component: {fileID: 1522769165}
   - component: {fileID: 1522769164}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74997,7 +74997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1523878252}
   - component: {fileID: 1523878253}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (7)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -75141,7 +75141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1529611013}
   - component: {fileID: 1529611014}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (3)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -75533,7 +75533,7 @@ GameObject:
   - component: {fileID: 1541008285}
   - component: {fileID: 1541008284}
   - component: {fileID: 1541008283}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75971,7 +75971,7 @@ GameObject:
   - component: {fileID: 1549270796}
   - component: {fileID: 1549270795}
   - component: {fileID: 1549270794}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (34)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -76129,7 +76129,7 @@ GameObject:
   - component: {fileID: 1549363893}
   - component: {fileID: 1549363892}
   - component: {fileID: 1549363891}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (1)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -76284,7 +76284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1562493989}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HitBoxes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76319,7 +76319,7 @@ GameObject:
   - component: {fileID: 1566797814}
   - component: {fileID: 1566797813}
   - component: {fileID: 1566797812}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76440,7 +76440,7 @@ GameObject:
   - component: {fileID: 1567328107}
   - component: {fileID: 1567328106}
   - component: {fileID: 1567328105}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (39)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -76733,7 +76733,7 @@ GameObject:
   - component: {fileID: 1576906231}
   - component: {fileID: 1576906230}
   - component: {fileID: 1576906229}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (31)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -76888,7 +76888,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1580746756}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Events
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77517,7 +77517,7 @@ GameObject:
   - component: {fileID: 1622979137}
   - component: {fileID: 1622979136}
   - component: {fileID: 1622979135}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (33)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -77916,7 +77916,7 @@ GameObject:
   - component: {fileID: 1637422328}
   - component: {fileID: 1637422330}
   - component: {fileID: 1637422329}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Note Particle Group Down (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77987,7 +77987,7 @@ GameObject:
   - component: {fileID: 1640666773}
   - component: {fileID: 1640666772}
   - component: {fileID: 1640666771}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (2)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -78393,7 +78393,7 @@ GameObject:
   - component: {fileID: 1644921233}
   - component: {fileID: 1644921232}
   - component: {fileID: 1644921231}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (14)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -78551,7 +78551,7 @@ GameObject:
   - component: {fileID: 1647533480}
   - component: {fileID: 1647533479}
   - component: {fileID: 1647533478}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78711,7 +78711,7 @@ GameObject:
   - component: {fileID: 1663388796}
   - component: {fileID: 1663388798}
   - component: {fileID: 1663388797}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -79688,7 +79688,7 @@ GameObject:
   - component: {fileID: 1692636546}
   - component: {fileID: 1692636545}
   - component: {fileID: 1692636544}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80332,7 +80332,7 @@ GameObject:
   - component: {fileID: 1708706264}
   - component: {fileID: 1708706263}
   - component: {fileID: 1708706262}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (15)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -80490,7 +80490,7 @@ GameObject:
   - component: {fileID: 1715300198}
   - component: {fileID: 1715300197}
   - component: {fileID: 1715300196}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80770,7 +80770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723429531}
   - component: {fileID: 1723429532}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: right
   m_TagString: Note Object
   m_Icon: {fileID: 0}
@@ -81121,7 +81121,7 @@ GameObject:
   - component: {fileID: 1729687411}
   - component: {fileID: 1729687410}
   - component: {fileID: 1729687409}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (9)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -81447,7 +81447,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1741764302}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81629,7 +81629,7 @@ GameObject:
   - component: {fileID: 1750948380}
   - component: {fileID: 1750948379}
   - component: {fileID: 1750948378}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Break Event
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82296,7 +82296,7 @@ GameObject:
   - component: {fileID: 1767367452}
   - component: {fileID: 1767367451}
   - component: {fileID: 1767367450}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (3)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -82454,7 +82454,7 @@ GameObject:
   - component: {fileID: 1767999354}
   - component: {fileID: 1767999353}
   - component: {fileID: 1767999352}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82659,7 +82659,7 @@ GameObject:
   - component: {fileID: 1768780483}
   - component: {fileID: 1768780482}
   - component: {fileID: 1768780481}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (22)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -83011,7 +83011,7 @@ GameObject:
   - component: {fileID: 1772624099}
   - component: {fileID: 1772624098}
   - component: {fileID: 1772624097}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83132,7 +83132,7 @@ GameObject:
   - component: {fileID: 1774735991}
   - component: {fileID: 1774735990}
   - component: {fileID: 1774735989}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (31)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -83290,7 +83290,7 @@ GameObject:
   - component: {fileID: 1776223087}
   - component: {fileID: 1776223086}
   - component: {fileID: 1776223085}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (13)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -83446,7 +83446,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776949769}
   - component: {fileID: 1776949770}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (5)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -83667,7 +83667,7 @@ GameObject:
   - component: {fileID: 1782084025}
   - component: {fileID: 1782084024}
   - component: {fileID: 1782084023}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (18)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -83825,7 +83825,7 @@ GameObject:
   - component: {fileID: 1783531263}
   - component: {fileID: 1783531262}
   - component: {fileID: 1783531261}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (30)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -83983,7 +83983,7 @@ GameObject:
   - component: {fileID: 1788448259}
   - component: {fileID: 1788448258}
   - component: {fileID: 1788448257}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (33)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -84299,7 +84299,7 @@ GameObject:
   - component: {fileID: 1801780810}
   - component: {fileID: 1801780809}
   - component: {fileID: 1801780808}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84420,7 +84420,7 @@ GameObject:
   - component: {fileID: 1808920174}
   - component: {fileID: 1808920173}
   - component: {fileID: 1808920172}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (39)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -84736,7 +84736,7 @@ GameObject:
   - component: {fileID: 1819656474}
   - component: {fileID: 1819656473}
   - component: {fileID: 1819656472}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (20)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -85250,7 +85250,7 @@ GameObject:
   - component: {fileID: 1825274259}
   - component: {fileID: 1825274258}
   - component: {fileID: 1825274257}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (51)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -85529,7 +85529,7 @@ GameObject:
   - component: {fileID: 1835517626}
   - component: {fileID: 1835517625}
   - component: {fileID: 1835517624}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85650,7 +85650,7 @@ GameObject:
   - component: {fileID: 1835670005}
   - component: {fileID: 1835670004}
   - component: {fileID: 1835670003}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: left (8)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -85966,7 +85966,7 @@ GameObject:
   - component: {fileID: 1839536801}
   - component: {fileID: 1839536800}
   - component: {fileID: 1839536799}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (10)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -86122,7 +86122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840006451}
   - component: {fileID: 1840006452}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (6)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -86208,7 +86208,7 @@ GameObject:
   - component: {fileID: 1841774654}
   - component: {fileID: 1841774653}
   - component: {fileID: 1841774652}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86947,7 +86947,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1868679155}
   - component: {fileID: 1868679156}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (6)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -87191,7 +87191,7 @@ GameObject:
   - component: {fileID: 1869350405}
   - component: {fileID: 1869350404}
   - component: {fileID: 1869350403}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (18)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -87737,7 +87737,7 @@ GameObject:
   - component: {fileID: 1883236902}
   - component: {fileID: 1883236901}
   - component: {fileID: 1883236900}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (47)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -87977,7 +87977,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1889616057}
   - component: {fileID: 1889616058}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: up
   m_TagString: Note Object
   m_Icon: {fileID: 0}
@@ -88062,7 +88062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1891396114}
   - component: {fileID: 1891396115}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Particle (4)
   m_TagString: Note Particle
   m_Icon: {fileID: 0}
@@ -88642,7 +88642,7 @@ GameObject:
   - component: {fileID: 1899383122}
   - component: {fileID: 1899383121}
   - component: {fileID: 1899383120}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88800,7 +88800,7 @@ GameObject:
   - component: {fileID: 1903180535}
   - component: {fileID: 1903180534}
   - component: {fileID: 1903180533}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88921,7 +88921,7 @@ GameObject:
   - component: {fileID: 1905344190}
   - component: {fileID: 1905344189}
   - component: {fileID: 1905344188}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (43)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -89322,7 +89322,7 @@ GameObject:
   - component: {fileID: 1923185633}
   - component: {fileID: 1923185632}
   - component: {fileID: 1923185631}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (50)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -89872,7 +89872,7 @@ GameObject:
   - component: {fileID: 1941253585}
   - component: {fileID: 1941253584}
   - component: {fileID: 1941253583}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90283,7 +90283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1945082734}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90319,7 +90319,7 @@ GameObject:
   - component: {fileID: 1948961228}
   - component: {fileID: 1948961227}
   - component: {fileID: 1948961226}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (53)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -90612,7 +90612,7 @@ GameObject:
   - component: {fileID: 1954524617}
   - component: {fileID: 1954524616}
   - component: {fileID: 1954524615}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (3)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -90770,7 +90770,7 @@ GameObject:
   - component: {fileID: 1955001888}
   - component: {fileID: 1955001887}
   - component: {fileID: 1955001886}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (22)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -91293,7 +91293,7 @@ GameObject:
   - component: {fileID: 1973173103}
   - component: {fileID: 1973173102}
   - component: {fileID: 1973173101}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (20)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -91448,7 +91448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1981523466}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Enemy Notes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91941,7 +91941,7 @@ GameObject:
   - component: {fileID: 1996410035}
   - component: {fileID: 1996410034}
   - component: {fileID: 1996410033}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92062,7 +92062,7 @@ GameObject:
   - component: {fileID: 1999530551}
   - component: {fileID: 1999530550}
   - component: {fileID: 1999530549}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92183,7 +92183,7 @@ GameObject:
   - component: {fileID: 2005015726}
   - component: {fileID: 2005015725}
   - component: {fileID: 2005015724}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (2)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -92341,7 +92341,7 @@ GameObject:
   - component: {fileID: 2008037758}
   - component: {fileID: 2008037757}
   - component: {fileID: 2008037756}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (7)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -92499,7 +92499,7 @@ GameObject:
   - component: {fileID: 2010387178}
   - component: {fileID: 2010387177}
   - component: {fileID: 2010387176}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (19)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -92656,7 +92656,7 @@ GameObject:
   - component: {fileID: 2010483837}
   - component: {fileID: 2010483839}
   - component: {fileID: 2010483838}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Note Particle Group Up (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92727,7 +92727,7 @@ GameObject:
   - component: {fileID: 2019943021}
   - component: {fileID: 2019943020}
   - component: {fileID: 2019943019}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (13)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -93051,7 +93051,7 @@ GameObject:
   - component: {fileID: 2024328237}
   - component: {fileID: 2024328239}
   - component: {fileID: 2024328238}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -93715,7 +93715,7 @@ GameObject:
   - component: {fileID: 2041816042}
   - component: {fileID: 2041816041}
   - component: {fileID: 2041816040}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (38)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -93957,7 +93957,7 @@ GameObject:
   - component: {fileID: 2045779686}
   - component: {fileID: 2045779685}
   - component: {fileID: 2045779684}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (21)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -94805,7 +94805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061185911}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94917,7 +94917,7 @@ GameObject:
   - component: {fileID: 2066244305}
   - component: {fileID: 2066244304}
   - component: {fileID: 2066244303}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (34)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -95075,7 +95075,7 @@ GameObject:
   - component: {fileID: 2068530073}
   - component: {fileID: 2068530072}
   - component: {fileID: 2068530071}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (52)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -95391,7 +95391,7 @@ GameObject:
   - component: {fileID: 2070933285}
   - component: {fileID: 2070933284}
   - component: {fileID: 2070933283}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (34)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -95549,7 +95549,7 @@ GameObject:
   - component: {fileID: 2075567418}
   - component: {fileID: 2075567417}
   - component: {fileID: 2075567416}
-  m_Layer: 8
+  m_Layer: 6
   m_Name: Scroll Event (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95670,7 +95670,7 @@ GameObject:
   - component: {fileID: 2078890229}
   - component: {fileID: 2078890228}
   - component: {fileID: 2078890227}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (33)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -95986,7 +95986,7 @@ GameObject:
   - component: {fileID: 2082987644}
   - component: {fileID: 2082987643}
   - component: {fileID: 2082987642}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (5)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -96299,7 +96299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2092693563}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Centre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96333,7 +96333,7 @@ GameObject:
   - component: {fileID: 2093455536}
   - component: {fileID: 2093455535}
   - component: {fileID: 2093455534}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (41)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -96491,7 +96491,7 @@ GameObject:
   - component: {fileID: 2101145679}
   - component: {fileID: 2101145678}
   - component: {fileID: 2101145677}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (2)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -97148,7 +97148,7 @@ GameObject:
   - component: {fileID: 2113109760}
   - component: {fileID: 2113109759}
   - component: {fileID: 2113109758}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (14)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -97306,7 +97306,7 @@ GameObject:
   - component: {fileID: 2121247483}
   - component: {fileID: 2121247482}
   - component: {fileID: 2121247481}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: up (16)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -97464,7 +97464,7 @@ GameObject:
   - component: {fileID: 2124775592}
   - component: {fileID: 2124775591}
   - component: {fileID: 2124775590}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: right (25)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -97970,7 +97970,7 @@ GameObject:
   - component: {fileID: 2132474019}
   - component: {fileID: 2132474018}
   - component: {fileID: 2132474017}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: down (24)
   m_TagString: Note
   m_Icon: {fileID: 0}
@@ -98125,7 +98125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2137289857}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Break Calculator (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
