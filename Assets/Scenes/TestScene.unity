@@ -3363,7 +3363,7 @@ GameObject:
   - component: {fileID: 99028724}
   - component: {fileID: 99028726}
   - component: {fileID: 99028725}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Up Collider
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -4863,7 +4863,7 @@ GameObject:
   m_Component:
   - component: {fileID: 140931283}
   - component: {fileID: 140931284}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Left
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -12826,7 +12826,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204961561}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warnings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17286,7 +17286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344644888}
   - component: {fileID: 344644889}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Right
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -47136,7 +47136,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082227062}
   - component: {fileID: 1082227063}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Down
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -53636,7 +53636,7 @@ GameObject:
   - component: {fileID: 1246131885}
   - component: {fileID: 1246131887}
   - component: {fileID: 1246131886}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Right Collider
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -57888,7 +57888,7 @@ GameObject:
   - component: {fileID: 1315345900}
   - component: {fileID: 1315345902}
   - component: {fileID: 1315345901}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Down Collider
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -74505,7 +74505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1494409097}
   - component: {fileID: 1494409098}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Up
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}
@@ -92394,7 +92394,7 @@ GameObject:
   - component: {fileID: 1975356438}
   - component: {fileID: 1975356440}
   - component: {fileID: 1975356439}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Chart Warning Left Collider
   m_TagString: NoteWarning
   m_Icon: {fileID: 0}

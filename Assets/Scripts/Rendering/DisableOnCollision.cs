@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DisableOnCollision : MonoBehaviour
 {
+    public bool _ai = false;
     [SerializeField] private WhichSide _whichSide;
     [SerializeField] private string _colName;
 
@@ -11,22 +12,29 @@ public class DisableOnCollision : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(_colName))
         {
-            if (_whichSide == WhichSide.Left && Input.GetKey(GameManager.Instance.left))
+            if (!_ai)
             {
-                gameObject.SetActive(false);
-            }
+                if (_whichSide == WhichSide.Left && Input.GetKey(GameManager.Instance.left))
+                {
+                    gameObject.SetActive(false);
+                }
 
-            if (_whichSide == WhichSide.Down && Input.GetKey(GameManager.Instance.down))
-            {
-                gameObject.SetActive(false);
-            }
+                if (_whichSide == WhichSide.Down && Input.GetKey(GameManager.Instance.down))
+                {
+                    gameObject.SetActive(false);
+                }
 
-            if (_whichSide == WhichSide.Up && Input.GetKey(GameManager.Instance.up))
-            {
-                gameObject.SetActive(false);
-            }
+                if (_whichSide == WhichSide.Up && Input.GetKey(GameManager.Instance.up))
+                {
+                    gameObject.SetActive(false);
+                }
 
-            if (_whichSide == WhichSide.Right && Input.GetKey(GameManager.Instance.right))
+                if (_whichSide == WhichSide.Right && Input.GetKey(GameManager.Instance.right))
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+            else
             {
                 gameObject.SetActive(false);
             }
