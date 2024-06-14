@@ -25,6 +25,7 @@ public class DreamwaveAICommunicator : MonoBehaviour
 
     [Header("Scripts")]
     [SerializeField] private DreamwaveAICharacter _character;
+    [SerializeField] private NoteController _noteController;
 
     [Header("GameObjects")]
     [SerializeField] private GameObject _noteParticle;
@@ -32,6 +33,17 @@ public class DreamwaveAICommunicator : MonoBehaviour
     [Header("Components")]
     [SerializeField] public SpriteRenderer _spriteRenderer;
     [SerializeField] public Sprite[] _noteSprites;
+
+    private void Awake()
+    {
+        _spriteRenderer = transform.parent.parent.GetComponent<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
+        _noteSprites[0] = _noteController.noteSprites[0];
+        _noteSprites[1] = _noteController.noteSprites[1];
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -65,7 +77,18 @@ public class DreamwaveAICommunicator : MonoBehaviour
                     break;
             }
 
+            StopAllCoroutines();
+            StartCoroutine(SimulateKey());
             collision.gameObject.SetActive(false);
         }
+    }
+
+    private IEnumerator SimulateKey()
+    {
+        _spriteRenderer.sprite = _noteSprites[1];
+
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        _spriteRenderer.sprite = _noteSprites[0];
     }
 }

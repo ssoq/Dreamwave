@@ -20724,7 +20724,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
+  m_Offset: {x: 0, y: -0.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -20778,9 +20778,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _whichSide: 3
   _character: {fileID: 1751173952}
+  _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1409486087}
   _spriteRenderer: {fileID: 0}
-  _noteSprites: []
+  _noteSprites:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &425065461
 GameObject:
   m_ObjectHideFlags: 0
@@ -21332,7 +21335,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
+  m_Offset: {x: 0, y: -0.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -21386,9 +21389,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _whichSide: 1
   _character: {fileID: 1751173952}
+  _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 2010483836}
   _spriteRenderer: {fileID: 0}
-  _noteSprites: []
+  _noteSprites:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &438370278
 GameObject:
   m_ObjectHideFlags: 0
@@ -24134,7 +24140,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
+  m_Offset: {x: 0, y: -0.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -24188,9 +24194,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _whichSide: 2
   _character: {fileID: 1751173952}
+  _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1637422327}
   _spriteRenderer: {fileID: 0}
-  _noteSprites: []
+  _noteSprites:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &519091548
 GameObject:
   m_ObjectHideFlags: 0
@@ -46190,7 +46199,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
+  m_Offset: {x: 0, y: -0.58}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -46244,9 +46253,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _whichSide: 0
   _character: {fileID: 1751173952}
+  _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1322890721}
   _spriteRenderer: {fileID: 0}
-  _noteSprites: []
+  _noteSprites:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1064486386
 GameObject:
   m_ObjectHideFlags: 0
