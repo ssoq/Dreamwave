@@ -84,6 +84,7 @@ public class CustomAssetLoader : MonoBehaviour
 
         GameObject[] _notes = GameObject.FindGameObjectsWithTag("Note");
         GameObject[] _enemyNotes = GameObject.FindGameObjectsWithTag("EnemyNote");
+        GameObject[] _holdNoteParents = GameObject.FindGameObjectsWithTag("Note Hold Parent");
         GameObject[] _noteControllers = GameObject.FindGameObjectsWithTag("Note Object");
         for (int i = 0; i < _notes.Length; i++)
         {
@@ -94,6 +95,11 @@ public class CustomAssetLoader : MonoBehaviour
         {
             SpriteRenderer enemySpriteRenderer = _enemyNotes[i].GetComponent<SpriteRenderer>();
             _noteSpriteRenderers.Add(enemySpriteRenderer);
+        }
+        for (int i = 0; i < _holdNoteParents.Length; i++)
+        {
+            SpriteRenderer holdNoteParenSpriteRenderer = _holdNoteParents[i].GetComponent<SpriteRenderer>();
+            _noteSpriteRenderers.Add(holdNoteParenSpriteRenderer);
         }
         for (int i = 0; i < _noteControllers.Length; i++)
         {

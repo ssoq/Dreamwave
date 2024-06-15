@@ -44804,7 +44804,9 @@ MonoBehaviour:
   _gameUnfocusedUi: {fileID: 1322970868}
   noteUi: {fileID: 908379446}
   noteUiSidePlayer: {fileID: 885608306}
+  noteUiSidePlayerMiddle: {fileID: 0}
   noteUiSideOpponent: {fileID: 7916543}
+  noteUiSideOpponentMiddle: {fileID: 0}
   noteRendererPlayerMobile: {fileID: 782217028}
   noteRendererPlayer: {fileID: 382014974}
   noteRendererOpponent: {fileID: 1195969946}
@@ -44859,7 +44861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typePlayerOne: 2
   _typePlayerTwo: 2
-  _typeNoteAsset: 0
+  _typeNoteAsset: 2
   _typeNoteParticleAsset: 2
   CustomNoteParticleName: CustomParticleDemo
   _particleSpriteWidth: 1080

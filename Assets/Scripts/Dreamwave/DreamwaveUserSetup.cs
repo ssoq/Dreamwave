@@ -26,6 +26,7 @@ public class DreamwaveUserSetup : MonoBehaviour
         EnableIncomingNoteWarning();
         ShouldAllowAutoPause();
         ShouldAllowNoteSplashes();
+        UpdateUserKeybinds();
     }
 
     private void SetPlayerFps()
@@ -38,37 +39,13 @@ public class DreamwaveUserSetup : MonoBehaviour
     {
         if (PlayerPrefs.GetString("chartPos") == "downScroll")
         {
-            GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(180f, 180f, 0);
-            GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(180f, 180f, 0);
-
-            _playerNoteHitbox[0].keyForSide = GameManager.Instance.right;
-            _playerNoteHitbox[1].keyForSide = GameManager.Instance.up;
-            _playerNoteHitbox[2].keyForSide = GameManager.Instance.down;
-            _playerNoteHitbox[3].keyForSide = GameManager.Instance.left;
-
-
-            Debug.Log("Keys set for upScroll: " +
-            _playerNoteHitbox[0].keyForSide + ", " +
-            _playerNoteHitbox[1].keyForSide + ", " +
-            _playerNoteHitbox[2].keyForSide + ", " +
-            _playerNoteHitbox[3].keyForSide);
-
+            GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(180f, 0f, 0);
+            GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(180f, 0f, 0);
         }
         else if(PlayerPrefs.GetString("chartPos") == "upScroll")
         {
             GameManager.Instance.noteUiSidePlayer.transform.rotation = Quaternion.Euler(0f, 0, 0);
             GameManager.Instance.noteUiSideOpponent.transform.rotation = Quaternion.Euler(0f, 0, 0);
-
-            _playerNoteHitbox[0].keyForSide = GameManager.Instance.left;
-            _playerNoteHitbox[1].keyForSide = GameManager.Instance.down;
-            _playerNoteHitbox[2].keyForSide = GameManager.Instance.up;
-            _playerNoteHitbox[3].keyForSide = GameManager.Instance.right;
-
-            Debug.Log("Keys set for upScroll: " +
-            _playerNoteHitbox[0].keyForSide + ", " +
-            _playerNoteHitbox[1].keyForSide + ", " +
-            _playerNoteHitbox[2].keyForSide + ", " +
-            _playerNoteHitbox[3].keyForSide);
         }
     }
 
@@ -123,6 +100,14 @@ public class DreamwaveUserSetup : MonoBehaviour
 
         if (_pref == 1) GameManager.Instance.shouldDrawNoteSplashes = true;
         else GameManager.Instance.shouldDrawNoteSplashes = false;
+    }
+
+    private void UpdateUserKeybinds()
+    {
+        _playerNoteHitbox[0].keyForSide = GameManager.Instance.left;
+        _playerNoteHitbox[1].keyForSide = GameManager.Instance.down;
+        _playerNoteHitbox[2].keyForSide = GameManager.Instance.up;
+        _playerNoteHitbox[3].keyForSide = GameManager.Instance.right;
     }
 
     void Update()

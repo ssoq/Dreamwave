@@ -51,110 +51,46 @@ public class NoteController : MonoBehaviour
     {
         if (Input.GetKeyDown(GameManager.Instance.left))
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(0));
-                StartCoroutine(KeyDownSpriteFlick(0));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(3));
-                StartCoroutine(KeyDownSpriteFlick(3));
-            }
+            StopCoroutine(KeyReleaseSpriteFlick(0));
+            StartCoroutine(KeyDownSpriteFlick(0));
         }
         else if (Input.GetKeyUp(GameManager.Instance.left))
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(0));
-                StartCoroutine(KeyReleaseSpriteFlick(0));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(3));
-                StartCoroutine(KeyReleaseSpriteFlick(3));
-            }
+            StopCoroutine(KeyDownSpriteFlick(0));
+            StartCoroutine(KeyReleaseSpriteFlick(0));
         }
 
         if (Input.GetKeyDown(GameManager.Instance.down))
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(1));
-                StartCoroutine(KeyDownSpriteFlick(1));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(2));
-                StartCoroutine(KeyDownSpriteFlick(2));
-            }
+            StopCoroutine(KeyReleaseSpriteFlick(1));
+            StartCoroutine(KeyDownSpriteFlick(1));
         }
         else if (Input.GetKeyUp(GameManager.Instance.down))
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(1));
-                StartCoroutine(KeyReleaseSpriteFlick(1));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(2));
-                StartCoroutine(KeyReleaseSpriteFlick(2));
-            }
+            StopCoroutine(KeyDownSpriteFlick(1));
+            StartCoroutine(KeyReleaseSpriteFlick(1));
         }
 
         if (Input.GetKeyDown(GameManager.Instance.up))
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(2));
-                StartCoroutine(KeyDownSpriteFlick(2));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(1));
-                StartCoroutine(KeyDownSpriteFlick(1));
-            }
+            StopCoroutine(KeyReleaseSpriteFlick(2));
+            StartCoroutine(KeyDownSpriteFlick(2));
         }
         else if (Input.GetKeyUp(GameManager.Instance.up))
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(2));
-                StartCoroutine(KeyReleaseSpriteFlick(2));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(1));
-                StartCoroutine(KeyReleaseSpriteFlick(1));
-            }
+            StopCoroutine(KeyDownSpriteFlick(2));
+            StartCoroutine(KeyReleaseSpriteFlick(2));
         }
 
         if (Input.GetKeyDown(GameManager.Instance.right)) // pressed - says it here but I think I am retarded so I need easier visuals
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(3));
-                StartCoroutine(KeyDownSpriteFlick(3));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyReleaseSpriteFlick(0));
-                StartCoroutine(KeyDownSpriteFlick(0));
-            }
+            StopCoroutine(KeyReleaseSpriteFlick(3));
+            StartCoroutine(KeyDownSpriteFlick(3));
         }
         else if (Input.GetKeyUp(GameManager.Instance.right)) // released
         {
-            if (PlayerPrefs.GetString("chartPos") == "upScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(3));
-                StartCoroutine(KeyReleaseSpriteFlick(3));
-            }
-            else if (PlayerPrefs.GetString("chartPos") == "downScroll")
-            {
-                StopCoroutine(KeyDownSpriteFlick(0));
-                StartCoroutine(KeyReleaseSpriteFlick(0));
-            }
+            StopCoroutine(KeyDownSpriteFlick(3));
+            StartCoroutine(KeyReleaseSpriteFlick(3));
         }
     }
 
