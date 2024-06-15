@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
+using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary>
@@ -62,8 +63,8 @@ public class CustomAssetLoader : MonoBehaviour
 
     [Space(10)]
     [Header("Note Renderers")]
-    public string CustomNoteName;
-    public string CustomNoteHeldName;
+    public string CustomNoteFileLocation;
+    public string CustomNoteHeldFileLocation;
     public int _NoteWidth = 470;
     public int _NoteHeight = 540;
     public Color[] _noteColors;
@@ -130,18 +131,23 @@ public class CustomAssetLoader : MonoBehaviour
                 break;
         }
 
+        // I need to get the int of how many sprites are available in each file and then apply them to each note controllers sprite lists respectively
         switch (_typeNoteAsset)
         {
             case TypeNoteAsset.Custom:
+                _noteController.noteSpritesDown.Clear();
+                _noteController.noteSpritesRelease.Clear();
+
+                string filePathHeld = Path.Combine($"{Application.streamingAssetsPath}/{CustomNoteHeldFileLocation}/Held Sprites/");
+                string filePathReleased = Path.Combine($"{Application.streamingAssetsPath}/{CustomNoteFileLocation}/Release Sprites/");
+
+                _noteController.noteSpritesDown.AddRange(LoadSpritesFromPath(filePathHeld, _NoteWidth, _NoteHeight));
+                _noteController.noteSpritesRelease.AddRange(LoadSpritesFromPath(filePathReleased, _NoteWidth, _NoteHeight));
+                
                 for (int i = 0; i < _noteSpriteRenderers.Count; i++)
                 {
-                    _noteSpriteRenderers[i].sprite = LoadStreamedSprite($"" +
-                        $"{Application.streamingAssetsPath + "/Sprites/UI/Game/Notes/"}", CustomNoteName + ".png", _NoteWidth, _NoteHeight);
+                    _noteSpriteRenderers[i].sprite = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
                 }
-                _noteController.noteSprites[0] = LoadStreamedSprite($"" +
-                        $"{Application.streamingAssetsPath + "/Sprites/UI/Game/Notes/"}", CustomNoteName + ".png", _NoteWidth, _NoteHeight);
-                _noteController.noteSprites[1] = LoadStreamedSprite($"" +
-                        $"{Application.streamingAssetsPath + "/Sprites/UI/Game/Notes/"}", CustomNoteHeldName + ".png", _NoteWidth, _NoteHeight);
                 break;
         }
     }
@@ -166,5 +172,41 @@ public class CustomAssetLoader : MonoBehaviour
             Debug.LogError("Could not find any file with the given path " + filePath);
             return null;
         }
+    }
+
+    public List<Sprite> LoadSpritesFromPath(string filePath, int width, int height)
+    {
+        List<Sprite> sprites = new List<Sprite>();
+
+        if (Directory.Exists(filePath))
+        {
+            // Get all files in the directory that match the pattern *.png
+            string[] imageFiles = Directory.GetFiles(filePath, "*.png");
+
+            foreach (string file in imageFiles)
+            {
+                string fileName = Path.GetFileNameWithoutExtension(file);
+                if (int.TryParse(fileName, out int index))
+                {
+                    // Load the image file into a Texture2D
+                    byte[] fileData = File.ReadAllBytes(file);
+                    Texture2D texture = new Texture2D(width, height);
+                    if (texture.LoadImage(fileData))
+                    {
+                        // Convert the Texture2D to a Sprite
+                        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+
+                        // Add the Sprite to the list
+                        sprites.Add(sprite);
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("Directory does not exist: " + filePath);
+        }
+
+        return sprites;
     }
 }

@@ -41,8 +41,8 @@ public class DreamwaveAICommunicator : MonoBehaviour
 
     private void Start()
     {
-        _noteSprites[0] = _noteController.noteSprites[0];
-        _noteSprites[1] = _noteController.noteSprites[1];
+        _noteSprites[0] = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
+        _noteSprites[1] = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -44859,14 +44859,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typePlayerOne: 2
   _typePlayerTwo: 2
-  _typeNoteAsset: 2
+  _typeNoteAsset: 0
   _typeNoteParticleAsset: 2
   CustomNoteParticleName: CustomParticleDemo
   _particleSpriteWidth: 1080
   _particleSpriteHeight: 1080
   _noteParticleSpriteRenderers: []
-  CustomNoteName: Dreamwave Custom Example Note
-  CustomNoteHeldName: Dreamwave Custom Example Note Held
+  CustomNoteFileLocation: Sprites\UI\Game\Notes\Dreamwave Custom Note Example
+  CustomNoteHeldFileLocation: Sprites\UI\Game\Notes\Dreamwave Custom Note Example
   _NoteWidth: 470
   _NoteHeight: 540
   _noteColors: []
@@ -54945,7 +54945,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: If enabled, when you tap a key, your character will animate regardless
-    of if there are notes rendered to hit or not.
+    of whether there are notes rendered to hit or not.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc1992457b5dc764587847ddf57c503e, type: 2}
   m_sharedMaterial: {fileID: -2245736175916561741, guid: dc1992457b5dc764587847ddf57c503e,
@@ -79980,13 +79980,13 @@ MonoBehaviour:
   - {fileID: 208501021}
   - {fileID: 1893410007}
   - {fileID: 1909558390}
-  noteSprites:
-  - {fileID: 21300000, guid: d438be538890dad45aaaa68e00aeb0e6, type: 3}
+  noteSpritesDown:
   - {fileID: 21300000, guid: 99d5ddbd7cb37d84498ef884e4478600, type: 3}
+  noteSpritesRelease:
+  - {fileID: 21300000, guid: d438be538890dad45aaaa68e00aeb0e6, type: 3}
   plrAnim: {fileID: 0}
   currentAnimationPlaying: 
-  spriteCrossfadeSpeed: 0.3
-  threeDCrossfadeSpeed: 0.25
+  noteAnimSpeed: 0.1
 --- !u!1 &1525967938
 GameObject:
   m_ObjectHideFlags: 0
