@@ -44858,7 +44858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typePlayerOne: 2
   _typePlayerTwo: 2
-  _typeNoteAsset: 0
+  _typeNoteAsset: 2
   _typeNoteParticleAsset: 2
   CustomNoteParticleName: CustomParticleDemo
   _particleSpriteWidth: 1080
@@ -87190,26 +87190,39 @@ MonoBehaviour:
   LeftAnimations:
   - {fileID: 1087356312, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: -324309359, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
-  LeftOffsets: []
+  LeftOffsets:
+  - {x: 0.61, y: 2.37}
+  - {x: 0.56, y: 2.47}
   DownAnimations:
   - {fileID: -1390256631, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: -1502368767, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
-  DownOffsets: []
+  DownOffsets:
+  - {x: -1.21, y: 1.95}
+  - {x: -1.36, y: 1.98}
   UpAnimations:
   - {fileID: -1445518920, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: -1603200475, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
-  UpOffsets: []
+  UpOffsets:
+  - {x: -0.16, y: 2.92}
+  - {x: -0.32, y: 2.82}
   RightAnimations:
   - {fileID: 1640233681, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: -1601835070, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
-  RightOffsets: []
+  RightOffsets:
+  - {x: -1.14, y: 2.61}
+  - {x: -1.1, y: 2.61}
   IdleAnimation:
   - {fileID: -1031174144, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: 1351716682, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: 563243950, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: 455991371, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
   - {fileID: 37259354, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}
-  IdleOffsets: []
+  IdleOffsets:
+  - {x: -0.11, y: 2.62}
+  - {x: -0.11, y: 2.47}
+  - {x: 0.02, y: 2.64}
+  - {x: 0.02, y: 2.73}
+  - {x: 0.02, y: 2.64}
 --- !u!1 &1757015205
 GameObject:
   m_ObjectHideFlags: 0

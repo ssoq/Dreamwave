@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// THIS IS OLD AND NO LONGER USED
+
 public enum WhichSide
 {
     Left,
