@@ -162,7 +162,7 @@ public class NoteHitbox : MonoBehaviour
         {
             if (!Input.GetKeyDown(keyForSide))
             {
-                NoteHit("Shit", delayInMs, 2);
+                if (collision.gameObject != null) NoteHit("Shit", delayInMs, 2);
             }
 
             notesWithinHitBox.Remove(collision.gameObject);

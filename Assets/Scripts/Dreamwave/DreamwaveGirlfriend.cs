@@ -57,6 +57,7 @@ public class DreamwaveGirlfriend : MonoBehaviour
 
     #region Processes
     private void Awake() => _gfSpriteRenderer = GetComponent<SpriteRenderer>();
+    //private void Start() => AnimationFlickDelay *= TempoManager.instance.audioSource.pitch; // speeds up and ensures no animations fuck up
     private void OnEnable() => TempoManager.OnStep += OnStep;
     private void OnDisable() => TempoManager.OnStep -= OnStep;
     private void OnDestroy() => TempoManager.OnStep -= OnStep;

@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -171,6 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &596637201948901121
 GameObject:
@@ -247,7 +249,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -343,6 +345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &1338872518938699302
 GameObject:
@@ -419,7 +423,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -715267619, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -515,6 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &1370370110128930887
 GameObject:
@@ -591,7 +597,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -687,6 +693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &2289534345675636788
 GameObject:
@@ -763,7 +771,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -859,6 +867,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &3077074698546580656
 GameObject:
@@ -935,7 +945,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -1031,6 +1041,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &3728634411010771837
 GameObject:
@@ -1107,7 +1119,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -1203,6 +1215,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &4104755539205263891
 GameObject:
@@ -1279,7 +1293,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -1375,6 +1389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &5329292319452237962
 GameObject:
@@ -1451,7 +1467,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -1547,6 +1563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &5832598168281266920
 GameObject:
@@ -1623,7 +1641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -1719,6 +1737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &6915421572351660716
 GameObject:
@@ -1966,7 +1986,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -2062,6 +2082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &7682363262113311571
 GameObject:
@@ -2138,7 +2160,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -2234,6 +2256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler
 --- !u!1 &8117293835587076221
 GameObject:
@@ -2310,7 +2334,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -2406,4 +2430,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
+  _whichSide: 0
   _colName: Note Hold Culler

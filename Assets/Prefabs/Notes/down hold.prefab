@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &1045429948850559618
@@ -248,7 +249,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -344,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &1471594741011228690
@@ -421,7 +423,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -517,6 +519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &2591735183844812731
@@ -594,7 +597,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -690,6 +693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &3843769739319743804
@@ -767,7 +771,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -863,6 +867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &4233756433030973602
@@ -940,7 +945,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -1036,6 +1041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &4863812473711462853
@@ -1113,7 +1119,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -1209,6 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &4986484925934573407
@@ -1286,7 +1293,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -1382,6 +1389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &6138777440496304940
@@ -1459,7 +1467,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: -715267619, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -1555,6 +1563,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &7502023858159632478
@@ -1632,7 +1641,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -1728,6 +1737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &7911599011390953724
@@ -1805,7 +1815,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -1901,6 +1911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &8158194672523453672
@@ -1978,7 +1989,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -2074,6 +2085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &8354889407563146800
@@ -2151,7 +2163,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 356763369, guid: 21b9d728ea04e2247bcb7a3694da5568, type: 3}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -2247,6 +2259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19809ffd5d2a27c4c96564cf85446558, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ai: 0
   _whichSide: 2
   _colName: Note Hold Culler
 --- !u!1 &8888526875997741929
