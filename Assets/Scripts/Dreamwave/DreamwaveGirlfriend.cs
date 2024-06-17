@@ -64,7 +64,12 @@ public class DreamwaveGirlfriend : MonoBehaviour
     
     private void OnStep(int step)
     {
-        if (step == 4)
+        if (step == 2)
+        {
+            StopCoroutine("IdleAnimation");
+            StartCoroutine("IdleAnimation");
+        }
+        else if (step == 4)
         {
             StopCoroutine("IdleAnimation");
             StartCoroutine("IdleAnimation");
@@ -79,6 +84,7 @@ public class DreamwaveGirlfriend : MonoBehaviour
         switch (_whichSide)
         {
             case "Left":
+                _whichSide = "Right";
                 for (int i = 0; i < IdleFramesLeft.Count; i++)
                 {
                     _gfSpriteRenderer.sprite = IdleFramesLeft[i];
@@ -88,9 +94,9 @@ public class DreamwaveGirlfriend : MonoBehaviour
 
                     if (i == IdleFramesLeft.Count - 1) yield break;
                 }
-                _whichSide = "Right";
                 break;
             case "Right":
+                _whichSide = "Left";
                 for (int i = 0; i < IdleFramesRight.Count; i++)
                 {
                     _gfSpriteRenderer.sprite = IdleFramesRight[i];
@@ -100,7 +106,7 @@ public class DreamwaveGirlfriend : MonoBehaviour
 
                     if (i == IdleFramesRight.Count - 1) yield break;
                 }
-                _whichSide = "Left";
+                _whichSide = "Right";
                 break;
         }
 

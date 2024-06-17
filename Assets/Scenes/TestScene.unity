@@ -81769,28 +81769,28 @@ MonoBehaviour:
   RightFrames: []
   RightFramesOffset: []
   IdleFramesLeft:
-  - {fileID: 21300000, guid: b91901902e92fb247bf84c7ffe52bf6c, type: 3}
-  - {fileID: 21300000, guid: 4964116705f3da14d8d42721b6f09997, type: 3}
-  - {fileID: 21300000, guid: 2b0b86121d4de3b47a2c5f9fccaa57e3, type: 3}
-  - {fileID: 21300000, guid: 64924733ee7af724592632a7bfea7c34, type: 3}
-  - {fileID: 21300000, guid: f54e847ef18b29a48abe63785aa00746, type: 3}
-  - {fileID: 21300000, guid: 707d91c98b765e74e9993635864adcbe, type: 3}
-  - {fileID: 21300000, guid: e9b433aa9da7f8a43ba05ca4ec7723fb, type: 3}
-  - {fileID: 21300000, guid: ef537783f2d623f469fd29218a6a5666, type: 3}
-  - {fileID: 21300000, guid: 52947fefb066ee64dae2dfeb3d765084, type: 3}
-  - {fileID: 21300000, guid: a5bb89eb0d8d7184e864382bc0e18269, type: 3}
+  - {fileID: 21300000, guid: 8882de44c64a181419503bacf78d2132, type: 3}
+  - {fileID: 21300000, guid: b0f8b6681b1f43c478460c39537fa4cb, type: 3}
+  - {fileID: 21300000, guid: eb83950e23003654cb98800e02a9b461, type: 3}
+  - {fileID: 21300000, guid: 7c72cb713e867a74dac18a632bd016d3, type: 3}
+  - {fileID: 21300000, guid: 1fdfa29dfd34686469f1cb368fe212c1, type: 3}
+  - {fileID: 21300000, guid: 8aaf433ea91ea304bbc9bcf5af5bcb45, type: 3}
+  - {fileID: 21300000, guid: fe2373d432c7dd74cb9db9a83e6c78df, type: 3}
+  - {fileID: 21300000, guid: d3b9182809311ae4f8312075406a1547, type: 3}
+  - {fileID: 21300000, guid: 4aa007442079325498ff35f3ae950b5d, type: 3}
+  - {fileID: 21300000, guid: a13849a9246b6ac428bdf236aafe4eea, type: 3}
   IdleLeftFramesOffset: []
   IdleFramesRight:
-  - {fileID: 21300000, guid: 88db8bb936665694e857e12687367382, type: 3}
-  - {fileID: 21300000, guid: 8fcc7873cd39add45b1dd6899f521d2d, type: 3}
-  - {fileID: 21300000, guid: 45c11b0310af2984ca3fe239394d47df, type: 3}
-  - {fileID: 21300000, guid: bb60fc68192fb204ca7f6ebdce3f48f4, type: 3}
-  - {fileID: 21300000, guid: 79a420d0c4bbd194c852e2258955d14c, type: 3}
-  - {fileID: 21300000, guid: 8343425503fe6234cb853838205ab20a, type: 3}
-  - {fileID: 21300000, guid: 1646a952eae63e84baa9038bc851a79c, type: 3}
-  - {fileID: 21300000, guid: 9d1666e5c18864f47a4111dde7fc5bcb, type: 3}
-  - {fileID: 21300000, guid: 49fbcb63aa124fb4e8529cd6488386d1, type: 3}
-  - {fileID: 21300000, guid: ea006cbd9a4024f4198568211a6d19f9, type: 3}
+  - {fileID: 21300000, guid: 087dbe33227b72e4e9f83f97a3a6a1c6, type: 3}
+  - {fileID: 21300000, guid: 67618643bcaab774d88f73e9f5fb8dae, type: 3}
+  - {fileID: 21300000, guid: c47486ee974999541a03c290cc103e49, type: 3}
+  - {fileID: 21300000, guid: 8771dd3a9a87f0346a8d0d6f31826eea, type: 3}
+  - {fileID: 21300000, guid: 9cd5216d69352a249b2e2f8de26b3fd7, type: 3}
+  - {fileID: 21300000, guid: 5b0bc12d67ee48a4289bbf545b6df97e, type: 3}
+  - {fileID: 21300000, guid: 72e5c25d743c2d146ae3d32d9b728023, type: 3}
+  - {fileID: 21300000, guid: 5ff881fcbf256f3488d6a721648cc1de, type: 3}
+  - {fileID: 21300000, guid: 81d1598c93c839c459a7e75edd078390, type: 3}
+  - {fileID: 21300000, guid: a00d82dd45473d548a874a5022de42a3, type: 3}
   IdleRightFramesOffset: []
   BFMissedFrames: []
   BFMissedFramesOffset: []
@@ -81805,7 +81805,7 @@ MonoBehaviour:
   GFLookOpponentTwo: []
   GFLookOPTwoFramesOffset: []
   _gfSpriteRenderer: {fileID: 0}
-  AnimationFlickDelay: 0.1
+  AnimationFlickDelay: 0.07
   AnimationHoldTime: 0.1
 --- !u!212 &1576712473
 SpriteRenderer:
@@ -81848,12 +81848,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b91901902e92fb247bf84c7ffe52bf6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8882de44c64a181419503bacf78d2132, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7, y: 6.34}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
