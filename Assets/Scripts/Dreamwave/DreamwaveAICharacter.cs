@@ -2,7 +2,7 @@
 **                                         
 **  Dreamverse Character
 **
-**  Name    :   DreamverseCharacter.cs
+**  Name    :   DreamwaveAICharacter.cs
 **  Author  :   Lewis-Lee
 ** 
 ** 

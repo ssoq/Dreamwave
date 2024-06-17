@@ -4,9 +4,9 @@ using UnityEngine;
 
 /*****************************************************************************
 **                                         
-**  Dreamverse AI Communicator
+**  Dreamwave AI Communicator
 **
-**  Name    :   DreamverseAICommunicator.cs
+**  Name    :   DreamwaveAICommunicator.cs
 **  Author  :   Lewis-Lee
 ** 
 ** 
