@@ -22391,9 +22391,8 @@ MonoBehaviour:
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1409486087}
   _spriteRenderer: {fileID: 0}
-  _noteSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  _noteSpritesHeld: []
+  _noteSpritesReleased: []
 --- !u!1 &425065461
 GameObject:
   m_ObjectHideFlags: 0
@@ -22977,9 +22976,8 @@ MonoBehaviour:
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 2010483836}
   _spriteRenderer: {fileID: 0}
-  _noteSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  _noteSpritesHeld: []
+  _noteSpritesReleased: []
 --- !u!1 &438370278
 GameObject:
   m_ObjectHideFlags: 0
@@ -26040,9 +26038,8 @@ MonoBehaviour:
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1637422327}
   _spriteRenderer: {fileID: 0}
-  _noteSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  _noteSpritesHeld: []
+  _noteSpritesReleased: []
 --- !u!1 &519091548
 GameObject:
   m_ObjectHideFlags: 0
@@ -44861,7 +44858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typePlayerOne: 2
   _typePlayerTwo: 2
-  _typeNoteAsset: 2
+  _typeNoteAsset: 0
   _typeNoteParticleAsset: 2
   CustomNoteParticleName: CustomParticleDemo
   _particleSpriteWidth: 1080
@@ -49242,9 +49239,8 @@ MonoBehaviour:
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1322890721}
   _spriteRenderer: {fileID: 0}
-  _noteSprites:
-  - {fileID: 0}
-  - {fileID: 0}
+  _noteSpritesHeld: []
+  _noteSpritesReleased: []
 --- !u!1 &1064486386
 GameObject:
   m_ObjectHideFlags: 0

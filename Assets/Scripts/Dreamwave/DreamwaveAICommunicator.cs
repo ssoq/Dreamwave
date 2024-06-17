@@ -32,7 +32,8 @@ public class DreamwaveAICommunicator : MonoBehaviour
 
     [Header("Components")]
     [SerializeField] public SpriteRenderer _spriteRenderer;
-    [SerializeField] public Sprite[] _noteSprites;
+    [SerializeField] public List<Sprite> _noteSpritesHeld;
+    [SerializeField] public List<Sprite> _noteSpritesReleased;
 
     private void Awake()
     {
@@ -41,8 +42,8 @@ public class DreamwaveAICommunicator : MonoBehaviour
 
     private void Start()
     {
-        _noteSprites[0] = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
-        _noteSprites[1] = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
+        _noteSpritesHeld.Add(_noteController.noteSpritesDown[_noteController.noteSpritesDown.Count - 1]);
+        _noteSpritesReleased.Add(_noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1]);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -97,10 +98,22 @@ public class DreamwaveAICommunicator : MonoBehaviour
 
     private IEnumerator SimulateKey()
     {
-        _spriteRenderer.sprite = _noteSprites[1];
+        for (int i = 0; i < _noteSpritesHeld.Count; i++)
+        {
+            _spriteRenderer.sprite = _noteSpritesHeld[i];
+
+            if (i == _noteSpritesHeld.Count - 1) break;
+        }
 
         yield return new WaitForSecondsRealtime(0.1f);
 
-        _spriteRenderer.sprite = _noteSprites[0];
+        for (int i = 0; i < _noteSpritesReleased.Count; i++)
+        {
+            _spriteRenderer.sprite = _noteSpritesReleased[i];
+
+            if (i == _noteSpritesReleased.Count - 1) break;
+        }
+
+        yield break;
     }
 }
