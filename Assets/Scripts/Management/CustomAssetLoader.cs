@@ -73,6 +73,32 @@ public class CustomAssetLoader : MonoBehaviour
 
     #endregion
 
+    #region Player One Section
+
+    [Space(10)]
+    [Header("Player One Animation Settings")]
+    public string CustomPlayerOneFileName;
+    public int _playerOneSpriteWidth = 1080;
+    public int _playerOneSpriteHeight = 1080;
+    public float _playerOneRectX = 1f;
+    public float _playerOneRectY = 1f;
+    public bool _shouldFlipPlayerOneCustom = true;
+    [SerializeField] private DreamwaveCharacter _playerOneScript;
+
+    #endregion
+
+    #region Player Two Section - AI
+
+    [Space(10)]
+    [Header("Player Two Animation Settings")]
+    public string CustomAiPlayerTwoFileName;
+    public int _playerTwoAiSpriteWidth = 1080;
+    public int _playerTwoAiSpriteHeight = 1080;
+    public bool _shouldFlipPlayerTwoCustom = true;
+    [SerializeField] private DreamwaveAICharacter _playerTwoAiScript;
+
+    #endregion
+
     private void Awake()
     {
         GatherNeededObjects();
@@ -147,12 +173,73 @@ public class CustomAssetLoader : MonoBehaviour
                 string filePathHeld = Path.Combine($"{Application.streamingAssetsPath}/{CustomNoteHeldFileLocation}/Held Sprites/");
                 string filePathReleased = Path.Combine($"{Application.streamingAssetsPath}/{CustomNoteFileLocation}/Release Sprites/");
 
-                _noteController.noteSpritesDown.AddRange(LoadSpritesFromPath(filePathHeld, _NoteWidth, _NoteHeight));
-                _noteController.noteSpritesRelease.AddRange(LoadSpritesFromPath(filePathReleased, _NoteWidth, _NoteHeight));
+                _noteController.noteSpritesDown.AddRange(LoadSpritesFromPath(filePathHeld, _NoteWidth, _NoteHeight, 0.5f, 0.5f));
+                _noteController.noteSpritesRelease.AddRange(LoadSpritesFromPath(filePathReleased, _NoteWidth, _NoteHeight, 0.5f, 0.5f));
                 
                 for (int i = 0; i < _noteSpriteRenderers.Count; i++)
                 {
                     _noteSpriteRenderers[i].sprite = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
+                }
+                break;
+        }
+
+        switch (_typePlayerOne)
+        {
+            case TypePlayerOne.Custom:
+                // Clear all animations and offsets
+                _playerOneScript.IdleAnimation.Clear();
+                _playerOneScript.IdleOffsets.Clear();
+
+                _playerOneScript.LeftAnimations.Clear();
+                _playerOneScript.LeftOffsets.Clear();
+                
+                _playerOneScript.DownAnimations.Clear();
+                _playerOneScript.DownOffsets.Clear();
+                
+                _playerOneScript.UpAnimations.Clear();
+                _playerOneScript.UpOffsets.Clear();
+                
+                _playerOneScript.RightAnimations.Clear();
+                _playerOneScript.RightOffsets.Clear();
+
+                if (_shouldFlipPlayerOneCustom) _playerOneScript.Renderer.flipX = true;
+                else _playerOneScript.Renderer.flipX = false;
+
+                // Define animation names
+                string[] animationNames = { "Idle", "Left", "Down", "Up", "Right" };
+
+                // Iterate over animation names
+                foreach (string animationName in animationNames)
+                {
+                    string animationPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneFileName}/{animationName}/");
+                    string offsetPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneFileName}/{animationName}/offsets.txt");
+
+                    var sprites = LoadSpritesFromPath(animationPath, _playerOneSpriteWidth, _playerOneSpriteHeight, _playerOneRectX, _playerOneRectY);
+                    var offsets = LoadSpriteOffsetsFromPath(offsetPath);
+
+                    switch (animationName)
+                    {
+                        case "Idle":
+                            _playerOneScript.IdleAnimation.AddRange(sprites);
+                            _playerOneScript.IdleOffsets.AddRange(offsets);
+                            break;
+                        case "Left":
+                            _playerOneScript.LeftAnimations.AddRange(sprites);
+                            _playerOneScript.LeftOffsets.AddRange(offsets);
+                            break;
+                        case "Down":
+                            _playerOneScript.DownAnimations.AddRange(sprites);
+                            _playerOneScript.DownOffsets.AddRange(offsets);
+                            break;
+                        case "Up":
+                            _playerOneScript.UpAnimations.AddRange(sprites);
+                            _playerOneScript.UpOffsets.AddRange(offsets);
+                            break;
+                        case "Right":
+                            _playerOneScript.RightAnimations.AddRange(sprites);
+                            _playerOneScript.RightOffsets.AddRange(offsets);
+                            break;
+                    }
                 }
                 break;
         }
@@ -180,9 +267,9 @@ public class CustomAssetLoader : MonoBehaviour
         }
     }
 
-    public List<Sprite> LoadSpritesFromPath(string filePath, int width, int height)
+    public List<Sprite> LoadSpritesFromPath(string filePath, int width, int height, float rectX, float rectY)
     {
-        List<Sprite> sprites = new List<Sprite>();
+        List<Sprite> sprites = new();
 
         if (Directory.Exists(filePath))
         {
@@ -200,7 +287,7 @@ public class CustomAssetLoader : MonoBehaviour
                     if (texture.LoadImage(fileData))
                     {
                         // Convert the Texture2D to a Sprite
-                        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+                        Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(rectX, rectY));
 
                         // Add the Sprite to the list
                         sprites.Add(sprite);
@@ -214,5 +301,42 @@ public class CustomAssetLoader : MonoBehaviour
         }
 
         return sprites;
+    }
+
+    public List<Vector2> LoadSpriteOffsetsFromPath(string filePath)
+    {
+        List<Vector2> offsets = new();
+
+        if (File.Exists(filePath))
+        {
+            // Read all lines from the offsets.txt file
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                // Split the line by comma to get x and y values
+                string[] values = line.Split(',');
+
+                if (values.Length == 2 &&
+                    float.TryParse(values[0].Trim(), out float x) &&
+                    float.TryParse(values[1].Trim(), out float y))
+                {
+                    // Create a new Vector2 with the parsed x and y values
+                    Vector2 offset = new Vector2(x, y);
+                    // Add the Vector2 to the list of offsets
+                    offsets.Add(offset);
+                }
+                else
+                {
+                    Debug.LogWarning("Invalid line in file: " + filePath + " Line: " + line);
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("File does not exist: " + filePath);
+        }
+
+        return offsets;
     }
 }

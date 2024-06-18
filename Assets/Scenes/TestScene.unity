@@ -19760,7 +19760,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Accuracy: 100%'
+  m_text: 'Accuracy: 100.00%'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc1992457b5dc764587847ddf57c503e, type: 2}
   m_sharedMaterial: {fileID: -2245736175916561741, guid: dc1992457b5dc764587847ddf57c503e,
@@ -44856,7 +44856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42ff566cafdeaf4a99eac30420afb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typePlayerOne: 2
+  _typePlayerOne: 0
   _typePlayerTwo: 2
   _typeNoteAsset: 2
   _typeNoteParticleAsset: 2
@@ -44871,6 +44871,18 @@ MonoBehaviour:
   _noteColors: []
   _noteSpriteRenderers: []
   _noteController: {fileID: 1524813484}
+  CustomPlayerOneFileName: Characters\Example Character
+  _playerOneSpriteWidth: 1080
+  _playerOneSpriteHeight: 1080
+  _playerOneRectX: 0.5
+  _playerOneRectY: 0.67
+  _shouldFlipPlayerOneCustom: 0
+  _playerOneScript: {fileID: 1895532699}
+  CustomAiPlayerTwoFileName: 
+  _playerTwoAiSpriteWidth: 1080
+  _playerTwoAiSpriteHeight: 1080
+  _shouldFlipPlayerTwoCustom: 1
+  _playerTwoAiScript: {fileID: 0}
 --- !u!114 &942200543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94863,7 +94875,7 @@ MonoBehaviour:
   IsCustom: 0
   _isSinging: 0
   _canAnimate: 1
-  Renderer: {fileID: 0}
+  Renderer: {fileID: 1895532698}
   AnimationSpeed: 0.1
   SingAnimationHold: 0.05
   LeftAnimations:

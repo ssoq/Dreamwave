@@ -38,21 +38,6 @@ public class DreamwaveCharacter : MonoBehaviour
     public List<Sprite> RightAnimations = new(); public List<Vector2> RightOffsets = new();
     public List<Sprite> IdleAnimation = new(); public List<Vector2> IdleOffsets = new();
 
-    private void Awake()
-    {
-        Renderer = GetComponent<SpriteRenderer>();
-
-        if (!IsCustom) return;
-
-        // will load custom frames for custom characters later on
-        LoadCharacterSheetsFromFiles();
-    }
-
-    private void LoadCharacterSheetsFromFiles()
-    {
-        // soon
-    }
-
     private void OnEnable()
     {
         TempoManager.OnStep += PlayStillAnimation;
