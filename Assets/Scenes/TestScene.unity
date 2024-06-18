@@ -44875,7 +44875,7 @@ MonoBehaviour:
   _playerOneSpriteWidth: 1080
   _playerOneSpriteHeight: 1080
   _playerOneRectX: 0.5
-  _playerOneRectY: 0.67
+  _playerOneRectY: 0.69
   _shouldFlipPlayerOneCustom: 0
   _playerOneScript: {fileID: 1895532699}
   CustomAiPlayerTwoFileName: 

@@ -241,6 +241,10 @@ public class CustomAssetLoader : MonoBehaviour
                             break;
                     }
                 }
+
+                _playerOneScript.Renderer.sprite = _playerOneScript.IdleAnimation[0];
+                _playerOneScript.Renderer.transform.localPosition = _playerOneScript.IdleOffsets[0];
+
                 break;
         }
     }
