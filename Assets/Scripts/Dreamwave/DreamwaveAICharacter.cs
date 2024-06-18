@@ -77,12 +77,18 @@ public class DreamwaveAICharacter : MonoBehaviour
             switch (step)
             {
                 case 2:
-                    StopCoroutine("StillAnimation");
-                    StartCoroutine("StillAnimation");
+                    if (!_isSinging)
+                    {
+                        StopCoroutine("StillAnimation");
+                        StartCoroutine("StillAnimation");
+                    }
                     break;
                 case 4:
-                    StopCoroutine("StillAnimation");
-                    StartCoroutine("StillAnimation");
+                    if (!_isSinging)
+                    {
+                        StopCoroutine("StillAnimation");
+                        StartCoroutine("StillAnimation");
+                    }
                     break;
             }
         }

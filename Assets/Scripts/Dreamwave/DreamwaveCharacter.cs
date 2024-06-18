@@ -70,49 +70,52 @@ public class DreamwaveCharacter : MonoBehaviour
     private void InputStates()
     {
         if (!_canAnimate) return;
+        if (!GameManager.Instance.canSongStart) return;
 
         if (Input.GetKeyDown(GameManager.Instance.left))
         {
             StopAllCoroutines();
+            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Left"));
         }
         else if (Input.GetKeyDown(GameManager.Instance.down))
         {
             StopAllCoroutines();
+            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Down"));
         }
         else if (Input.GetKeyDown(GameManager.Instance.up))
         {
             StopAllCoroutines();
+            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Up"));
         }
         else if (Input.GetKeyDown(GameManager.Instance.right))
         {
             StopAllCoroutines();
+            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Right"));
         }
     }
 
-    private void AnimationStates()
-    {
-        // needed this for something but forgot - should have written this shit down MANNNNN
-    }
-
     private void PlayStillAnimation(int step)
     {
-        if (!_isSinging)
+        switch (step)
         {
-            switch (step)
-            {
-                case 2:
+            case 2:
+                if (!_isSinging)
+                {
                     StopCoroutine("StillAnimation");
                     StartCoroutine("StillAnimation");
-                    break;
-                case 4:
+                }
+                break;
+            case 4:
+                if (!_isSinging)
+                {
                     StopCoroutine("StillAnimation");
                     StartCoroutine("StillAnimation");
-                    break;
-            }
+                }
+                break;
         }
     }
 
