@@ -94,7 +94,9 @@ public class CustomAssetLoader : MonoBehaviour
     public string CustomAiPlayerTwoFileName;
     public int _playerTwoAiSpriteWidth = 1080;
     public int _playerTwoAiSpriteHeight = 1080;
-    public bool _shouldFlipPlayerTwoCustom = true;
+    public float _playerTwoRectX = 0.5f;
+    public float _playerTwoRectY = 0.5f;
+    public bool _shouldFlipPlayerTwoCustom = false;
     [SerializeField] private DreamwaveAICharacter _playerTwoAiScript;
 
     #endregion
@@ -175,7 +177,7 @@ public class CustomAssetLoader : MonoBehaviour
 
                 _noteController.noteSpritesDown.AddRange(LoadSpritesFromPath(filePathHeld, _NoteWidth, _NoteHeight, 0.5f, 0.5f));
                 _noteController.noteSpritesRelease.AddRange(LoadSpritesFromPath(filePathReleased, _NoteWidth, _NoteHeight, 0.5f, 0.5f));
-                
+
                 for (int i = 0; i < _noteSpriteRenderers.Count; i++)
                 {
                     _noteSpriteRenderers[i].sprite = _noteController.noteSpritesRelease[_noteController.noteSpritesRelease.Count - 1];
@@ -192,13 +194,13 @@ public class CustomAssetLoader : MonoBehaviour
 
                 _playerOneScript.LeftAnimations.Clear();
                 _playerOneScript.LeftOffsets.Clear();
-                
+
                 _playerOneScript.DownAnimations.Clear();
                 _playerOneScript.DownOffsets.Clear();
-                
+
                 _playerOneScript.UpAnimations.Clear();
                 _playerOneScript.UpOffsets.Clear();
-                
+
                 _playerOneScript.RightAnimations.Clear();
                 _playerOneScript.RightOffsets.Clear();
 
@@ -247,6 +249,71 @@ public class CustomAssetLoader : MonoBehaviour
 
                 break;
         }
+
+        switch (_typePlayerTwo)
+        {
+            case TypePlayerTwo.Custom:
+                // Clear all animations and offsets
+                _playerTwoAiScript.IdleAnimation.Clear();
+                _playerTwoAiScript.IdleOffsets.Clear();
+
+                _playerTwoAiScript.LeftAnimations.Clear();
+                _playerTwoAiScript.LeftOffsets.Clear();
+
+                _playerTwoAiScript.DownAnimations.Clear();
+                _playerTwoAiScript.DownOffsets.Clear();
+
+                _playerTwoAiScript.UpAnimations.Clear();
+                _playerTwoAiScript.UpOffsets.Clear();
+
+                _playerTwoAiScript.RightAnimations.Clear();
+                _playerTwoAiScript.RightOffsets.Clear();
+
+                if (_shouldFlipPlayerTwoCustom) _playerTwoAiScript.Renderer.flipX = true;
+                else _playerTwoAiScript.Renderer.flipX = false;
+
+                // Define animation names
+                string[] animationNames = { "Idle", "Left", "Down", "Up", "Right" };
+
+                // Iterate over animation names
+                foreach (string animationName in animationNames)
+                {
+                    string animationPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomAiPlayerTwoFileName}/{animationName}/");
+                    string offsetPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomAiPlayerTwoFileName}/{animationName}/offsets.txt");
+
+                    var sprites = LoadSpritesFromPath(animationPath, _playerTwoAiSpriteWidth, _playerTwoAiSpriteHeight, _playerTwoRectX, _playerTwoRectY);
+                    var offsets = LoadSpriteOffsetsFromPath(offsetPath);
+
+                    switch (animationName)
+                    {
+                        case "Idle":
+                            _playerTwoAiScript.IdleAnimation.AddRange(sprites);
+                            _playerTwoAiScript.IdleOffsets.AddRange(offsets);
+                            break;
+                        case "Left":
+                            _playerTwoAiScript.LeftAnimations.AddRange(sprites);
+                            _playerTwoAiScript.LeftOffsets.AddRange(offsets);
+                            break;
+                        case "Down":
+                            _playerTwoAiScript.DownAnimations.AddRange(sprites);
+                            _playerTwoAiScript.DownOffsets.AddRange(offsets);
+                            break;
+                        case "Up":
+                            _playerTwoAiScript.UpAnimations.AddRange(sprites);
+                            _playerTwoAiScript.UpOffsets.AddRange(offsets);
+                            break;
+                        case "Right":
+                            _playerTwoAiScript.RightAnimations.AddRange(sprites);
+                            _playerTwoAiScript.RightOffsets.AddRange(offsets);
+                            break;
+                    }
+                }
+
+                _playerTwoAiScript.Renderer.sprite = _playerTwoAiScript.IdleAnimation[0];
+                _playerTwoAiScript.Renderer.transform.localPosition = _playerTwoAiScript.IdleOffsets[0];
+
+                break;
+        }
     }
 
     public Sprite LoadStreamedSprite(string filepath, string fileName, int width, int height)
@@ -257,7 +324,7 @@ public class CustomAssetLoader : MonoBehaviour
         {
             byte[] fileData = File.ReadAllBytes(filePath);
 
-            Texture2D texture = new (width, height, TextureFormat.ARGB32, false);
+            Texture2D texture = new(width, height, TextureFormat.ARGB32, false);
             texture.LoadImage(fileData);
 
             Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
@@ -343,4 +410,4 @@ public class CustomAssetLoader : MonoBehaviour
 
         return offsets;
     }
-}
+} 

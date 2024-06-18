@@ -75,25 +75,21 @@ public class DreamwaveCharacter : MonoBehaviour
         if (Input.GetKeyDown(GameManager.Instance.left))
         {
             StopAllCoroutines();
-            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Left"));
         }
         else if (Input.GetKeyDown(GameManager.Instance.down))
         {
             StopAllCoroutines();
-            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Down"));
         }
         else if (Input.GetKeyDown(GameManager.Instance.up))
         {
             StopAllCoroutines();
-            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Up"));
         }
         else if (Input.GetKeyDown(GameManager.Instance.right))
         {
             StopAllCoroutines();
-            StopCoroutine("StillAnimation");
             StartCoroutine(SingAnimation("Right"));
         }
     }
