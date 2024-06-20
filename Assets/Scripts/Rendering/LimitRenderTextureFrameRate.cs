@@ -21,7 +21,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 [RequireComponent(typeof(Camera))]
 
@@ -32,35 +31,41 @@ public class LimitRenderTextureFrameRate : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private float FPS = 5f;
+    [SerializeField] private float _fps;
 
     private void Start()
     {
-        FPS = Settings.instance.localFfps;
-        InvokeRepeating("Render", 0f, 1f / FPS);
+        FPS = PlayerPrefs.GetFloat("ffps");
+        _fps = 1f / FPS;
+        StartCoroutine("Render");
     }
 
     void OnEnable()
     {
-        RenderPipelineManager.endCameraRendering += RenderPipelineManager_endCameraRendering;
+        PauseMenu.Pause += OnPause;
     }
 
     void OnDisable()
     {
-        RenderPipelineManager.endCameraRendering -= RenderPipelineManager_endCameraRendering;
+        PauseMenu.Pause -= OnPause;
     }
 
-    private void Render()
+    private IEnumerator Render()
     {
-        _camera.enabled = true;
+        while (true)
+        {
+            yield return new WaitForSecondsRealtime(_fps);
+
+            _camera.enabled = true;
+            yield return new WaitForEndOfFrame(); // Wait until the end of the frame to ensure rendering is completed
+
+            _camera.enabled = false;
+        }
     }
 
-    private void RenderPipelineManager_endCameraRendering(ScriptableRenderContext context, Camera camera)
+    private void OnPause(bool paused)
     {
-        OnPostRender();
-    }
-
-    private void OnPostRender()
-    {
-        _camera.enabled = false;
+        FPS = PlayerPrefs.GetFloat("ffps");
+        _fps = 1f / FPS;
     }
 }

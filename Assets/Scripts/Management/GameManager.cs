@@ -186,7 +186,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         fpsText.text = "Fps - " + (1.0f / Time.unscaledDeltaTime).ToString("F0");
-        ffpsText.text = "FFps - " + (1.0f / Time.fixedDeltaTime).ToString("F0");
+        ffpsText.text = "FFps - " + PlayerPrefs.GetFloat("ffps").ToString("F0");
 
         if (PauseMenu.instance._isPaused) return;
         AnimateBackground();

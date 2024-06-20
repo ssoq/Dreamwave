@@ -32,7 +32,7 @@ public class DreamwaveUserSetup : MonoBehaviour
     private void SetPlayerFps()
     {
         Application.targetFrameRate = PlayerPrefs.GetInt("fps");
-        Time.fixedDeltaTime = (1.0f / PlayerPrefs.GetFloat("ffps"));
+        //Time.fixedDeltaTime = (1.0f / PlayerPrefs.GetFloat("ffps")); - I used to use Fixed time for chart scrolling
     }
 
     private void CheckPlayerNoteRenderPreferences()

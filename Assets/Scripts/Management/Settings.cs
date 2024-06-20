@@ -228,15 +228,15 @@ public class Settings : MonoBehaviour
         if (Input.GetKeyDown(navLeft))
         {
             if (localFfps > 30) localFfps -= 10;
-            Time.fixedDeltaTime = (1 / localFfps);
+            //Time.fixedDeltaTime = (1 / localFfps); - I used to use Fixed time for chart scrolling
             settingsTextAssets[1].text = localFfps.ToString("F0");
             PlayerPrefs.SetFloat("ffps", localFfps);
             PlayerPrefs.Save();
         }
         else if (Input.GetKeyDown(navRight))
         {
-            if (localFfps < 120) localFfps += 10;
-            Time.fixedDeltaTime = (1 / localFfps);
+            if (localFfps < 240) localFfps += 10;
+            //Time.fixedDeltaTime = (1 / localFfps); - I used to use Fixed time for chart scrolling
             settingsTextAssets[1].text = localFfps.ToString("F0");
             PlayerPrefs.SetFloat("ffps", localFfps);
             PlayerPrefs.Save();

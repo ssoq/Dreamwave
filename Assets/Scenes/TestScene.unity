@@ -19981,6 +19981,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 382014978}
   FPS: 120
+  _fps: 0
 --- !u!1 &382157936
 GameObject:
   m_ObjectHideFlags: 0
@@ -36935,6 +36936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 782217032}
   FPS: 120
+  _fps: 0
 --- !u!114 &782217031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54169,7 +54171,7 @@ Camera:
   m_AllowMSAA: 1
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
+  m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!114 &1195969950
@@ -54186,6 +54188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _camera: {fileID: 1195969949}
   FPS: 120
+  _fps: 0
 --- !u!1 &1199824497
 GameObject:
   m_ObjectHideFlags: 0
