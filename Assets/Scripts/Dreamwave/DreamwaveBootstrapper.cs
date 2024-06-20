@@ -78,6 +78,22 @@ public class DreamwaveBootstrapper : MonoBehaviour
                 else _discordRpc.SetActive(false);
                 break;
         }
+
+        if (string.IsNullOrEmpty(PlayerPrefs.GetString("firstTime")))
+        {
+            PlayerPrefs.SetInt("fps", 120);
+            PlayerPrefs.SetFloat("ffps", 120);
+            PlayerPrefs.SetInt("quality", 0);
+            PlayerPrefs.SetString("chartPos", "upScroll");
+            PlayerPrefs.SetInt("opponentEnabled", 1);
+            PlayerPrefs.SetInt("ghostTapping", 1);
+            PlayerPrefs.SetInt("freeAnimate", 0);
+            PlayerPrefs.SetInt("incomingNoteWarning", 1);
+            PlayerPrefs.SetInt("autoPause", 0);
+            PlayerPrefs.SetInt("noteSplashes", 1);
+
+            PlayerPrefs.SetString("firstTime", "False");
+        }
     }
 
     private IEnumerator InitEngineBuildType()
