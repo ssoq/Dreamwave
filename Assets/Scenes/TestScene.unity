@@ -44881,6 +44881,8 @@ MonoBehaviour:
   CustomAiPlayerTwoFileName: 
   _playerTwoAiSpriteWidth: 1080
   _playerTwoAiSpriteHeight: 1080
+  _playerTwoRectX: 0.5
+  _playerTwoRectY: 0.5
   _shouldFlipPlayerTwoCustom: 1
   _playerTwoAiScript: {fileID: 0}
 --- !u!114 &942200543
@@ -90679,7 +90681,7 @@ GameObject:
   - component: {fileID: 1824844391}
   - component: {fileID: 1824844390}
   m_Layer: 0
-  m_Name: Fanfare Audio
+  m_Name: Countdown Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94914,6 +94916,11 @@ MonoBehaviour:
   - {x: 0.03, y: 0.66}
   - {x: 0.03, y: 0.72}
   - {x: 0.05, y: 0.66}
+  _noteHitboxes:
+  - {fileID: 1024807880}
+  - {fileID: 468820207}
+  - {fileID: 868015678}
+  - {fileID: 229887436}
 --- !u!1 &1899349705
 GameObject:
   m_ObjectHideFlags: 0

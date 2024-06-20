@@ -221,6 +221,7 @@ public class GameManager : MonoBehaviour
                 var shit = Instantiate(ratings[4], ratings[3].transform.position, Quaternion.identity);
                 shit.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
                 shit.transform.SetParent(canvas.transform);
+                shit.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 combo = 0;
                 misses++;
                 comboText.text = "Combo: " + combo.ToString();
@@ -233,6 +234,7 @@ public class GameManager : MonoBehaviour
                 var bad = Instantiate(ratings[3], ratings[2].transform.position, Quaternion.identity);
                 bad.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
                 bad.transform.SetParent(canvas.transform);
+                bad.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 combo = 0;
                 misses++;
                 bads++;
@@ -245,6 +247,7 @@ public class GameManager : MonoBehaviour
                 var good = Instantiate(ratings[2], ratings[1].transform.position, Quaternion.identity);
                 good.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
                 good.transform.SetParent(canvas.transform);
+                good.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 combo++;
                 cools++;
                 totalNotesHitCorrect++;
@@ -256,6 +259,7 @@ public class GameManager : MonoBehaviour
                 var sick = Instantiate(ratings[1], ratings[0].transform.position, Quaternion.identity);
                 sick.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
                 sick.transform.SetParent(canvas.transform);
+                sick.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 combo++;
                 sicks++;
                 totalNotesHitCorrect++;
@@ -267,6 +271,7 @@ public class GameManager : MonoBehaviour
                 var dreamy = Instantiate(ratings[0], ratings[0].transform.position, Quaternion.identity);
                 dreamy.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
                 dreamy.transform.SetParent(canvas.transform);
+                dreamy.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 combo++;
                 dreamys++;
                 totalNotesHitCorrect++;

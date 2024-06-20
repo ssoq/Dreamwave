@@ -38,6 +38,9 @@ public class DreamwaveCharacter : MonoBehaviour
     public List<Sprite> RightAnimations = new(); public List<Vector2> RightOffsets = new();
     public List<Sprite> IdleAnimation = new(); public List<Vector2> IdleOffsets = new();
 
+    [Header("Components")]
+    [SerializeField] private NoteHitbox[] _noteHitboxes;
+
     private void OnEnable()
     {
         TempoManager.OnStep += PlayStillAnimation;
@@ -64,33 +67,76 @@ public class DreamwaveCharacter : MonoBehaviour
     private void Update()
     {
         InputStates();
-        //AnimationStates();
     }
 
+    private int l = 0;
+    private int d = 0;
+    private int u = 0;
+    private int r = 0;
     private void InputStates()
     {
         if (!_canAnimate) return;
         if (!GameManager.Instance.canSongStart) return;
 
+        if (!GameManager.Instance.canFreeAnimate)
+        {
+            l = _noteHitboxes[0].notesWithinHitBox.Count;
+            d = _noteHitboxes[1].notesWithinHitBox.Count;
+            u = _noteHitboxes[2].notesWithinHitBox.Count;
+            r = _noteHitboxes[3].notesWithinHitBox.Count;
+        }
+
         if (Input.GetKeyDown(GameManager.Instance.left))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Left"));
+
+            if (GameManager.Instance.canFreeAnimate) return;
+            
+            if (l > 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(SingAnimation("Left"));
+            }
         }
         else if (Input.GetKeyDown(GameManager.Instance.down))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Down"));
+
+            if (GameManager.Instance.canFreeAnimate) return;
+
+            if (d > 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(SingAnimation("Down"));
+            }
         }
         else if (Input.GetKeyDown(GameManager.Instance.up))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Up"));
+
+            if (GameManager.Instance.canFreeAnimate) return;
+
+            if (u > 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(SingAnimation("Up"));
+            }
         }
         else if (Input.GetKeyDown(GameManager.Instance.right))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Right"));
+
+            if (GameManager.Instance.canFreeAnimate) return;
+
+            if (r > 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(SingAnimation("Right"));
+            }
         }
     }
 

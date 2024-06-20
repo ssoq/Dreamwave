@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
-public enum Side 
+public enum Side
 {
     Left,
     Down,
@@ -19,8 +19,8 @@ public class NoteHitbox : MonoBehaviour
     public GameObject centre;
     public float delayInMs;
     public float[] ratingThresholds;
-    public delegate void HitNote(string scoreType, float msDelay, float noteDistance);
-    public static event HitNote NoteHit;
+    public delegate void HitNoteHandler(string scoreType, float msDelay, float noteDistance);
+    public static event HitNoteHandler NoteHit;
     public KeyCode keyForSide;
     public string buttonForSide;
     public GameObject NoteHitParticle;
@@ -29,22 +29,18 @@ public class NoteHitbox : MonoBehaviour
 
     private void Start()
     {
-        switch (side) 
+        switch (side)
         {
             case Side.Left:
-                //keyForSide = GameManager.Instance.left;
                 buttonForSide = "Left";
                 break;
             case Side.Down:
-                //keyForSide = GameManager.Instance.down;
                 buttonForSide = "Down";
                 break;
             case Side.Up:
-                //keyForSide = GameManager.Instance.up;
                 buttonForSide = "Up";
                 break;
             case Side.Right:
-                //keyForSide = GameManager.Instance.right;
                 buttonForSide = "Right";
                 break;
         }
@@ -59,134 +55,126 @@ public class NoteHitbox : MonoBehaviour
 
     private void NoteInput()
     {
-        if (PauseMenu.instance._isPaused) return;
-        if (notesWithinHitBox.Count <= 0) return;
+        if (PauseMenu.instance != null && PauseMenu.instance._isPaused) return;
+        if (notesWithinHitBox.Count <= 0 || centre == null || ratingThresholds == null || ratingThresholds.Length < 5) return;
 
-        var fn = notesWithinHitBox[0].gameObject;
+        var fn = notesWithinHitBox[0];
+        if (fn == null) return;
+
         var dist = Vector2.Distance(centre.transform.position, fn.transform.position);
 
-        if (Input.GetKeyDown(keyForSide) | MobileControls.instance.GetButtonsPressed(buttonForSide))
+        if (Input.GetKeyDown(keyForSide) || (MobileControls.instance != null && MobileControls.instance.GetButtonsPressed(buttonForSide)))
         {
             stopwatch.Stop();
             delayInMs = (float)stopwatch.Elapsed.TotalMilliseconds;
 
-            if (dist >= ratingThresholds[4])
-            {
-                NoteHit("Shit", delayInMs, dist);
-            }
-            else if (dist >= ratingThresholds[3])
-            {
-                NoteHit("Bad", delayInMs, dist);
-            }
-            else if (dist >= ratingThresholds[2])
-            {
-                NoteHit("Cool", delayInMs, dist);
+            string scoreType = DetermineScoreType(dist);
+            if (NoteHit != null)
+                NoteHit(scoreType, delayInMs, dist);
 
-                if (GameManager.Instance.shouldDrawNoteSplashes)
-                {
-                    var nhc = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
-                    nhc.SetActive(true);
-                }
-            }
-            else if (dist >= ratingThresholds[1])
-            {
-                NoteHit("Sick", delayInMs, dist);
-
-                if (GameManager.Instance.shouldDrawNoteSplashes)
-                {
-                    var nhs = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
-                    nhs.SetActive(true);
-                }
-            }
-            else if (dist >= ratingThresholds[0])
-            {
-                NoteHit("Dreamy", delayInMs, dist);
-
-                if (GameManager.Instance.shouldDrawNoteSplashes)
-                {
-                    var nhd = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
-                    nhd.SetActive(true);
-                }
-            }
-            else if (dist <= ratingThresholds[0])
-            {
-                NoteHit("Shit", delayInMs, dist);
-            }
+            CreateNoteHitParticle(scoreType);
 
             stopwatch.Reset();
-            
+
             if (fn.CompareTag("Note"))
             {
                 fn.SetActive(false);
             }
             else if (fn.CompareTag("Note Hold Parent"))
             {
-                fn.GetComponent<SpriteRenderer>().enabled = false;
+                var spriteRenderer = fn.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                    spriteRenderer.enabled = false;
             }
+        }
+    }
+
+    private string DetermineScoreType(float distance)
+    {
+        if (distance >= ratingThresholds[4])
+            return "Shit";
+        if (distance >= ratingThresholds[3])
+            return "Bad";
+        if (distance >= ratingThresholds[2])
+            return "Cool";
+        if (distance >= ratingThresholds[1])
+            return "Sick";
+        return distance >= ratingThresholds[0] ? "Dreamy" : "Shit";
+    }
+
+    private void CreateNoteHitParticle(string scoreType)
+    {
+        if (GameManager.Instance != null && GameManager.Instance.shouldDrawNoteSplashes && NoteHitParticle != null)
+        {
+            var nh = Instantiate(NoteHitParticle, NoteHitParticle.transform.position, Quaternion.identity);
+            nh.SetActive(true);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Note"))
+        if (collision == null || collision.gameObject == null) return;
+
+        if (collision.gameObject.CompareTag("Note") || collision.gameObject.CompareTag("Note Hold Parent") || collision.gameObject.CompareTag("Note Hold"))
         {
             notesWithinHitBox.Add(collision.gameObject);
             stopwatch.Restart();
         }
 
-        if (collision.gameObject.CompareTag("Note Hold Parent"))
+        if (collision.gameObject.CompareTag("Note Hold") && Input.GetKey(keyForSide))
         {
-            notesWithinHitBox.Add(collision.gameObject);
-            stopwatch.Restart();
-        }
-
-        if (collision.gameObject.CompareTag("Note Hold"))
-        {
-            notesWithinHitBox.Add(collision.gameObject);
-            stopwatch.Restart();
-        }
-
-        if (collision.gameObject.CompareTag("Note Hold"))
-        {
-            if (Input.GetKey(keyForSide))
-            {
-                NoteHit("Dreamy", delayInMs, 0);
-                //collision.gameObject.transform.gameObject.SetActive(false);
-            }
+            NoteHit?.Invoke("Dreamy", delayInMs, 0);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if (collision == null || collision.gameObject == null) return;
+
         if (collision.gameObject.CompareTag("Note"))
         {
-            if (!Input.GetKeyDown(keyForSide))
-            {
-                if (collision.gameObject != null) NoteHit("Shit", delayInMs, 2);
-            }
-
-            notesWithinHitBox.Remove(collision.gameObject);
+            HandleNoteExit(collision);
         }
-
-        if (collision.gameObject.CompareTag("Note Hold Parent"))
+        else if (collision.gameObject.CompareTag("Note Hold Parent"))
         {
-            if (!Input.GetKey(keyForSide))
-            {
-                if (collision.gameObject != null) NoteHit("Shit", delayInMs, 2);
-            }
-
-            notesWithinHitBox.Remove(collision.gameObject);
-            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            HandleNoteHoldParentExit(collision);
         }
-
-        if (collision.gameObject.CompareTag("Note Hold"))
+        else if (collision.gameObject.CompareTag("Note Hold"))
         {
-            if (!Input.GetKey(keyForSide))
-            {
-                if (collision.gameObject != null) NoteHit("Shit", delayInMs, 2);
-            }
-
-            notesWithinHitBox.Remove(collision.gameObject);
+            HandleNoteHoldExit(collision);
         }
+    }
+
+    private void HandleNoteExit(Collider2D collision)
+    {
+        if (!Input.GetKeyDown(keyForSide))
+        {
+            NoteHit?.Invoke("Shit", delayInMs, 2);
+        }
+
+        notesWithinHitBox.Remove(collision.gameObject);
+    }
+
+    private void HandleNoteHoldParentExit(Collider2D collision)
+    {
+        if (!Input.GetKey(keyForSide))
+        {
+            NoteHit?.Invoke("Shit", delayInMs, 2);
+        }
+
+        notesWithinHitBox.Remove(collision.gameObject);
+        var spriteRenderer = collision.gameObject.GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = false;
+    }
+
+    private void HandleNoteHoldExit(Collider2D collision)
+    {
+        if (!Input.GetKey(keyForSide))
+        {
+            NoteHit?.Invoke("Shit", delayInMs, 2);
+        }
+
+        notesWithinHitBox.Remove(collision.gameObject);
     }
 }

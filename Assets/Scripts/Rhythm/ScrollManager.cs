@@ -26,18 +26,19 @@ public class ScrollManager : MonoBehaviour
         PauseMenu.Pause -= OnPause;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (tempoManager != null && GameManager.Instance.start && CanScroll && GameManager.Instance.canSongStart)
         {
             float scrollSpeed = tempoManager.beatsPerMinute * scrollSpeedMultiplier;
 
-            transform.Translate(Vector3.up * Time.fixedDeltaTime * scrollSpeed, Space.World);
+            // Use Time.deltaTime for frame rate independent movement
+            transform.Translate(Vector3.up * Time.deltaTime * scrollSpeed, Space.World);
 
             int currentStep = GameManager.Instance.stepCount;
-            if (currentStep != previousStep && Vector3.Distance(transform.position, Vector3.up * currentStep) < snapThreshold)
+            if (currentStep != previousStep && Mathf.Abs(transform.position.y - currentStep) < snapThreshold)
             {
-                transform.position = Vector3.up * currentStep;
+                transform.position = new Vector3(transform.position.x, currentStep, transform.position.z);
                 previousStep = currentStep;
             }
         }
@@ -45,14 +46,6 @@ public class ScrollManager : MonoBehaviour
 
     private void OnPause(bool pausedState)
     {
-        switch (pausedState)
-        {
-            case true:
-                CanScroll = false;
-                break;
-            case false:
-                CanScroll = true;
-                break;
-        }
+        CanScroll = !pausedState;
     }
 }

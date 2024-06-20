@@ -75,7 +75,7 @@ public class DreamwaveUserSetup : MonoBehaviour
         var _pref = PlayerPrefs.GetInt("freeAnimate");
 
         if (_pref == 1) GameManager.Instance.canFreeAnimate = true;
-        else GameManager.Instance.canFreeAnimate = true;
+        else GameManager.Instance.canFreeAnimate = false;
     }
 
     private void EnableIncomingNoteWarning()
