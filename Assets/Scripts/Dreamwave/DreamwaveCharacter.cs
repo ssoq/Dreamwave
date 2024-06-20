@@ -38,24 +38,24 @@ public class DreamwaveCharacter : MonoBehaviour
     public List<Sprite> RightAnimations = new(); public List<Vector2> RightOffsets = new();
     public List<Sprite> IdleAnimation = new(); public List<Vector2> IdleOffsets = new();
 
-    [Header("Components")]
-    [SerializeField] private NoteHitbox[] _noteHitboxes;
-
     private void OnEnable()
     {
         TempoManager.OnStep += PlayStillAnimation;
         PauseMenu.Pause += OnPause;
+        NoteHitbox.NoteHit += OnNoteHit;
     }
 
     private void OnDisable()
     {
         TempoManager.OnStep -= PlayStillAnimation;
         PauseMenu.Pause -= OnPause;
+        NoteHitbox.NoteHit -= OnNoteHit;
     }
     private void OnDestroy()
     {
         TempoManager.OnStep -= PlayStillAnimation;
         PauseMenu.Pause -= OnPause;
+        NoteHitbox.NoteHit -= OnNoteHit;
     }
 
     private void OnPause(bool paused)
@@ -66,77 +66,69 @@ public class DreamwaveCharacter : MonoBehaviour
 
     private void Update()
     {
-        InputStates();
+        if (GameManager.Instance.canFreeAnimate) InputStates();
     }
 
-    private int l = 0;
-    private int d = 0;
-    private int u = 0;
-    private int r = 0;
     private void InputStates()
     {
         if (!_canAnimate) return;
         if (!GameManager.Instance.canSongStart) return;
-
-        if (!GameManager.Instance.canFreeAnimate)
-        {
-            l = _noteHitboxes[0].notesWithinHitBox.Count;
-            d = _noteHitboxes[1].notesWithinHitBox.Count;
-            u = _noteHitboxes[2].notesWithinHitBox.Count;
-            r = _noteHitboxes[3].notesWithinHitBox.Count;
-        }
+        if (!GameManager.Instance.canFreeAnimate) return;
 
         if (Input.GetKeyDown(GameManager.Instance.left))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Left"));
-
-            if (GameManager.Instance.canFreeAnimate) return;
-            
-            if (l > 0)
-            {
-                StopAllCoroutines();
-                StartCoroutine(SingAnimation("Left"));
-            }
         }
         else if (Input.GetKeyDown(GameManager.Instance.down))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Down"));
-
-            if (GameManager.Instance.canFreeAnimate) return;
-
-            if (d > 0)
-            {
-                StopAllCoroutines();
-                StartCoroutine(SingAnimation("Down"));
-            }
         }
         else if (Input.GetKeyDown(GameManager.Instance.up))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Up"));
-
-            if (GameManager.Instance.canFreeAnimate) return;
-
-            if (u > 0)
-            {
-                StopAllCoroutines();
-                StartCoroutine(SingAnimation("Up"));
-            }
         }
         else if (Input.GetKeyDown(GameManager.Instance.right))
         {
             StopAllCoroutines();
             StartCoroutine(SingAnimation("Right"));
+        }
+    }
 
-            if (GameManager.Instance.canFreeAnimate) return;
+    private void OnNoteHit(string scoreType, float msDelay, float noteDistance, string direction)
+    {
+        if (GameManager.Instance.canFreeAnimate) return;
 
-            if (r > 0)
-            {
-                StopAllCoroutines();
-                StartCoroutine(SingAnimation("Right"));
-            }
+        switch (scoreType)
+        {
+            case "Shit": // will handle miss sprites another time
+                break;
+            case "Miss":
+                break;
+            default:
+                if (direction == GameManager.Instance.left.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(SingAnimation("Left"));
+                }
+                else if (direction == GameManager.Instance.down.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(SingAnimation("Down"));
+                }
+                else if (direction == GameManager.Instance.up.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(SingAnimation("Up"));
+                }
+                else if (direction == GameManager.Instance.right.ToString())
+                {
+                    StopAllCoroutines();
+                    StartCoroutine(SingAnimation("Right"));
+                }
+                break;
         }
     }
 

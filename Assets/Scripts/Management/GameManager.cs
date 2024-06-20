@@ -211,7 +211,7 @@ public class GameManager : MonoBehaviour
         TempoManager.OnStep -= OnStepHandler;
     }
 
-    private void OnNoteHit(string newScore, float msDelay, float noteDistance)
+    private void OnNoteHit(string newScore, float msDelay, float noteDistance, string direction)
     {
         switch (newScore) 
         {
