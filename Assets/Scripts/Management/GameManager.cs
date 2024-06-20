@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 
 public enum Focus
@@ -235,8 +234,7 @@ public class GameManager : MonoBehaviour
                 bad.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
                 bad.transform.SetParent(canvas.transform);
                 bad.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
-                combo = 0;
-                misses++;
+                combo++;
                 bads++;
                 comboText.text = "Combo: " + combo.ToString();
                 missesText.text = "Misses: " + misses.ToString();
@@ -288,51 +286,57 @@ public class GameManager : MonoBehaviour
         //Debug.Log(score + " - " + newScore);
     }
 
-    public void CalculatePlayerRating() // PLEASE FIX SOON
+    public void CalculatePlayerRating() // PLEASE FIX SOON - FIXED IT MEOW MEOW!!! 20/06/2024
     {
-        if (misses == 0 && accuracy >= 100 && shits == 0 && bads == 0 && cools == 0 && sicks == 0)
+        if (misses == 0)
         {
-            _playerRating = Ratings.MFC;
+            if (shits == 0 && bads == 0 && cools == 0 && sicks == 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.MFC;
+            }
+            else if (shits == 0 && bads == 0 && cools == 0 && sicks > 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.PFC;
+            }
+            else if (shits == 0 && bads == 0 && cools > 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.GFC;
+            }
+            else if (shits == 0 && bads > 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.FC;
+            }
         }
-        else if (misses == 0 && accuracy >= 90 && shits == 0 && bads == 0 && cools == 0 && sicks >= 1)
+        else
         {
-            _playerRating = Ratings.PFC;
-        }
-        else if (misses == 0 && accuracy >= 90 && shits == 0 && bads == 0 && cools >= 1 && sicks >= 1)
-        {
-            _playerRating = Ratings.GFC;
-        }
-        else if (misses == 0 && accuracy >= 90 && shits == 0 && bads >= 1 && cools >= 1 && sicks >= 1)
-        {
-            _playerRating = Ratings.FC;
-        }
-        else if (misses >= 1 && misses <= 9 && accuracy >= 90 && shits >= 0 && bads >= 0 && cools >= 1 && sicks >= 1)
-        {
-            _playerRating = Ratings.SDCB;
-        }
-        else if (misses >= 10 && accuracy >= 90)
-        {
-            _playerRating = Ratings.S;
-        }
-        else if (misses >= 10 && accuracy >= 80 && accuracy <= 89)
-        {
-            _playerRating = Ratings.A;
-        }
-        else if (misses >= 10 && accuracy >= 70 && accuracy <= 79)
-        {
-            _playerRating = Ratings.B;
-        }
-        else if (misses >= 10 && accuracy >= 60 && accuracy <= 69)
-        {
-            _playerRating = Ratings.C;
-        }
-        else if (misses >= 10 && accuracy >= 50 && accuracy <= 59)
-        {
-            _playerRating = Ratings.D;
-        }
-        else if (misses >= 10 && accuracy >= 40 && accuracy <= 49) // Changed this line from accuracy <= 40 to accuracy >= 40
-        {
-            _playerRating = Ratings.F; // Fixed this line from F to FCB
+            if (misses <= 9 && accuracy >= -1 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.SDCB;
+            }
+            else if (misses >= 10 && accuracy >= 90 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.S;
+            }
+            else if (misses >= 10 && accuracy >= 80 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.A;
+            }
+            else if (misses >= 10 && accuracy >= 70 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.B;
+            }
+            else if (misses >= 10 && accuracy >= 60 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.C;
+            }
+            else if (misses >= 10 && accuracy >= 50 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.D;
+            }
+            else if (misses >= 10 && accuracy >= 40 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
+            {
+                _playerRating = Ratings.F;
+            }
         }
 
         ratingText.text = "Rating: " + _playerRating.ToString();
