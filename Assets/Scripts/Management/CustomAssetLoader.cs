@@ -107,6 +107,14 @@ public class CustomAssetLoader : MonoBehaviour
     public bool _shouldFlipPlayerTwoCustom = false;
     [SerializeField] private DreamwaveAICharacter _playerTwoAiScript;
 
+    [Space(5)]
+    public string CustomPlayerTwoIconFileName;
+    public int _playerTwoIconWidth = 1080;
+    public int _playerTwoIconHeight = 1080;
+    public float _playerTwoIconRectX = 1f;
+    public float _playerTwoIconRectY = 1f;
+    [SerializeField] private DreamwaveIcon _playerTwoIconScript;
+
     #endregion
 
     private void Awake()
@@ -271,7 +279,7 @@ public class CustomAssetLoader : MonoBehaviour
                     string animationPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneIconFileName}/{animationName}");
                     string offsetPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneIconFileName}/{animationName}/offsets.txt");
 
-                    var sprites = LoadSpritesFromPath(animationPath, _playerOneIconWidth, _playerOneIconHeight, _playerOneIconRectX, _playerTwoRectY);
+                    var sprites = LoadSpritesFromPath(animationPath, _playerOneIconWidth, _playerOneIconHeight, _playerOneIconRectX, _playerOneIconRectY);
                     var offsets = LoadSpriteOffsetsFromPath(offsetPath);
 
                     switch (animationName)
@@ -305,6 +313,8 @@ public class CustomAssetLoader : MonoBehaviour
         {
             case TypePlayerTwo.Custom:
                 // Clear all animations and offsets
+                #region Clearing Defualts
+
                 _playerTwoAiScript.IdleAnimation.Clear();
                 _playerTwoAiScript.IdleOffsets.Clear();
 
@@ -320,11 +330,26 @@ public class CustomAssetLoader : MonoBehaviour
                 _playerTwoAiScript.RightAnimations.Clear();
                 _playerTwoAiScript.RightOffsets.Clear();
 
+                _playerTwoIconScript._critical.Clear();
+                _playerTwoIconScript._criticalOffsets.Clear();
+
+                _playerTwoIconScript._losing.Clear();
+                _playerTwoIconScript._losingOffsets.Clear();
+
+                _playerTwoIconScript._neutral.Clear();
+                _playerTwoIconScript._neutralOffsets.Clear();
+
+                _playerTwoIconScript._winning.Clear();
+                _playerTwoIconScript._winningOffsets.Clear();
+
+                #endregion
+
                 if (_shouldFlipPlayerTwoCustom) _playerTwoAiScript.Renderer.flipX = true;
                 else _playerTwoAiScript.Renderer.flipX = false;
 
                 // Define animation names
                 string[] animationNames = { "Idle", "Left", "Down", "Up", "Right" };
+                string[] iconAnimationNames = { "Winning", "Neutral", "Losing", "Critical" };
 
                 // Iterate over animation names
                 foreach (string animationName in animationNames)
@@ -356,6 +381,36 @@ public class CustomAssetLoader : MonoBehaviour
                         case "Right":
                             _playerTwoAiScript.RightAnimations.AddRange(sprites);
                             _playerTwoAiScript.RightOffsets.AddRange(offsets);
+                            break;
+                    }
+                }
+
+                // load custom icon sprites and offsets for animations
+                foreach (string animationName in iconAnimationNames)
+                {
+                    string animationPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerTwoIconFileName}/{animationName}");
+                    string offsetPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerTwoIconFileName}/{animationName}/offsets.txt");
+
+                    var sprites = LoadSpritesFromPath(animationPath, _playerTwoIconWidth, _playerTwoIconHeight, _playerTwoIconRectX, _playerTwoRectY);
+                    var offsets = LoadSpriteOffsetsFromPath(offsetPath);
+
+                    switch (animationName)
+                    {
+                        case "Winning":
+                            _playerTwoIconScript._winning.AddRange(sprites);
+                            _playerTwoIconScript._winningOffsets.AddRange(offsets);
+                            break;
+                        case "Neutral":
+                            _playerTwoIconScript._neutral.AddRange(sprites);
+                            _playerTwoIconScript._neutralOffsets.AddRange(offsets);
+                            break;
+                        case "Losing":
+                            _playerTwoIconScript._losing.AddRange(sprites);
+                            _playerTwoIconScript._losingOffsets.AddRange(offsets);
+                            break;
+                        case "Critical":
+                            _playerTwoIconScript._critical.AddRange(sprites);
+                            _playerTwoIconScript._criticalOffsets.AddRange(offsets);
                             break;
                     }
                 }

@@ -60,53 +60,77 @@ public class DreamwaveIcon : MonoBehaviour
     {
         var health = GameManager.Instance.health;
 
-        switch (_whichSide)
+        if (WithinRange(health, 0, 20))
         {
-            case WhichSide.Left:
-                if (WithinRange(health, 80, 101))
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(IconAnimation("Critical"));
-                }
-                else if (WithinRange(health, 40, 80))
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(IconAnimation("Losing"));
-                }
-                else if (WithinRange(health, 20, 40))
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(IconAnimation("Neutral"));
-                }
-                else if (WithinRange(health, 0, 20))
-                {
+            switch (_whichSide)
+            {
+                case WhichSide.Left:
                     StopAllCoroutines();
                     StartCoroutine(IconAnimation("Winning"));
-                }
-                break;
-            case WhichSide.Right:
-                if (WithinRange(health, 0, 20))
-                {
+                    break;
+                case WhichSide.Right:
                     StopAllCoroutines();
                     StartCoroutine(IconAnimation("Critical"));
-                }
-                else if (WithinRange(health, 20, 40))
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(IconAnimation("Losing"));
-                }
-                else if (WithinRange(health, 40, 80))
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(IconAnimation("Neutral"));
-                }
-                else if (WithinRange(health, 80, 101))
-                {
-                    StopAllCoroutines();
-                    StartCoroutine(IconAnimation("Winning"));
-                }
-                break;
+                    break;
+            }
         }
+        else if (WithinRange(health, 20, 40))
+        {
+            switch (_whichSide)
+            {
+                case WhichSide.Left:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Neutral"));
+                    break;
+                case WhichSide.Right:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Losing"));
+                    break;
+            }
+        }
+        else if (WithinRange(health, 40, 60))
+        {
+            switch (_whichSide)
+            {
+                case WhichSide.Left:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Neutral"));
+                    break;
+                case WhichSide.Right:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Neutral"));
+                    break;
+            }
+        }
+        else if (WithinRange(health, 60, 80))
+        {
+            switch (_whichSide)
+            {
+                case WhichSide.Left:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Losing"));
+                    break;
+                case WhichSide.Right:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Neutral"));
+                    break;
+            }
+        }
+        else if (WithinRange(health, 80, 101))
+        {
+            switch (_whichSide)
+            {
+                case WhichSide.Left:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Critical"));
+                    break;
+                case WhichSide.Right:
+                    StopAllCoroutines();
+                    StartCoroutine(IconAnimation("Winning"));
+                    break;
+            }
+        }
+
     }
 
     private IEnumerator IconAnimation(string state)
