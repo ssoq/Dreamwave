@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum Focus
 {
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public KeyCode right;
 
     [Header("Game")]
+    [SerializeField] public int health = 50;
     [SerializeField] public int score = 0;
     [SerializeField] public int combo = 0;
     [SerializeField] public int misses = 0;
@@ -117,6 +119,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI bpmText;
     [SerializeField] private TextMeshProUGUI stepText;
     [SerializeField] private TextMeshProUGUI overallStepText;
+    [SerializeField] private Slider _healthSlider;
 
     [Header("Prefabs")]
     [SerializeField] public GameObject[] ratings;
@@ -187,6 +190,8 @@ public class GameManager : MonoBehaviour
     {
         fpsText.text = "Fps - " + (1.0f / Time.unscaledDeltaTime).ToString("F0");
         ffpsText.text = "FFps - " + PlayerPrefs.GetFloat("ffps").ToString("F0");
+        health = Mathf.Clamp(health, 0, 101);
+        _healthSlider.value = Mathf.Lerp(_healthSlider.value, health, 10f * Time.deltaTime);
 
         if (PauseMenu.instance._isPaused) return;
         AnimateBackground();
@@ -227,6 +232,7 @@ public class GameManager : MonoBehaviour
                 missesText.text = "Misses: " + misses.ToString();
                 shits++;
                 accuracy -= 0.12f + (noteDistance / 3);
+                UpdatePlayerHealth(-5);
                 break;
             case "Bad":
                 score -= scores[3];
@@ -239,6 +245,7 @@ public class GameManager : MonoBehaviour
                 comboText.text = "Combo: " + combo.ToString();
                 missesText.text = "Misses: " + misses.ToString();
                 accuracy -= 0.1f + (noteDistance / 2);
+                UpdatePlayerHealth(1);
                 break;
             case "Cool":
                 score += scores[2] - ((int)msDelay / 2);
@@ -251,6 +258,7 @@ public class GameManager : MonoBehaviour
                 totalNotesHitCorrect++;
                 comboText.text = "Combo: " + combo.ToString();
                 accuracy += 0.05f - (noteDistance / 4);
+                UpdatePlayerHealth(2);
                 break;
             case "Sick":
                 score += scores[1] - ((int)msDelay / 3);
@@ -263,6 +271,7 @@ public class GameManager : MonoBehaviour
                 totalNotesHitCorrect++;
                 comboText.text = "Combo: " + combo.ToString();
                 accuracy += 0.1f - (noteDistance / 3);
+                UpdatePlayerHealth(3);
                 break;
             case "Dreamy":
                 score += scores[0] - ((int)msDelay / 4);
@@ -275,6 +284,7 @@ public class GameManager : MonoBehaviour
                 totalNotesHitCorrect++;
                 comboText.text = "Combo: " + combo.ToString();
                 accuracy += 0.12f - (noteDistance / 2);
+                UpdatePlayerHealth(5);
                 break;
         }
 
@@ -340,6 +350,11 @@ public class GameManager : MonoBehaviour
         }
 
         ratingText.text = "Rating: " + _playerRating.ToString();
+    }
+
+    private void UpdatePlayerHealth(int healthToChange)
+    {
+        health += healthToChange;
     }
 
     private void PositionNoteUi()

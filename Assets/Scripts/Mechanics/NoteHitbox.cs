@@ -135,6 +135,8 @@ public class NoteHitbox : MonoBehaviour
             collision.gameObject.CompareTag("Note Hold Parent") ||
             collision.gameObject.CompareTag("Note Hold"))
         {
+            if (!Input.GetKey(keyForSide)) NoteHit("Shit", delayInMs, 2, keyForSide.ToString()+"miss");
+
             notesWithinHitBox.Remove(collision.gameObject);
             HandleNoteVisibility(collision.gameObject);
         }

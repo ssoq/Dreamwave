@@ -85,6 +85,14 @@ public class CustomAssetLoader : MonoBehaviour
     public bool _shouldFlipPlayerOneCustom = true;
     [SerializeField] private DreamwaveCharacter _playerOneScript;
 
+    [Space(5)]
+    public string CustomPlayerOneIconFileName;
+    public int _playerOneIconWidth = 1080;
+    public int _playerOneIconHeight = 1080;
+    public float _playerOneIconRectX = 1f;
+    public float _playerOneIconRectY = 1f;
+    [SerializeField] private DreamwaveIcon _playerOneIconScript;
+
     #endregion
 
     #region Player Two Section - AI
@@ -204,13 +212,26 @@ public class CustomAssetLoader : MonoBehaviour
                 _playerOneScript.RightAnimations.Clear();
                 _playerOneScript.RightOffsets.Clear();
 
+                _playerOneIconScript._critical.Clear();
+                _playerOneIconScript._criticalOffsets.Clear();
+
+                _playerOneIconScript._losing.Clear();
+                _playerOneIconScript._losingOffsets.Clear();
+
+                _playerOneIconScript._neutral.Clear();
+                _playerOneIconScript._neutralOffsets.Clear();
+
+                _playerOneIconScript._winning.Clear();
+                _playerOneIconScript._winningOffsets.Clear();
+
                 if (_shouldFlipPlayerOneCustom) _playerOneScript.Renderer.flipX = true;
                 else _playerOneScript.Renderer.flipX = false;
 
                 // Define animation names
                 string[] animationNames = { "Idle", "Left", "Down", "Up", "Right" };
+                string[] iconAnimationNames = { "Winning", "Neutral", "Losing", "Critical" };
 
-                // Iterate over animation names
+                // load custom character sprites and offsets for animations
                 foreach (string animationName in animationNames)
                 {
                     string animationPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneFileName}/{animationName}/");
@@ -240,6 +261,36 @@ public class CustomAssetLoader : MonoBehaviour
                         case "Right":
                             _playerOneScript.RightAnimations.AddRange(sprites);
                             _playerOneScript.RightOffsets.AddRange(offsets);
+                            break;
+                    }
+                }
+
+                // load custom icon sprites and offsets for animations
+                foreach (string animationName in iconAnimationNames)
+                {
+                    string animationPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneIconFileName}/{animationName}");
+                    string offsetPath = Path.Combine($"{Application.streamingAssetsPath}/{CustomPlayerOneIconFileName}/{animationName}/offsets.txt");
+
+                    var sprites = LoadSpritesFromPath(animationPath, _playerOneIconWidth, _playerOneIconHeight, _playerOneIconRectX, _playerTwoRectY);
+                    var offsets = LoadSpriteOffsetsFromPath(offsetPath);
+
+                    switch (animationName)
+                    {
+                        case "Winning":
+                            _playerOneIconScript._winning.AddRange(sprites);
+                            _playerOneIconScript._winningOffsets.AddRange(offsets);
+                            break;
+                        case "Neutral":
+                            _playerOneIconScript._neutral.AddRange(sprites);
+                            _playerOneIconScript._neutralOffsets.AddRange(offsets);
+                            break;
+                        case "Losing":
+                            _playerOneIconScript._losing.AddRange(sprites);
+                            _playerOneIconScript._losingOffsets.AddRange(offsets);
+                            break;
+                        case "Critical":
+                            _playerOneIconScript._critical.AddRange(sprites);
+                            _playerOneIconScript._criticalOffsets.AddRange(offsets);
                             break;
                     }
                 }
