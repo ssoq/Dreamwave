@@ -121,6 +121,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI overallStepText;
     [SerializeField] private Slider _healthSlider;
 
+    [Header("Animation")]
+    [SerializeField] private Animator _healthSliderAnim;
+
     [Header("Prefabs")]
     [SerializeField] public GameObject[] ratings;
 
@@ -160,6 +163,7 @@ public class GameManager : MonoBehaviour
             totalNotes++;
         }
 
+        health = 50;
         accuracy = 100.00f;
         CalculatePlayerRating();
         ConfigureDeviceSettings();
@@ -196,7 +200,10 @@ public class GameManager : MonoBehaviour
         if (PauseMenu.instance._isPaused) return;
         AnimateBackground();
         PositionNoteUi();
+        ShouldDisplayHealthSlider();
     }
+
+    private void LateUpdate() => PreviousHealthValue();
 
     private void OnEnable()
     {
@@ -352,6 +359,32 @@ public class GameManager : MonoBehaviour
         ratingText.text = "Rating: " + _playerRating.ToString();
     }
 
+    private int _lastHealthValue;
+    private bool _runningRoutine = false;
+    private void ShouldDisplayHealthSlider()
+    {
+        if (!_runningRoutine && _lastHealthValue != health)
+        {
+            StartCoroutine(SwitchHealthSliderState());
+            _runningRoutine = true;
+        }
+    }
+    private void PreviousHealthValue() => _lastHealthValue = health;
+
+    private IEnumerator SwitchHealthSliderState()
+    {
+        _runningRoutine = true;
+        _healthSliderAnim.CrossFade("In", 0.1f);
+
+        yield return new WaitUntil(() => _lastHealthValue == health);
+        yield return new WaitForSecondsRealtime(3f);
+        
+        _healthSliderAnim.CrossFade("Out", 0.1f);
+        
+        yield return new WaitForSeconds(0.1f);
+
+        _runningRoutine = false;
+    }
     private void UpdatePlayerHealth(int healthToChange)
     {
         health += healthToChange;
