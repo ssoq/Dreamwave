@@ -377,12 +377,9 @@ public class GameManager : MonoBehaviour
         _healthSliderAnim.CrossFade("In", 0.1f);
 
         yield return new WaitUntil(() => _lastHealthValue == health);
-        yield return new WaitForSecondsRealtime(3f);
+        yield return new WaitForSecondsRealtime(5f);
         
         _healthSliderAnim.CrossFade("Out", 0.1f);
-        
-        yield return new WaitForSeconds(0.1f);
-
         _runningRoutine = false;
     }
     private void UpdatePlayerHealth(int healthToChange)
