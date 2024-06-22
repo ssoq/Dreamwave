@@ -26,25 +26,22 @@ public class NoteHitbox : MonoBehaviour
     public GameObject NoteHitParticle;
 
     private Stopwatch stopwatch;
+    private bool noteHit = false;
 
     private void Start()
     {
         switch (side)
         {
             case Side.Left:
-                //keyForSide = GameManager.Instance.left;
                 buttonForSide = "Left";
                 break;
             case Side.Down:
-                //keyForSide = GameManager.Instance.down;
                 buttonForSide = "Down";
                 break;
             case Side.Up:
-                //keyForSide = GameManager.Instance.up;
                 buttonForSide = "Up";
                 break;
             case Side.Right:
-                //keyForSide = GameManager.Instance.right;
                 buttonForSide = "Right";
                 break;
         }
@@ -83,7 +80,6 @@ public class NoteHitbox : MonoBehaviour
             else if (dist >= ratingThresholds[2])
             {
                 NoteHit("Cool", delayInMs, dist, keyForSide.ToString());
-
                 if (GameManager.Instance.shouldDrawNoteSplashes)
                 {
                     Instantiate(NoteHitParticle, fn.transform.position, Quaternion.identity).SetActive(true);
@@ -92,7 +88,6 @@ public class NoteHitbox : MonoBehaviour
             else if (dist >= ratingThresholds[1])
             {
                 NoteHit("Sick", delayInMs, dist, keyForSide.ToString());
-
                 if (GameManager.Instance.shouldDrawNoteSplashes)
                 {
                     Instantiate(NoteHitParticle, fn.transform.position, Quaternion.identity).SetActive(true);
@@ -101,7 +96,6 @@ public class NoteHitbox : MonoBehaviour
             else if (dist >= ratingThresholds[0])
             {
                 NoteHit("Dreamy", delayInMs, dist, keyForSide.ToString());
-
                 if (GameManager.Instance.shouldDrawNoteSplashes)
                 {
                     Instantiate(NoteHitParticle, fn.transform.position, Quaternion.identity).SetActive(true);
@@ -114,7 +108,9 @@ public class NoteHitbox : MonoBehaviour
 
             // Reset stopwatch and handle note visibility
             stopwatch.Reset();
+            noteHit = true;  // Mark note as hit
             HandleNoteVisibility(fn);
+            notesWithinHitBox.Remove(fn);  // Remove the hit note from the list
         }
     }
 
@@ -126,6 +122,7 @@ public class NoteHitbox : MonoBehaviour
         {
             notesWithinHitBox.Add(collision.gameObject);
             stopwatch.Restart();
+            noteHit = false;  // Reset note hit flag
         }
     }
 
@@ -135,9 +132,12 @@ public class NoteHitbox : MonoBehaviour
             collision.gameObject.CompareTag("Note Hold Parent") ||
             collision.gameObject.CompareTag("Note Hold"))
         {
-            UnityEngine.Debug.Log(Input.GetKey(keyForSide));
+            UnityEngine.Debug.Log(Input.GetKey(keyForSide) + " " + collision.gameObject.tag);
 
-            if (!Input.GetKey(keyForSide)) NoteHit("Shit", delayInMs, 2, keyForSide.ToString()+"miss");
+            if (!noteHit && !Input.GetKey(keyForSide))
+            {
+                NoteHit("Shit", delayInMs, 2, keyForSide.ToString() + "miss");
+            }
 
             notesWithinHitBox.Remove(collision.gameObject);
             HandleNoteVisibility(collision.gameObject);
