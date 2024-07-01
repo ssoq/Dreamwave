@@ -76701,7 +76701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1410931877
 Transform:
   m_ObjectHideFlags: 0
@@ -88390,7 +88390,7 @@ MonoBehaviour:
   _isSinging: 0
   _canAnimate: 1
   Renderer: {fileID: 1751173951}
-  AnimationSpeed: 0.1
+  AnimationSpeed: 0.5
   SingAnimationHold: 0.3
   LeftAnimations:
   - {fileID: 1087356312, guid: bfa7e4c737c264149906dce81e19fa4b, type: 3}

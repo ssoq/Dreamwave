@@ -359,6 +359,8 @@ public class GameManager : MonoBehaviour
         ratingText.text = "Rating: " + _playerRating.ToString();
     }
 
+    #region Player Health
+
     private int _lastHealthValue;
     private bool _runningRoutine = false;
     private void ShouldDisplayHealthSlider()
@@ -378,7 +380,7 @@ public class GameManager : MonoBehaviour
 
         yield return new WaitUntil(() => _lastHealthValue == health);
         yield return new WaitForSecondsRealtime(5f);
-        
+
         _healthSliderAnim.CrossFade("Out", 0.1f);
         _runningRoutine = false;
     }
@@ -386,6 +388,9 @@ public class GameManager : MonoBehaviour
     {
         health += healthToChange;
     }
+
+
+    #endregion
 
     private void PositionNoteUi()
     {

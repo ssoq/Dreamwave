@@ -132,7 +132,7 @@ public class NoteHitbox : MonoBehaviour
             collision.gameObject.CompareTag("Note Hold Parent") ||
             collision.gameObject.CompareTag("Note Hold"))
         {
-            UnityEngine.Debug.Log(Input.GetKey(keyForSide) + " " + collision.gameObject.tag);
+            //UnityEngine.Debug.Log(Input.GetKey(keyForSide) + " " + collision.gameObject.tag);
 
             if (!noteHit && !Input.GetKey(keyForSide))
             {
