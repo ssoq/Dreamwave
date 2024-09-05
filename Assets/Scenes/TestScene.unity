@@ -33075,7 +33075,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7eca12499db309e4995ae1769e86bd65, type: 3}
   - {fileID: 21300000, guid: 391a927ee561f654ea2bedf9e5f03b9d, type: 3}
   numSamples: 512
-  sensitivity: 100
+  sensitivity: 500
   audioSource: {fileID: 1475031433}
 --- !u!1 &663223479
 GameObject:
@@ -45684,15 +45684,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _typePlayerOne: 0
-  _typePlayerTwo: 0
-  _typeNoteAsset: 2
+  _typePlayerTwo: 2
+  _typeNoteAsset: 0
   _typeNoteParticleAsset: 2
   CustomNoteParticleName: CustomParticleDemo
   _particleSpriteWidth: 1080
   _particleSpriteHeight: 1080
   _noteParticleSpriteRenderers: []
-  CustomNoteFileLocation: Sprites\UI\Game\Notes\Dreamwave Custom Note Example
-  CustomNoteHeldFileLocation: Sprites\UI\Game\Notes\Dreamwave Custom Note Example
+  CustomNoteFileLocation: Sprites\UI\Game\Notes\Dreamwave Base Note Skin
+  CustomNoteHeldFileLocation: Sprites\UI\Game\Notes\Dreamwave Base Note Skin
   _NoteWidth: 470
   _NoteHeight: 540
   _noteColors: []
@@ -81109,7 +81109,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d438be538890dad45aaaa68e00aeb0e6, type: 3}
   plrAnim: {fileID: 0}
   currentAnimationPlaying: 
-  noteAnimSpeed: 0.1
+  noteAnimSpeed: 0.05
 --- !u!1 &1525967938
 GameObject:
   m_ObjectHideFlags: 0

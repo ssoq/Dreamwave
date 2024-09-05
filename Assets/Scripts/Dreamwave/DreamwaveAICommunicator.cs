@@ -22,6 +22,7 @@ public class DreamwaveAICommunicator : MonoBehaviour
 {
     [Header("Settings")]
     [SerializeField] private WhichSide _whichSide;
+    [SerializeField] private float noteAnimSpeed = 0.05f;
 
     [Header("Scripts")]
     [SerializeField] private DreamwaveAICharacter _character;
@@ -102,6 +103,8 @@ public class DreamwaveAICommunicator : MonoBehaviour
         {
             _spriteRenderer.sprite = _noteSpritesHeld[i];
 
+            yield return new WaitForSecondsRealtime(noteAnimSpeed);
+
             if (i == _noteSpritesHeld.Count - 1) break;
         }
 
@@ -110,6 +113,8 @@ public class DreamwaveAICommunicator : MonoBehaviour
         for (int i = 0; i < _noteSpritesReleased.Count; i++)
         {
             _spriteRenderer.sprite = _noteSpritesReleased[i];
+
+            yield return new WaitForSecondsRealtime(noteAnimSpeed);
 
             if (i == _noteSpritesReleased.Count - 1) break;
         }
