@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Xml.Serialization;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Networking;
+using static TempoManager;
 
 /// <summary>
 /// Custom asset loader.
@@ -116,6 +116,8 @@ public class CustomAssetLoader : MonoBehaviour
     [SerializeField] private DreamwaveIcon _playerTwoIconScript;
 
     #endregion
+
+    [SerializeField] private string mp3FileName;
 
     private void Awake()
     {
@@ -420,6 +422,8 @@ public class CustomAssetLoader : MonoBehaviour
 
                 break;
         }
+
+        StartCoroutine(LoadMP3());
     }
 
     public Sprite LoadStreamedSprite(string filepath, string fileName, int width, int height)
@@ -515,5 +519,29 @@ public class CustomAssetLoader : MonoBehaviour
         }
 
         return offsets;
+    }
+
+    private IEnumerator LoadMP3()
+    {
+        string filePath = Path.Combine(Application.streamingAssetsPath, mp3FileName);
+        UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip("file://" + filePath, AudioType.MPEG);
+
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError("Failed to load MP3: " + www.error);
+        }
+        else
+        {
+            AudioClip audioClip = DownloadHandlerAudioClip.GetContent(www);
+            // You can now use the AudioClip, for example, assign it to an AudioSource
+            AudioSource audioSource = instance.audioSource;
+            if (audioSource != null)
+            {
+                audioSource.clip = audioClip;
+                audioSource.Play();
+            }
+        }
     }
 } 
