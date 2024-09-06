@@ -42,8 +42,8 @@ public class DreamwaveVisualiser : MonoBehaviour
 
     private void UpdateVisualizer()
     {
-        // Determine which sprite to display based on the loudness
-        int spriteIndex = Mathf.Clamp((int)(loudness), 0, visualizerSprites.Length - 1);
+        // Scale the loudness to the range of the sprite array
+        int spriteIndex = Mathf.Clamp((int)(loudness * (visualizerSprites.Length - 1)), 0, visualizerSprites.Length - 1);
         _renderer.sprite = visualizerSprites[spriteIndex];
     }
 }

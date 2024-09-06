@@ -108,7 +108,7 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.005
     - _QueueOffset: 0
-    - _RealTime: 30.818548
+    - _RealTime: 27.157867
     - _ReceiveShadows: 1
     - _Rotation: 0
     - _Scale: 2

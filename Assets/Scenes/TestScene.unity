@@ -22783,6 +22783,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 3
+  noteAnimSpeed: 0.05
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1409486087}
@@ -23368,6 +23369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 1
+  noteAnimSpeed: 0.05
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 2010483836}
@@ -26588,6 +26590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 2
+  noteAnimSpeed: 0.05
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1637422327}
@@ -33075,7 +33078,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7eca12499db309e4995ae1769e86bd65, type: 3}
   - {fileID: 21300000, guid: 391a927ee561f654ea2bedf9e5f03b9d, type: 3}
   numSamples: 512
-  sensitivity: 500
+  sensitivity: 3
   audioSource: {fileID: 1475031433}
 --- !u!1 &663223479
 GameObject:
@@ -45724,6 +45727,9 @@ MonoBehaviour:
   _playerTwoIconRectX: 0.5
   _playerTwoIconRectY: 0.5
   _playerTwoIconScript: {fileID: 27266911}
+  _background: {fileID: 0}
+  _backgroundFileName: 
+  mp3FileName: 
 --- !u!114 &942200543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50090,6 +50096,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 0
+  noteAnimSpeed: 0.05
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1322890721}
