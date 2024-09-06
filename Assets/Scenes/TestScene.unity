@@ -45686,7 +45686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42ff566cafdeaf4a99eac30420afb3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typePlayerOne: 0
+  _typePlayerOne: 2
   _typePlayerTwo: 2
   _typeNoteAsset: 0
   _typeNoteParticleAsset: 2
@@ -78976,7 +78976,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0000f928daab5e64298419d6c77a3aeb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -107816,6 +107816,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: right hold
       objectReference: {fileID: 0}
+    - target: {fileID: 3529011863574266872, guid: 44c1db9415eaa4e43b204370d0279870,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -108605,6 +108610,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: left hold
       objectReference: {fileID: 0}
+    - target: {fileID: 6915421572351660716, guid: 72a5debd2d5fd3248bc5dc30d9f81ca7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -108771,6 +108781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: up hold
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051830009340388339, guid: 6235264038236f14387ca3f85739db54,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -109089,6 +109104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: down hold
+      objectReference: {fileID: 0}
+    - target: {fileID: 8888526875997741929, guid: a5c76a29e8ffb3a4595cd151cf00d06c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
