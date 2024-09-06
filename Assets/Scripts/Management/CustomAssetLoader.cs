@@ -117,6 +117,13 @@ public class CustomAssetLoader : MonoBehaviour
 
     #endregion
 
+    [Space(10)]
+
+    [SerializeField] private SpriteRenderer _background;
+    [SerializeField] private string _backgroundFileName;
+
+    [Space(10)]
+
     [SerializeField] private string mp3FileName;
 
     private void Awake()
@@ -423,6 +430,7 @@ public class CustomAssetLoader : MonoBehaviour
                 break;
         }
 
+        _background.sprite = LoadStreamedSprite(Application.streamingAssetsPath, _backgroundFileName, (1920 / 2), (1080 / 2));
         StartCoroutine(LoadMP3());
     }
 

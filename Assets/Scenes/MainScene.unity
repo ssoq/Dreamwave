@@ -44706,7 +44706,7 @@ GameObject:
   - component: {fileID: 926881138}
   - component: {fileID: 926881139}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44721,8 +44721,8 @@ Transform:
   m_GameObject: {fileID: 926881137}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 11}
-  m_LocalScale: {x: 27.344624, y: 13.639398, z: 18.360722}
+  m_LocalPosition: {x: 0, y: 3.67, z: 11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90009704}
@@ -45600,6 +45600,8 @@ MonoBehaviour:
   _playerTwoIconRectX: 0.5
   _playerTwoIconRectY: 0.5
   _playerTwoIconScript: {fileID: 27266911}
+  _background: {fileID: 926881139}
+  _backgroundFileName: Mods\Twiddlefinger\Sprites\Backgrounds\Twiddlefinger Background.png
   mp3FileName: Mods\Twiddlefinger\Music\Twiddlefinger.mp3
 --- !u!114 &942200543
 MonoBehaviour:
@@ -98933,7 +98935,7 @@ Animation:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962586697}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: f0f50853d80f187468dbc55703505320, type: 2}
   m_Animations:
