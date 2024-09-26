@@ -77,7 +77,7 @@ public class CameraSystem : MonoBehaviour
         }
     }
 
-    float zoom;
+    float zoom = 60f;
     private void ZoomEffect(int step)
     {
         if (step == 1) { zoom = 50f; StartCoroutine(UnZoom()); }
