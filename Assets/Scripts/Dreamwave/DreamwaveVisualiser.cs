@@ -11,7 +11,7 @@ public class DreamwaveVisualiser : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource;
     private float[] samples;
-    private float loudness;
+    public float loudness;
 
     void Start()
     {

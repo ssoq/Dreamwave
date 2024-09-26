@@ -14288,9 +14288,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothing: 2
-  leftPos: {x: -1.63, y: 2.04, z: -2.98}
-  rightPos: {x: 1.63, y: 2.04, z: -2.98}
   centrePos: {x: 0, y: 2.04, z: -2.98}
+  leftPlayer: {fileID: 1751173950}
+  rightPlayer: {fileID: 1895532697}
+  _zAxis: -2.98
+  visualiser: {fileID: 660245059}
 --- !u!1 &236982075
 GameObject:
   m_ObjectHideFlags: 0
@@ -33080,6 +33082,7 @@ MonoBehaviour:
   numSamples: 512
   sensitivity: 3
   audioSource: {fileID: 1475031433}
+  loudness: 0
 --- !u!1 &663223479
 GameObject:
   m_ObjectHideFlags: 0
@@ -78976,7 +78979,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0000f928daab5e64298419d6c77a3aeb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 0.8
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
