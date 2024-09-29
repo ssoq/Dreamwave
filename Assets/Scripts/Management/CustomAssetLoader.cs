@@ -12,28 +12,7 @@ using static TempoManager;
 /// a text document which contains the state of custom assets.
 /// </summary>
 
-public enum TypePlayerOne
-{
-    Custom,
-    Mod,
-    Default //fallback
-}
-
-public enum TypePlayerTwo
-{
-    Custom,
-    Mod,
-    Default //fallback
-}
-
-public enum TypeNoteAsset
-{
-    Custom,
-    Mod,
-    Default //fallback
-}
-
-public enum TypeNoteParticleAsset
+public enum TypeAsset
 {
     Custom,
     Mod,
@@ -42,20 +21,21 @@ public enum TypeNoteParticleAsset
 
 public class CustomAssetLoader : MonoBehaviour
 {
-    public TypePlayerOne _typePlayerOne;
-    public TypePlayerTwo _typePlayerTwo;
-    public TypeNoteAsset _typeNoteAsset;
-    public TypeNoteParticleAsset _typeNoteParticleAsset;
+    public TypeAsset _typePlayerOne;
+    public TypeAsset _typePlayerTwo;
+    public TypeAsset _typeNoteAsset;
+    public TypeAsset _typeNoteParticleAsset;
 
     #region Note Particle Renderer Section
 
     [Space(10)]
     [Header("Note Particle Settings")]
-    public string CustomNoteParticleName;
+    public string CustomNoteParticleFileName;
     public int _particleSpriteWidth = 1080;
     public int _particleSpriteHeight = 1080;
     [Header("Note Particle Renderers")]
-    [SerializeField] private List<SpriteRenderer> _noteParticleSpriteRenderers;
+    [SerializeField] private List<DreamwaveParticle> _dreamwaveParticles;
+    [SerializeField] private List<Sprite> _noteParticleAnimation;
 
     #endregion
 
@@ -161,15 +141,6 @@ public class CustomAssetLoader : MonoBehaviour
         }
         #endregion
 
-        #region Note Particles
-        GameObject[] _noteParticles = GameObject.FindGameObjectsWithTag("Note Particle");
-        for (int i = 0; i < _noteParticles.Length; i++)
-        {
-            SpriteRenderer spriteRenderer = _noteParticles[i].GetComponent<SpriteRenderer>();
-            _noteParticleSpriteRenderers.Add(spriteRenderer);
-        }
-        #endregion
-
         LoadCustomAssets(); // calls after for-loops
     }
 
@@ -177,23 +148,27 @@ public class CustomAssetLoader : MonoBehaviour
     {
         switch (_typeNoteParticleAsset)
         {
-            case TypeNoteParticleAsset.Custom:
-                for (int i = 0; i < _noteParticleSpriteRenderers.Count; i++)
+            case TypeAsset.Custom:
+                string filePath = Path.Combine($"{Application.streamingAssetsPath}/{CustomNoteParticleFileName}");
+                _noteParticleAnimation.AddRange(LoadSpritesFromPath(filePath, _particleSpriteWidth, _particleSpriteHeight, 0.5f, 0.5f));
+
+                for (int i = 0; i < _dreamwaveParticles.Count; i++)
                 {
-                    _noteParticleSpriteRenderers[i].sprite = LoadStreamedSprite($"" +
-                        $"{Application.streamingAssetsPath + "/Sprites/UI/Game/NoteParticles/"}", CustomNoteParticleName + ".png", _particleSpriteWidth, _particleSpriteHeight);
+                    _dreamwaveParticles[i].ParticleAnimation.AddRange(_noteParticleAnimation);
+
+                    if (i == _dreamwaveParticles.Count - 1) break;
                 }
                 break;
-            case TypeNoteParticleAsset.Mod:
+            case TypeAsset.Mod:
                 break;
-            case TypeNoteParticleAsset.Default:
+            case TypeAsset.Default:
                 break;
         }
 
         // I need to get the int of how many sprites are available in each file and then apply them to each note controllers sprite lists respectively
         switch (_typeNoteAsset)
         {
-            case TypeNoteAsset.Custom:
+            case TypeAsset.Custom:
                 _noteController.noteSpritesDown.Clear();
                 _noteController.noteSpritesRelease.Clear();
 
@@ -212,7 +187,7 @@ public class CustomAssetLoader : MonoBehaviour
 
         switch (_typePlayerOne)
         {
-            case TypePlayerOne.Custom:
+            case TypeAsset.Custom:
                 // Clear all animations and offsets
                 _playerOneScript.IdleAnimation.Clear();
                 _playerOneScript.IdleOffsets.Clear();
@@ -320,7 +295,7 @@ public class CustomAssetLoader : MonoBehaviour
 
         switch (_typePlayerTwo)
         {
-            case TypePlayerTwo.Custom:
+            case TypeAsset.Custom:
                 // Clear all animations and offsets
                 #region Clearing Defualts
 
