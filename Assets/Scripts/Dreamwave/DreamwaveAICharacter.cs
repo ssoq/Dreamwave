@@ -17,27 +17,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DreamwaveAICharacter : MonoBehaviour
+public class DreamwaveAICharacter : DreamwaveCharacter
 {
-    [Header("Settings")]
-    public bool IsCustom = false; // decides whether you're using a base character or a custom character
-
-    [Header("States")]
-    [SerializeField] private bool _isSinging = false;
-    [SerializeField] private bool _canAnimate = true;
-
-    [Header("Rendering")]
-    public SpriteRenderer Renderer;
-    public float AnimationSpeed = 0.1f;
-    public float SingAnimationHold = 0.05f;
-
-    [Header("Character Animation Lists")]
-    public List<Sprite> LeftAnimations = new(); public List<Vector2> LeftOffsets = new();
-    public List<Sprite> DownAnimations = new(); public List<Vector2> DownOffsets = new();
-    public List<Sprite> UpAnimations = new(); public List<Vector2> UpOffsets = new();
-    public List<Sprite> RightAnimations = new(); public List<Vector2> RightOffsets = new();
-    public List<Sprite> IdleAnimation = new(); public List<Vector2> IdleOffsets = new();
-
     private void Awake()
     {
         Renderer = GetComponent<SpriteRenderer>();
@@ -79,30 +60,16 @@ public class DreamwaveAICharacter : MonoBehaviour
                 case 2:
                     if (!_isSinging)
                     {
-                        StopCoroutine("StillAnimation");
-                        StartCoroutine("StillAnimation");
+                        PlayAnimation(Renderer, IdleAnimation, IdleOffsets, AnimationSpeed);
                     }
                     break;
                 case 4:
                     if (!_isSinging)
                     {
-                        StopCoroutine("StillAnimation");
-                        StartCoroutine("StillAnimation");
+                        PlayAnimation(Renderer, IdleAnimation, IdleOffsets, AnimationSpeed);
                     }
                     break;
             }
-        }
-    }
-
-    private IEnumerator StillAnimation() // means idle but cannot use it due to variable using same name
-    {
-        for (int i = 0; i < IdleAnimation.Count; i++)
-        {
-            Renderer.sprite = IdleAnimation[i];
-            if (IdleOffsets.Count != 0) Renderer.gameObject.transform.localPosition = IdleOffsets[i];
-            yield return new WaitForSecondsRealtime(AnimationSpeed);
-
-            if (i == IdleAnimation.Count - 1) yield break;
         }
     }
 
@@ -129,17 +96,9 @@ public class DreamwaveAICharacter : MonoBehaviour
             _ => IdleOffsets
         };
 
-        for (int i = 0; i < animations.Count; i++)
-        {
-            Renderer.sprite = animations[i];
-            if (offsets.Count != 0) Renderer.gameObject.transform.localPosition = offsets[i];
-            if (i != animations.Count - 1) yield return new WaitForSecondsRealtime(AnimationSpeed);
+        PlayAnimation(Renderer, animations, offsets, AnimationSpeed);
 
-            if (i == animations.Count - 1)
-            {
-                yield return new WaitForSecondsRealtime(SingAnimationHold);
-            }
-        }
+        yield return new WaitForSecondsRealtime(SingAnimationHold);
 
         _isSinging = false;
         yield break;
