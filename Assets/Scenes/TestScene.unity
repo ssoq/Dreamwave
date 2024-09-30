@@ -15993,6 +15993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: 2.248, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -34371,7 +34372,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -9}
-  m_LocalScale: {x: 311.27, y: 0.1, z: 36.431}
+  m_LocalScale: {x: 311.27, y: 0.0000001, z: 36.431}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 90009704}
@@ -59731,6 +59732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: 2.248, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -73861,6 +73863,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: -2.252, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -73931,7 +73934,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1410931877
 Transform:
   m_ObjectHideFlags: 0
@@ -75101,6 +75104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: -0.7520001, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -81074,6 +81078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: 0.7479999, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -88032,6 +88037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: 0.7479999, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -96787,6 +96793,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: -0.7520001, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -103756,6 +103763,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
+  AnimationTime: 0.03
   offset: {x: -2.252, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}

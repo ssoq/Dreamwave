@@ -6,6 +6,7 @@ public class DreamwaveParticle : DreamwaveAnimation
 {
     public SpriteRenderer Renderer;
     public List<Sprite> ParticleAnimation;
+    public float AnimationTime = 0.04f;
     public Vector2 offset;
     public Vector2 scale;
     public Transform parent;
@@ -28,7 +29,7 @@ public class DreamwaveParticle : DreamwaveAnimation
             offsets.Add(new Vector3(offset.x, 0));
         }
 
-        PlayAnimation(Renderer, ParticleAnimation, offsets, 0.04f);
+        PlayAnimation(Renderer, ParticleAnimation, offsets, AnimationTime);
     }
 
 }
