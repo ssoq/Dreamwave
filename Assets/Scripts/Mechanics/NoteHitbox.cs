@@ -136,7 +136,7 @@ public class NoteHitbox : MonoBehaviour
 
             if (!noteHit && !Input.GetKey(keyForSide))
             {
-                NoteHit("Shit", delayInMs, 2, keyForSide.ToString() + "miss");
+                NoteHit("Missed", delayInMs, 2, keyForSide.ToString() + "miss");
             }
 
             notesWithinHitBox.Remove(collision.gameObject);

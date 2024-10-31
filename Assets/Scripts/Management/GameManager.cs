@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int score = 0;
     [SerializeField] public int combo = 0;
     [SerializeField] public int misses = 0;
-    [SerializeField] public float accuracy = 100;
+    [SerializeField] public float accuracy = 100f;
     [SerializeField] public Ratings _playerRating;
     [SerializeField] public int[] scores;
     [SerializeField] public int totalNotes;
@@ -223,138 +223,129 @@ public class GameManager : MonoBehaviour
         TempoManager.OnStep -= OnStepHandler;
     }
 
+    private int totalHits = 0;
+
     private void OnNoteHit(string newScore, float msDelay, float noteDistance, string direction)
     {
-        switch (newScore) 
+        int hitScore = 0;
+        float hitAccuracy = 100.0f; // Start with a perfect hit score for accuracy weighting
+
+        switch (newScore)
         {
+            case "Missed":
+                hitScore = scores[5]; // lowest score
+                misses++;
+                combo = 0;
+                shits++;
+                hitAccuracy = 0.0f; // Missed hits lower accuracy significantly
+
+                var missed = Instantiate(ratings[5], ratings[5].transform.position, Quaternion.identity);
+                missed.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
+                missed.transform.SetParent(canvas.transform);
+                missed.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
+                break;
             case "Shit":
-                score -= scores[4];
-                var shit = Instantiate(ratings[4], ratings[3].transform.position, Quaternion.identity);
-                shit.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
+                hitScore = scores[4];
+                combo = 0;
+                shits++;
+                hitAccuracy = 40.0f; // Shit hit lowers accuracy somewhat
+
+                var shit = Instantiate(ratings[4], ratings[4].transform.position, Quaternion.identity);
+                shit.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
                 shit.transform.SetParent(canvas.transform);
                 shit.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
-                combo = 0;
-                misses++;
-                comboText.text = "Combo: " + combo.ToString();
-                missesText.text = "Misses: " + misses.ToString();
-                shits++;
-                accuracy -= 0.12f + (noteDistance / 3);
-                UpdatePlayerHealth(-5);
                 break;
             case "Bad":
-                score -= scores[3];
-                var bad = Instantiate(ratings[3], ratings[2].transform.position, Quaternion.identity);
-                bad.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
-                bad.transform.SetParent(canvas.transform);
-                bad.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
+                hitScore = scores[3];
                 combo++;
                 bads++;
-                comboText.text = "Combo: " + combo.ToString();
-                missesText.text = "Misses: " + misses.ToString();
-                accuracy -= 0.1f + (noteDistance / 2);
-                UpdatePlayerHealth(1);
+                hitAccuracy = 60.0f; // Bad hit contributes less to accuracy
+
+                var bad = Instantiate(ratings[3], ratings[3].transform.position, Quaternion.identity);
+                bad.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
+                bad.transform.SetParent(canvas.transform);
+                bad.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 break;
             case "Cool":
-                score += scores[2] - ((int)msDelay / 2);
-                var good = Instantiate(ratings[2], ratings[1].transform.position, Quaternion.identity);
-                good.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
-                good.transform.SetParent(canvas.transform);
-                good.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
+                hitScore = scores[2];
                 combo++;
                 cools++;
                 totalNotesHitCorrect++;
-                comboText.text = "Combo: " + combo.ToString();
-                accuracy += 0.05f - (noteDistance / 4);
-                UpdatePlayerHealth(2);
+                hitAccuracy = 80.0f; // Cool hit keeps accuracy high
+
+                var cool = Instantiate(ratings[2], ratings[2].transform.position, Quaternion.identity);
+                cool.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
+                cool.transform.SetParent(canvas.transform);
+                cool.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 break;
             case "Sick":
-                score += scores[1] - ((int)msDelay / 3);
-                var sick = Instantiate(ratings[1], ratings[0].transform.position, Quaternion.identity);
-                sick.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: "+msDelay.ToString("F4");
-                sick.transform.SetParent(canvas.transform);
-                sick.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
+                hitScore = scores[1];
                 combo++;
                 sicks++;
                 totalNotesHitCorrect++;
-                comboText.text = "Combo: " + combo.ToString();
-                accuracy += 0.1f - (noteDistance / 3);
-                UpdatePlayerHealth(3);
+                hitAccuracy = 90.0f; // Sick hit boosts accuracy slightly
+
+                var sick = Instantiate(ratings[1], ratings[1].transform.position, Quaternion.identity);
+                sick.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
+                sick.transform.SetParent(canvas.transform);
+                sick.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
                 break;
             case "Dreamy":
-                score += scores[0] - ((int)msDelay / 4);
+                hitScore = scores[0];
+                combo++;
+                dreamys++;
+                totalNotesHitCorrect++;
+                hitAccuracy = 100.0f; // Dreamy hit maintains perfect accuracy
+
                 var dreamy = Instantiate(ratings[0], ratings[0].transform.position, Quaternion.identity);
                 dreamy.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
                 dreamy.transform.SetParent(canvas.transform);
                 dreamy.transform.localScale = new Vector3(0.1338828f, 0.1338828f, 0.1338828f);
-                combo++;
-                dreamys++;
-                totalNotesHitCorrect++;
-                comboText.text = "Combo: " + combo.ToString();
-                accuracy += 0.12f - (noteDistance / 2);
-                UpdatePlayerHealth(5);
                 break;
         }
 
+        // Adjust score and health
+        score += hitScore;
+        UpdatePlayerHealth(hitScore > 0 ? 2 : -5);
+
+        // Update total hits and calculate weighted accuracy
+        totalHits++;
+        accuracy = ((accuracy * (totalHits - 1)) + hitAccuracy) / totalHits;
         accuracy = Mathf.Clamp(accuracy, 0f, 100f);
+
+        // Update UI
+        comboText.text = "Combo: " + combo.ToString();
+        missesText.text = "Misses: " + misses.ToString();
         accuracyText.text = "Accuracy: " + accuracy.ToString("F0") + "%";
-        score = Mathf.Clamp(score, 0, 999999999);
         scoreText.text = "Score: " + score.ToString();
+
         CalculatePlayerRating();
-        //Debug.Log(score + " - " + newScore);
     }
 
-    public void CalculatePlayerRating() // PLEASE FIX SOON - FIXED IT MEOW MEOW!!! 20/06/2024
+    public void CalculatePlayerRating()
     {
-        if (misses == 0)
-        {
-            if (shits == 0 && bads == 0 && cools == 0 && sicks == 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.MFC;
-            }
-            else if (shits == 0 && bads == 0 && cools == 0 && sicks > 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.PFC;
-            }
-            else if (shits == 0 && bads == 0 && cools > 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.GFC;
-            }
-            else if (shits == 0 && bads > 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.FC;
-            }
-        }
+        if (misses == 0 && dreamys > 0 && sicks == 0 && cools == 0 && bads == 0 && shits == 0)
+            _playerRating = Ratings.MFC; // Marvelous Full Combo
+        else if (misses == 0 && sicks > 0 && cools == 0 && bads == 0 && shits == 0)
+            _playerRating = Ratings.PFC; // Perfect Full Combo
+        else if (misses == 0 && cools > 0 && bads == 0 && shits == 0)
+            _playerRating = Ratings.GFC; // Good Full Combo
+        else if (misses == 0 && (bads > 0 || shits > 0))
+            _playerRating = Ratings.FC; // Full Combo
+        else if (misses >= 9)
+            _playerRating = Ratings.SDCB; // Single Digit Combo Break
+        else if (accuracy >= 80f)
+            _playerRating = Ratings.S;
+        else if (accuracy >= 70f)
+            _playerRating = Ratings.A;
+        else if (accuracy >= 60f)
+            _playerRating = Ratings.B;
+        else if (accuracy >= 50f)
+            _playerRating = Ratings.C;
+        else if (accuracy >= 40f)
+            _playerRating = Ratings.D;
         else
-        {
-            if (misses <= 9 && accuracy >= -1 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.SDCB;
-            }
-            else if (misses >= 10 && accuracy >= 90 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.S;
-            }
-            else if (misses >= 10 && accuracy >= 80 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.A;
-            }
-            else if (misses >= 10 && accuracy >= 70 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.B;
-            }
-            else if (misses >= 10 && accuracy >= 60 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.C;
-            }
-            else if (misses >= 10 && accuracy >= 50 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.D;
-            }
-            else if (misses >= 10 && accuracy >= 40 && shits >= 0 && bads >= 0 && cools >= 0 && sicks >= 0 && dreamys >= 0)
-            {
-                _playerRating = Ratings.F;
-            }
-        }
+            _playerRating = Ratings.F;
 
         ratingText.text = "Rating: " + _playerRating.ToString();
     }

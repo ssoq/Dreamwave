@@ -14079,10 +14079,10 @@ MonoBehaviour:
   delayInMs: 0
   ratingThresholds:
   - 0
-  - 0.6
-  - 1.1
-  - 1.6
-  - 2.1
+  - 0.4
+  - 0.7
+  - 1
+  - 1.4
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 3778646841318257463}
@@ -14129,7 +14129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 5}
+  m_Size: {x: 1, y: 6}
   m_EdgeRadius: 0
 --- !u!50 &229887438
 Rigidbody2D:
@@ -19313,7 +19313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Accuracy: 100.00%'
+  m_text: 'Accuracy: 100%'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc1992457b5dc764587847ddf57c503e, type: 2}
   m_sharedMaterial: {fileID: -2245736175916561741, guid: dc1992457b5dc764587847ddf57c503e,
@@ -21977,7 +21977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 3
-  noteAnimSpeed: 0.05
+  noteAnimSpeed: 0.02
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1409486087}
@@ -22563,7 +22563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 1
-  noteAnimSpeed: 0.05
+  noteAnimSpeed: 0.02
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 2010483836}
@@ -23892,10 +23892,10 @@ MonoBehaviour:
   delayInMs: 0
   ratingThresholds:
   - 0
-  - 0.6
-  - 1.1
-  - 1.6
-  - 2.1
+  - 0.4
+  - 0.7
+  - 1
+  - 1.4
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 1821306573}
@@ -23942,7 +23942,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 5.15}
+  m_Size: {x: 1, y: 6.15}
   m_EdgeRadius: 0
 --- !u!50 &468820209
 Rigidbody2D:
@@ -25700,7 +25700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 2
-  noteAnimSpeed: 0.05
+  noteAnimSpeed: 0.02
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1637422327}
@@ -35090,7 +35090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &763987813
 RectTransform:
   m_ObjectHideFlags: 0
@@ -40297,10 +40297,10 @@ MonoBehaviour:
   delayInMs: 0
   ratingThresholds:
   - 0
-  - 0.6
-  - 1.1
-  - 1.6
-  - 2.1
+  - 0.4
+  - 0.7
+  - 1
+  - 1.4
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 1444186459}
@@ -40347,7 +40347,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 5.15}
+  m_Size: {x: 1, y: 6.15}
   m_EdgeRadius: 0
 --- !u!50 &868015680
 Rigidbody2D:
@@ -43619,7 +43619,7 @@ MonoBehaviour:
   misses: 0
   accuracy: 100
   _playerRating: 0
-  scores: 5e010000c8000000640000000a0000001e000000
+  scores: 5e010000c8000000640000000a0000001e00000064000000
   totalNotes: 0
   totalNotesHitCorrect: 0
   shits: 0
@@ -43639,6 +43639,17 @@ MonoBehaviour:
   - Am I boring you?
   - What the funk'?
   - Just for you!
+  - Hey, Isla!
+  - What are you doing!?
+  - Where's Nini???
+  - Don't leave!
+  - I wonder if you can break this...
+  - '@louander on discord'
+  - You look lonely, I can fix that...
+  - What are you doing with your life?
+  - What am I doing with my life?
+  - Why do we exist?
+  - Why does this exist?
   SongName: Doppelganger
   SongCreatorName: Sugar Moon
   SongImageName: dreamwave_logo
@@ -43676,6 +43687,7 @@ MonoBehaviour:
   - {fileID: 366948236}
   - {fileID: 637291569}
   - {fileID: 133114313}
+  - {fileID: 801129284}
   start: 0
   stepCount: 0
 --- !u!4 &942200541
@@ -43792,7 +43804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &947138879
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46116,7 +46128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1005990485
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46661,7 +46673,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 5}
+  m_Size: {x: 1, y: 6}
   m_EdgeRadius: 0
 --- !u!50 &1024807879
 Rigidbody2D:
@@ -46708,10 +46720,10 @@ MonoBehaviour:
   delayInMs: 0
   ratingThresholds:
   - 0
-  - 0.6
-  - 1.1
-  - 1.6
-  - 2.1
+  - 0.4
+  - 0.7
+  - 1
+  - 1.4
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 300072332}
@@ -47704,7 +47716,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _whichSide: 0
-  noteAnimSpeed: 0.05
+  noteAnimSpeed: 0.02
   _character: {fileID: 1751173952}
   _noteController: {fileID: 1524813484}
   _noteParticle: {fileID: 1322890721}
@@ -75927,7 +75939,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0000f928daab5e64298419d6c77a3aeb, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 0.8
+  m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -77899,7 +77911,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d438be538890dad45aaaa68e00aeb0e6, type: 3}
   plrAnim: {fileID: 0}
   currentAnimationPlaying: 
-  noteAnimSpeed: 0.05
+  noteAnimSpeed: 0.02
 --- !u!1 &1525967938
 GameObject:
   m_ObjectHideFlags: 0
@@ -84424,7 +84436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1731738656
 RectTransform:
   m_ObjectHideFlags: 0
@@ -89957,7 +89969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1860354137
 RectTransform:
   m_ObjectHideFlags: 0
@@ -95566,7 +95578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1985984813
 RectTransform:
   m_ObjectHideFlags: 0
