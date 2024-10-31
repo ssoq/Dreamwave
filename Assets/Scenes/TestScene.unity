@@ -15993,7 +15993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: 2.248, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -59639,7 +59639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: 2.248, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -73770,7 +73770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: -2.252, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -75011,7 +75011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: -0.7520001, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -80985,7 +80985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: 0.7479999, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -88027,7 +88027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: 0.7479999, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -96783,7 +96783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: -0.7520001, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -103753,7 +103753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.023
+  AnimationTime: 0.02
   offset: {x: -2.252, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
