@@ -233,11 +233,11 @@ public class GameManager : MonoBehaviour
         switch (newScore)
         {
             case "Missed":
-                hitScore = scores[5]; // lowest score
+                hitScore = scores[5];
                 misses++;
                 combo = 0;
                 shits++;
-                hitAccuracy = 0.0f; // Missed hits lower accuracy significantly
+                hitAccuracy = 0.0f;
 
                 var missed = Instantiate(ratings[5], ratings[5].transform.position, Quaternion.identity);
                 missed.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
@@ -248,7 +248,7 @@ public class GameManager : MonoBehaviour
                 hitScore = scores[4];
                 combo = 0;
                 shits++;
-                hitAccuracy = 40.0f; // Shit hit lowers accuracy somewhat
+                hitAccuracy = 40.0f;
 
                 var shit = Instantiate(ratings[4], ratings[4].transform.position, Quaternion.identity);
                 shit.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
@@ -259,7 +259,7 @@ public class GameManager : MonoBehaviour
                 hitScore = scores[3];
                 combo++;
                 bads++;
-                hitAccuracy = 60.0f; // Bad hit contributes less to accuracy
+                hitAccuracy = 60.0f;
 
                 var bad = Instantiate(ratings[3], ratings[3].transform.position, Quaternion.identity);
                 bad.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
@@ -271,7 +271,7 @@ public class GameManager : MonoBehaviour
                 combo++;
                 cools++;
                 totalNotesHitCorrect++;
-                hitAccuracy = 80.0f; // Cool hit keeps accuracy high
+                hitAccuracy = 80.0f;
 
                 var cool = Instantiate(ratings[2], ratings[2].transform.position, Quaternion.identity);
                 cool.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
@@ -283,7 +283,7 @@ public class GameManager : MonoBehaviour
                 combo++;
                 sicks++;
                 totalNotesHitCorrect++;
-                hitAccuracy = 90.0f; // Sick hit boosts accuracy slightly
+                hitAccuracy = 90.0f;
 
                 var sick = Instantiate(ratings[1], ratings[1].transform.position, Quaternion.identity);
                 sick.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
@@ -295,7 +295,7 @@ public class GameManager : MonoBehaviour
                 combo++;
                 dreamys++;
                 totalNotesHitCorrect++;
-                hitAccuracy = 100.0f; // Dreamy hit maintains perfect accuracy
+                hitAccuracy = 100.0f;
 
                 var dreamy = Instantiate(ratings[0], ratings[0].transform.position, Quaternion.identity);
                 dreamy.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = "MS: " + msDelay.ToString("F4");
