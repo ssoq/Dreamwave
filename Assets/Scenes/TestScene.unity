@@ -14080,9 +14080,9 @@ MonoBehaviour:
   ratingThresholds:
   - 0
   - 0.4
-  - 0.6
-  - 1.2
-  - 2
+  - 0.7
+  - 1
+  - 1.6
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 3778646841318257463}
@@ -14129,7 +14129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 6}
+  m_Size: {x: 1, y: 8}
   m_EdgeRadius: 0
 --- !u!50 &229887438
 Rigidbody2D:
@@ -15993,7 +15993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: 2.248, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -16037,7 +16037,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -23893,9 +23893,9 @@ MonoBehaviour:
   ratingThresholds:
   - 0
   - 0.4
-  - 0.6
-  - 1.2
-  - 2
+  - 0.7
+  - 1
+  - 1.6
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 1821306573}
@@ -23942,7 +23942,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 6.15}
+  m_Size: {x: 1, y: 8.25}
   m_EdgeRadius: 0
 --- !u!50 &468820209
 Rigidbody2D:
@@ -40193,9 +40193,9 @@ MonoBehaviour:
   ratingThresholds:
   - 0
   - 0.4
-  - 0.6
-  - 1.2
-  - 2
+  - 0.7
+  - 1
+  - 1.6
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 1444186459}
@@ -40242,7 +40242,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 6.15}
+  m_Size: {x: 1, y: 8.25}
   m_EdgeRadius: 0
 --- !u!50 &868015680
 Rigidbody2D:
@@ -46568,7 +46568,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 6}
+  m_Size: {x: 1, y: 8}
   m_EdgeRadius: 0
 --- !u!50 &1024807879
 Rigidbody2D:
@@ -46616,9 +46616,9 @@ MonoBehaviour:
   ratingThresholds:
   - 0
   - 0.4
-  - 0.6
-  - 1.2
-  - 2
+  - 0.7
+  - 1
+  - 1.6
   keyForSide: 0
   buttonForSide: 
   NoteHitParticle: {fileID: 300072332}
@@ -59639,7 +59639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: 2.248, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -59683,7 +59683,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.99607843, g: 0, b: 1, a: 1}
   m_FlipX: 0
@@ -73770,7 +73770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: -2.252, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -73814,7 +73814,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0.13725491, b: 0, a: 1}
   m_FlipX: 0
@@ -75011,7 +75011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: -0.7520001, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -75055,7 +75055,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.09803922, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -80985,7 +80985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: 0.7479999, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -81029,7 +81029,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -88027,7 +88027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: 0.7479999, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -88071,7 +88071,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0, g: 0.627451, b: 1, a: 1}
   m_FlipX: 0
@@ -93157,7 +93157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -23.000122, y: -25}
+  m_AnchoredPosition: {x: -23.000244, y: -25}
   m_SizeDelta: {x: 100, y: 50}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1927842897
@@ -96783,7 +96783,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: -0.7520001, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 830386068}
@@ -96827,7 +96827,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 0.09803922, g: 1, b: 0, a: 1}
   m_FlipX: 0
@@ -103753,7 +103753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Renderer: {fileID: 0}
   ParticleAnimation: []
-  AnimationTime: 0.03
+  AnimationTime: 0.023
   offset: {x: -2.252, y: 0}
   scale: {x: 0.25, y: 0.25}
   parent: {fileID: 541235031}
@@ -103797,7 +103797,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 0.13725491, b: 0, a: 1}
   m_FlipX: 0
